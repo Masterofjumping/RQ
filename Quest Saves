@@ -484,78 +484,91 @@
       delay: 10
 '3':
   name: Smith the Blacksmith
-  description: '&a[Quest] &bTest a new refined alloy sword and observe the affect it has on test dummies. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  description: '&a[Quest] &bTest a new refined alloy sword and observe the affect
+    it has on test dummies. &cDifficulty: &8Coal'
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
-      type: ACTION
       block: '35'
       hand: '267'
       location: -1.55;66.00;-63.90;RPG;179.40;90.00;
       range: 5
-    '1':
       type: ACTION
-      prerequisites: '0'
+      description: '&a[Objective] &bStrike the test dummy with the sword.'
+    '1':
       block: '35'
       hand: '267'
       location: 0.36;66.00;-60.73;RPG;160.95;4.50;
       range: 5
+      type: ACTION
+      description: '&a[Objective] &bStrike the test dummy again with the sword.'
+      prerequisites: '0'
     '2':
-      type: NPC
-      prerequisites: '1'
       index: 20
       cancel: true
+      type: NPC
+      description: '&a[Objective] &bSpeak to the blacksmith, Smith.'
+      prerequisites: '1'
   conditions:
     '0':
-      type: QUESTNOT
       quest: Smith the Blacksmith
+      inverted: true
+      type: QUEST
   events:
     '0':
+      message: '&4[Smith] &3Test this sword for me, will ya? Go to the brown training
+        dummies in the &3yard and have a swing at one.'
       type: MSG
       occasion: -1
       delay: 1
-      message: '&4[Smith] &3Test this sword for me, will ya? Go to the brown training
-    dummies in the &3yard and have a swing at one.'
     '1':
+      message: '&a[Objective] &bUse the sword on a training dummy.'
       type: MSG
       occasion: -1
       delay: 2
-      message: '&a[Objective] &bUse the sword on a training dummy.'
     '2':
+      command: rpgitem SS give %p
       type: CMD
       occasion: -3
-      command: rpgitem SS give %p
     '3':
+      message: '&4[Smith] &3That was no proper hit! Strike the dummy with vengeance!'
       type: MSG
       occasion: 0
-      message: '&4[Smith] &3That was no proper hit! Strike the dummy with
-        vengeance!'
     '4':
+      message: '&e[Rewards] &7Smiths Sword - 3 x Iron Ingots - 1 Quest Point.'
       type: MSG
       occasion: -3
-      message: '&e[Rewards] &7Smiths Sword - 3 x Iron Ingots - 1 Quest Point.'
     '5':
+      amount: 1
       type: POINT
       occasion: -3
-      amount: 1
     '6':
+      message: '&a[Quest Item] &bReceived an Iron Sword.'
       type: MSG
       occasion: -1
       delay: 4
-      message: '&a[Quest Item] &bReceived an Iron Sword.'
     '7':
+      item: '267:0'
       type: ITEM
       occasion: -1
-      item: '267:0'
     '8':
+      message: '&a[Objective] &bSpeak to the blacksmith, Smith.'
       type: MSG
       occasion: 1
-      message: '&a[Objective] &bSpeak to the blacksmith, Smith.'
     '9':
-      type: MSG
-      occasion: 2
       message: '&4[Smith] &3I make strong swords don''t I? Here, have this sword for
         your help.'
+      type: MSG
+      occasion: 2
+    '10':
+      item: '265:0'
+      amount: 3
+      type: ITEM
+      occasion: -3
+    '11':
+      location: -1.56;66.00;-63.64;RPG;182.85;29.70;
+      type: LIGHTNING
+      occasion: 2
 '4':
   name: Shadow Training
   description: '&a[Quest] &bTake your first step towards the &2Shadow Hunters&b.&c
