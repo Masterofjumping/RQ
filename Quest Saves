@@ -2,7 +2,7 @@
   name: New Beginning
   description: '§a[Quest] §bStart you journey, as you leave this place of imprisonment
     with a §3quest. §cDifficulty: §8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '77'
@@ -123,7 +123,7 @@
   name: Decisions
   description: '§a[Quest] §bSpeak with each Caste leader, and learn of their virtues.
     §bThen make the big choice. §cDifficulty: §8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 7
@@ -320,7 +320,7 @@
   name: Hyperion Initiation
   description: '§a[Quest] §bBegin your journey with the §1Hyperion Order§b. §cDifficulty:
     §8Coal'
-  flags: DEATHCANCEL;ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;DEATHCANCEL;
   objectives:
     '0':
       index: 141
@@ -482,11 +482,85 @@
       type: MSG
       occasion: 2
       delay: 10
+'3':
+  name: Smith the Blacksmith
+  description: '&a[Quest] &bTest a new refined alloy sword and observe the affect it has on test dummies. &cDifficulty: &8Coal'
+  flags: ACTIVE;NODESC;
+  objectives:
+    '0':
+      type: ACTION
+      block: '35'
+      hand: '267'
+      location: -1.55;66.00;-63.90;RPG;179.40;90.00;
+      range: 5
+    '1':
+      type: ACTION
+      prerequisites: '0'
+      block: '35'
+      hand: '267'
+      location: 0.36;66.00;-60.73;RPG;160.95;4.50;
+      range: 5
+    '2':
+      type: NPC
+      prerequisites: '1'
+      index: 20
+      cancel: true
+  conditions:
+    '0':
+      type: QUESTNOT
+      quest: Smith the Blacksmith
+  events:
+    '0':
+      type: MSG
+      occasion: -1
+      delay: 1
+      message: '&4[Smith] &3Test this sword for me, will ya? Go to the brown training
+    dummies in the &3yard and have a swing at one.'
+    '1':
+      type: MSG
+      occasion: -1
+      delay: 2
+      message: '&a[Objective] &bUse the sword on a training dummy.'
+    '2':
+      type: CMD
+      occasion: -3
+      command: rpgitem SS give %p
+    '3':
+      type: MSG
+      occasion: 0
+      message: '&4[Smith] &3That was no proper hit! Strike the dummy with
+        vengeance!'
+    '4':
+      type: MSG
+      occasion: -3
+      message: '&e[Rewards] &7Smiths Sword - 3 x Iron Ingots - 1 Quest Point.'
+    '5':
+      type: POINT
+      occasion: -3
+      amount: 1
+    '6':
+      type: MSG
+      occasion: -1
+      delay: 4
+      message: '&a[Quest Item] &bReceived an Iron Sword.'
+    '7':
+      type: ITEM
+      occasion: -1
+      item: '267:0'
+    '8':
+      type: MSG
+      occasion: 1
+      message: '&a[Objective] &bSpeak to the blacksmith, Smith.'
+    '9':
+      type: MSG
+      occasion: 2
+      message: '&4[Smith] &3I make strong swords don''t I? Here, have this sword for
+        your help.'
 '4':
   name: Shadow Training
   description: '&a[Quest] &bTake your first step towards the &2Shadow Hunters&b.&c
     Difficulty: &7Coal'
-  flags: DEATHCANCEL;ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;DEATHCANCEL;
   objectives:
     '0':
       region: SPHERE|-309.16;90.00;-1162.54;RPG;0.00;0.00;|1.0
@@ -667,7 +741,7 @@
   name: Scarlet Beginnings
   description: '&a[Quest] &bJoin the ranks of the &5Scarlet Coven&b. &cDifficulty:
     &8Coal'
-  flags: DEATHCANCEL;ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;DEATHCANCEL;
   objectives:
     '0':
       hand: '259'
@@ -890,7 +964,7 @@
   name: The Ropes
   description: '&a[Quest] &bCourier some packages for a short while, and gain some
     contacts at the same time. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 126
@@ -1146,3 +1220,59 @@
       type: QUEST
 '8':
   name: The Love Story
+  description: '&a[Quest] &BThe classic story of love; Insers and Aheri separated
+    but their hearts still long to be together. Maybe you can help? &cDifficulty:
+    &8Coal'
+  flags: NODESC;
+  objectives:
+    '0':
+      region: SPHERE|59.00;72.00;-195.42;RPG;0.00;0.00;|3.0
+      type: REGION
+      description: '&a[Objective] &bBegin to navigate the skull catacombs.'
+    '1':
+      region: SPHERE|87.98;73.00;-197.53;RPG;0.00;0.00;|3.0
+      type: REGION
+      description: '&a[Objective] &bLocate Aheri in the skull catacombs.'
+  conditions:
+    '0':
+      quest: The Love Story
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Insers] &3Oh, how my heart aches for my love Aheri.'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '1':
+      message: '&4[Insers] &3Tis a misery, each day without her. I beseech you to
+        help.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '2':
+      message: '&4[Insers] &3Take this rose, navigate the deadly ruins & give it to
+        my love.'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '3':
+      message: '&a[Objective] &bNavigate the skull catacombs and give the rose to
+        Aheri.'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '4':
+      message: '&4[?] &3You will perish, wandering these corridors.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '5':
+      entity: 93
+      location: 50.41;72.00;-190.44;RPG;356.10;16.35;
+      type: SPAWN
+      occasion: 0
+    '6':
+      objective: 0
+      type: OBJCOM
+      occasion: 1
