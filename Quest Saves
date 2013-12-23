@@ -1,0 +1,1148 @@
+'0':
+  name: New Beginning
+  description: '§a[Quest] §bStart you journey, as you leave this place of imprisonment
+    with a §3quest. §cDifficulty: §8Coal'
+  flags: ACTIVE;NODESC;
+  objectives:
+    '0':
+      block: '77'
+      click: 2
+      type: ACTION
+      description: '&a[Objective] &bRight click a &7stone button&b behind the hut.'
+    '1':
+      index: 45
+      type: NPC
+      description: '&a[Objective] &bSpeak to Memnoc (right click).'
+    '2':
+      region: SPHERE|-435.26;81.00;-1213.43;RPG;0.00;0.00;|4.0
+      type: REGION
+      description: '&a[Objective] &bUse the portal, at the end of this platform.'
+  conditions:
+    '0':
+      quest: New Beginnings
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[CaptainAspyr] &3Prisoner, your time is up for this mine.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '1':
+      message: '&4[CaptainAspyr] &3You are now being set free, proceed to the Mine
+        Carts.'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '2':
+      message: '&a[Quest] &3That is an objective, complete it to further your progress.'
+      type: MSG
+      occasion: -1
+      delay: 7
+    '3':
+      message: '&a[Objective] &bRight click a &7stone button &bbehind the hut.'
+      type: MSG
+      occasion: -1
+      delay: 6
+    '4':
+      message: '&a[Quest] &3You can use &6/q help&3 for quest commands.'
+      type: MSG
+      occasion: -1
+      delay: 8
+    '5':
+      message: '&a[Quest] &3You hear a &7rumble &3as a minecart approaches.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '6':
+      location: -135.51;91.00;-1487.23;RPG;0.88;3.60;
+      type: TELE
+      occasion: 0
+      delay: 3
+    '7':
+      message: '&4[Memnoc] &3Come speak to me, I will kit you out for leaving.'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '8':
+      message: '&a[Objective] &bSpeak to Memnoc (right click).'
+      type: MSG
+      occasion: 0
+      delay: 6
+    '9':
+      command: rpgitem ts give %player% 1
+      type: CMD
+      occasion: 1
+      delay: 2
+    '10':
+      item: '297:0'
+      amount: 5
+      type: ITEM
+      occasion: 1
+      delay: 2
+    '11':
+      message: '&4[Memnoc] &3Prisoner #43289, it appears you have been released.'
+      type: MSG
+      occasion: 1
+    '12':
+      message: '&4[Memnoc] &3Lucky bugger... here is your gear.'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '13':
+      message: '&a[Objective] &bRead the information & then walk up the path out of
+        here.'
+      type: MSG
+      occasion: 1
+      delay: 3
+    '14':
+      command: pex user %player% add multiverse.portal.access.New_Spawn
+      type: CMD
+      occasion: 1
+    '15':
+      amount: 1
+      type: POINT
+      occasion: 2
+      delay: 2
+    '16':
+      amount: 115.0
+      type: MONEY
+      occasion: 2
+      delay: 2
+    '17':
+      message: '&e[Rewards] &7$115 - 1 Quest Point.'
+      type: MSG
+      occasion: 2
+      delay: 2
+    '18':
+      message: '&a[Quest] &3Quest points are required for higher Caste ranks.'
+      type: MSG
+      occasion: 2
+      delay: 3
+'1':
+  name: Decisions
+  description: '§a[Quest] §bSpeak with each Caste leader, and learn of their virtues.
+    §bThen make the big choice. §cDifficulty: §8Coal'
+  flags: ACTIVE;NODESC;
+  objectives:
+    '0':
+      index: 7
+      type: NPC
+      description: '&a[Objective] &bSpeak with &4Rauthr&b. (loc: -292, 90, -1248)'
+    '1':
+      index: 138
+      type: NPC
+      description: '&a[Objective] &bSpeak with &4Vallelith&b. (loc: -308, 89, -1167)'
+    '2':
+      index: 142
+      type: NPC
+      description: '&a[Objective] &bSpeak with &4Whicked&b. (loc: -389, 89, -1108)'
+    '3':
+      region: SPHERE|-381.12;84.00;-1137.22;RPG;0.00;0.00;|1000.0
+      type: REGION
+      description: '&a[Objective] &bComplete objectives; 1, 2 & 3. (Speak to all leaders)'
+      prerequisites: 0;1;2
+  conditions:
+    '0':
+      quest: New Beginning
+      type: QUEST
+    '1':
+      quest: Decisions
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Joe] &3Hello, I''m the resident "guide" of this neutral zone.'
+      type: MSG
+      occasion: -1
+    '1':
+      message: '&4[Joe] &3I advise you join a Caste, the current turmoil dictates
+        this.'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '2':
+      message: '&4[Joe] &3These Castes offer protection and family, don’t be rash
+        though.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '3':
+      message: '&4[Joe] &3Speak to each leader first, and then make an informed decision.'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '4':
+      message: '&a[Objectives] &bSpeak to &4Rauthr&b, &4Vallelith &band &4Whicked&b.'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '5':
+      item: 373:16450
+      type: ITEM
+      occasion: -1
+      delay: 4
+    '6':
+      message: '&4[Joe] &3Take this potion, it will help you travel quickly.'
+      type: MSG
+      occasion: -1
+      delay: 5
+    '7':
+      message: '&4[Rauthr] &3Welcome to the &1Hyperion &3Embassy. We are the one true
+        Caste.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '8':
+      message: '&4[Rauthr] &3As an initiate you''d learn our principles of honour
+        & strength.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '9':
+      message: '&4[Rauthr] &3Take a parchment from a dispenser, and now may you excuse
+        me.'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '10':
+      item: '322:0'
+      amount: 3
+      type: ITEM
+      occasion: 0
+      delay: 4
+    '11':
+      message: '&a[Objective] &bSpeak with &4Rauthr&b complete!'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '12':
+      message: '&4[Vallelith] &3As we speak, Shadow Telehunter''s are watching.'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '13':
+      message: '&4[Vallelith] &3Each of them could strike at a moments notice.'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '14':
+      message: '&4[Vallelith] &3The ability to disguise as a foe, or disappear entirely...'
+      type: MSG
+      occasion: 1
+      delay: 3
+    '15':
+      message: '&4[Vallelith] &3Is what we prize, are you interested in this?'
+      type: MSG
+      occasion: 1
+      delay: 4
+    '16':
+      message: '&a[Objective] &bSpeak with &4Vallelith &bcomplete!'
+      type: MSG
+      occasion: 1
+      delay: 5
+    '17':
+      item: '388:0'
+      amount: 6
+      type: ITEM
+      occasion: 1
+      delay: 5
+    '18':
+      message: '&4[Whicked] &3Who do you see in this room?'
+      type: MSG
+      occasion: 2
+      delay: 1
+    '19':
+      message: '&4[Whicked] &3I see individuals who study the fine arts of magic.'
+      type: MSG
+      occasion: 2
+      delay: 2
+    '20':
+      message: '&4[Whicked] &3All that we ask in return; is for you to fight with
+        us.'
+      type: MSG
+      occasion: 2
+      delay: 4
+    '21':
+      message: '&4[Whicked] &3Now here is a gift, consider what we offer.'
+      type: MSG
+      occasion: 2
+      delay: 5
+    '22':
+      message: '&4[Whicked] &3Necromancy, teleportation & arcane are all our fields
+        of magic.'
+      type: MSG
+      occasion: 2
+      delay: 3
+    '23':
+      message: '&a[Objective] &bSpeak with &4Whicked &bcomplete!.'
+      type: MSG
+      occasion: 2
+      delay: 6
+    '24':
+      item: '384:0'
+      amount: 10
+      type: ITEM
+      occasion: 2
+      delay: 6
+    '25':
+      message: '&4[%p] &3It is probably time for me to choose a Caste.'
+      type: MSG
+      occasion: 3
+      delay: 14
+    '26':
+      message: '&a[Quest] &bTo join a Caste, go and speak to that leader again.'
+      type: MSG
+      occasion: 3
+      delay: 15
+    '27':
+      message: '&e[Rewards] &7$75 - 5 Cooked Fish - 1 Quest Point.'
+      type: MSG
+      occasion: 3
+      delay: 16
+    '28':
+      amount: 75.0
+      type: MONEY
+      occasion: 3
+      delay: 16
+    '29':
+      amount: 1
+      type: POINT
+      occasion: 3
+      delay: 16
+    '30':
+      item: '350:0'
+      amount: 5
+      type: ITEM
+      occasion: 3
+      delay: 16
+'2':
+  name: Hyperion Initiation
+  description: '§a[Quest] §bBegin your journey with the §1Hyperion Order§b. §cDifficulty:
+    §8Coal'
+  flags: DEATHCANCEL;ACTIVE;NODESC;
+  objectives:
+    '0':
+      index: 141
+      type: NPC
+      description: '&a[Objective] &bSpeak to the npc &4Guards&b. (-316, 89, -1265)'
+    '1':
+      amount: 2
+      type: MOBKILL
+      description: '&a[Objective] &bKill these two mobs.'
+      prerequisites: '0'
+    '2':
+      type: MOBKILL
+      description: '&a[Objective] &bKill the Whitch.'
+      prerequisites: 0;1
+  conditions:
+    '0':
+      quest: Decisions
+      type: QUEST
+    '1':
+      quest: Hyperion Initiation
+      inverted: true
+      type: QUEST
+    '2':
+      quest: Scarlet Beginnings
+      inverted: true
+      type: QUEST
+    '3':
+      quest: Shadow Training
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Rauthr] &3Glad to see you have chosen to join us.'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '1':
+      message: '&4[Rauthr] &3Before we can accept you though, there is a combat assessment.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '2':
+      message: '&a[Objective] &bSpeak to the npc &4Guards&b. (-316, 89, -1265)'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '3':
+      message: '&4[Guards] &3Another new trainee.. Try not to get yourself killed.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '4':
+      location: -173.47;63.00;-1277.56;RPG;179.75;-0.15;
+      type: TELE
+      occasion: 0
+      delay: 3
+    '5':
+      message: '&4[Guards] &3Here is how the test goes, survive and you pass. Die
+        & you die.'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '6':
+      item: '268:0'
+      enchants: '16:1'
+      type: ITEM
+      occasion: 0
+      delay: 4
+    '7':
+      message: '&a[Objective] &bSurvive!'
+      type: MSG
+      occasion: 0
+      delay: 6
+    '8':
+      location: -178.60;63.00;-1293.30;RPG;-0.40;-1.20;
+      type: EXPLOSION
+      occasion: 0
+      delay: 7
+    '9':
+      entity: 54
+      location: -178.60;63.00;-1293.30;RPG;-0.40;-1.20;
+      type: SPAWN
+      occasion: 0
+      delay: 8
+    '10':
+      location: -168.38;63.00;-1293.35;RPG;-0.40;-0.60;
+      type: EXPLOSION
+      occasion: 0
+      delay: 7
+    '11':
+      entity: 51
+      location: -168.38;63.00;-1293.35;RPG;-0.40;-0.60;
+      type: SPAWN
+      occasion: 0
+      delay: 8
+    '12':
+      message: '&4[Guards] &3You have spirit, but let''s see how you do against this.'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '13':
+      location: -173.91;63.00;-1296.31;RPG;0.95;88.20;
+      type: EXPLOSION
+      occasion: 1
+      delay: 3
+    '14':
+      location: -175.22;63.00;-1296.32;RPG;0.95;88.20;
+      type: EXPLOSION
+      occasion: 1
+      delay: 3
+    '15':
+      entity: 66
+      location: -174.56;63.00;-1296.32;RPG;0.95;88.20;
+      type: SPAWN
+      occasion: 1
+      delay: 4
+    '16':
+      message: '&4[Guards] &3I am impressed, you took on a Scarlet Initiate and survived.'
+      type: MSG
+      occasion: 2
+      delay: 1
+    '17':
+      location: -296.62;90.00;-1248.68;RPG;271.85;0.45;
+      type: TELE
+      occasion: 2
+      delay: 3
+    '18':
+      message: '&4[Guards] &3It is with honour, that I bestow upon you rank of Trainee.'
+      type: MSG
+      occasion: 2
+      delay: 5
+    '19':
+      command: pex user %p add Hyperion
+      type: CMD
+      occasion: 2
+      delay: 5
+    '20':
+      command: broadcast %p &3is now a &1Trainee &3in the &1Hyperion Order&3.
+      type: CMD
+      occasion: 2
+      delay: 6
+    '21':
+      command: class set %p Hyperion
+      type: CMD
+      occasion: 2
+      delay: 6
+    '22':
+      location: 32.50;77.00;-10.50;RPG;179.70;4.80;
+      type: TELE
+      occasion: 2
+      delay: 8
+    '23':
+      message: '&4[Eilf] &3Wow.. an actual Hyperion soldier!'
+      type: MSG
+      occasion: 2
+      delay: 9
+    '24':
+      message: '&e[Rewards] &7First Hyperion Rank - Access to /spells'
+      type: MSG
+      occasion: 2
+      delay: 10
+'4':
+  name: Shadow Training
+  description: '&a[Quest] &bTake your first step towards the &2Shadow Hunters&b.&c
+    Difficulty: &7Coal'
+  flags: DEATHCANCEL;ACTIVE;NODESC;
+  objectives:
+    '0':
+      region: SPHERE|-309.16;90.00;-1162.54;RPG;0.00;0.00;|1.0
+      type: REGION
+      description: '&a[Objective] &bStep onto one of the &egold &bpads next to Vallelith.'
+    '1':
+      region: SPHERE|-309.26;90.00;-1172.51;RPG;0.00;0.00;|1.0
+      type: REGION
+      description: '&a[Objective] &bRetrieve the skull and place it on the glowstone
+        dais.'
+    '2':
+      region: SPHERE|-309.40;117.00;-1161.30;RPG;0.00;0.00;|3.0
+      type: REGION
+      description: '&a[Objective] &bRetrieve the skull at the top of this tower.'
+      prerequisites: 0;1
+    '3':
+      block: '144'
+      type: PLACE
+      description: '&a[Objective] &bPlace the skull onto the glowstone dais.'
+      prerequisites: '2'
+  conditions:
+    '0':
+      quest: Decisions
+      type: QUEST
+    '1':
+      quest: Scarlet Beginnings
+      inverted: true
+      type: QUEST
+    '2':
+      quest: Hyperion Initiation
+      inverted: true
+      type: QUEST
+    '3':
+      quest: Shadow Training
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Vallelith] &3I see you wish to prove your value as a potential
+        recruit.'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '1':
+      message: '&4[Vallelith] &3To begin, simply step on one of the &egold &3pads.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '2':
+      message: '&4[Vallelith] &3Though be warned, we value speed & agility over strength.'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '3':
+      message: '&a[Objective] &bStep onto one of the &egold &bpads.'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '4':
+      objective: 1
+      type: OBJCOM
+      occasion: 0
+    '5':
+      objective: 0
+      type: OBJCOM
+      occasion: 1
+    '6':
+      location: -317.32;99.00;-1170.69;RPG;310.25;-4.20;
+      type: TELE
+      occasion: 0
+    '7':
+      location: -317.32;99.00;-1170.69;RPG;310.25;-4.20;
+      type: TELE
+      occasion: 1
+    '8':
+      message: '&4[Vallelith] &3This is a simple enough test, climb up and collect
+        the skull.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '9':
+      message: '&4[Vallelith] &3Then make your way down and place it on the glowstone
+        dais.'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '10':
+      message: '&a[Objective] &bRetrieve the skull and place it on the glowstone dais.'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '11':
+      message: '&4[Vallelith] &3This is a simple enough test, climb up and collect
+        the skull.'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '12':
+      message: '&4[Vallelith] &3Then make your way down and place it on the glowstone
+        dais.'
+      type: MSG
+      occasion: 1
+      delay: 3
+    '13':
+      message: '&a[Objective] &bRetrieve the skull and place it on the glowstone dais.'
+      type: MSG
+      occasion: 1
+      delay: 4
+    '14':
+      item: '397:0'
+      type: ITEM
+      occasion: 2
+      delay: 1
+    '15':
+      block: 0:0
+      location: -309.42;118.00;-1161.35;RPG;2.15;90.00;
+      type: BLOCK
+      occasion: 2
+      delay: 1
+    '16':
+      message: '&4[%p] &3Time to make it down...'
+      type: MSG
+      occasion: 2
+      delay: 2
+    '17':
+      message: '&a[Objective] &bPlace the skull onto the glowstone dais.'
+      type: MSG
+      occasion: 2
+      delay: 3
+    '18':
+      message: '&4[Vallelith] &3You completed quite quick, it appears your worth training.'
+      type: MSG
+      occasion: 3
+      delay: 2
+    '19':
+      block: 0:0
+      location: -301.64;100.00;-1167.49;RPG;92.75;90.00;
+      type: BLOCK
+      occasion: 3
+      delay: 5
+    '20':
+      location: 32.50;77.00;-10.50;RPG;179.70;4.80;
+      type: TELE
+      occasion: 3
+      delay: 4
+    '21':
+      command: pex user %p group add Shadow
+      type: CMD
+      occasion: 3
+      delay: 3
+    '22':
+      command: class set %p Shadow
+      type: CMD
+      occasion: 3
+      delay: 3
+    '23':
+      command: broadcast %p &3is now a &aRanger &3of the &aShadow Hunters&3.
+      type: CMD
+      occasion: 3
+      delay: 4
+    '24':
+      message: '&4[Eilf] &3Congratulations on the rank, Shadow Hunter!'
+      type: MSG
+      occasion: 3
+      delay: 5
+    '25':
+      message: '&e[Rewards] &7First Shadow Rank - Access to /spells'
+      type: MSG
+      occasion: 3
+      delay: 6
+    '26':
+      block: '144:2'
+      location: -309.47;118.00;-1161.71;RPG;180.20;85.50;
+      type: BLOCK
+      occasion: 2
+      delay: 8
+'5':
+  name: Scarlet Beginnings
+  description: '&a[Quest] &bJoin the ranks of the &5Scarlet Coven&b. &cDifficulty:
+    &8Coal'
+  flags: DEATHCANCEL;ACTIVE;NODESC;
+  objectives:
+    '0':
+      hand: '259'
+      click: 2
+      location: -413.37;87.00;-1127.37;RPG;325.39;85.80;
+      range: 2
+      type: ACTION
+      description: '&a[Objective] &bLight altar "A" with the flint & steel. (-413,
+        86, -1127)'
+    '1':
+      hand: '259'
+      click: 2
+      location: -413.25;87.00;-1088.52;RPG;275.59;88.50;
+      range: 2
+      type: ACTION
+      description: '&a[Objective] &bLight altar "B" with the flint & steel. (-413,
+        86, -1088)'
+    '2':
+      hand: '259'
+      click: 2
+      location: -355.30;87.00;-1088.51;RPG;270.49;90.00;
+      range: 2
+      type: ACTION
+      description: '&a[Objective] &bLight altar "C" with the flint & steel. (-355,
+        86, -1088)'
+    '3':
+      hand: '259'
+      click: 2
+      location: -354.50;87.00;-1127.81;RPG;177.04;90.00;
+      range: 2
+      type: ACTION
+      description: '&a[Objective] &bLight altar "D" with the flint & steel. (-354,
+        86, -1127)'
+    '4':
+      region: SPHERE|-371.77;83.00;-1123.83;RPG;0.00;0.00;|1000.0
+      type: REGION
+      description: '&a[Objective] &bLight all four of the Scarlet altar''s.'
+      prerequisites: 0;1;2;3
+    '5':
+      index: 142
+      cancel: true
+      type: NPC
+      description: '&a[Objective] &bReturn to Whicked and obtain your reward.'
+      prerequisites: '4'
+  conditions:
+    '0':
+      quest: Scarlet Beginnings
+      inverted: true
+      type: QUEST
+    '1':
+      quest: Hyperion Initiation
+      inverted: true
+      type: QUEST
+    '2':
+      quest: Shadow Training
+      inverted: true
+      type: QUEST
+    '3':
+      quest: Decisions
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Whicked] &3Before you begin on a path of wisdom and discovery.'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '1':
+      message: '&4[Whicked] &3We must evaluate your potential, simply light our four
+        altars.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '2':
+      message: '&a[Objective] &bLight the four altars. &9(Follow Assigir to the first
+        altar)'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '3':
+      message: '&a[Quest Item] &b1 x Flint & Steel'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '4':
+      item: '259:0'
+      type: ITEM
+      occasion: -1
+      delay: 4
+    '5':
+      message: '&a[Objective] &bAltar "A" has been lit.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '6':
+      message: '&4[%p] &3A strange sound comes from the altar, something is not right.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '7':
+      command: playsound portal.trigger %p
+      type: CMD
+      occasion: 0
+      delay: 1
+    '8':
+      message: '&a[Objective] &bAltar "B" has been lit.'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '9':
+      message: '&a[Objective] &bAltar "C" has been lit.'
+      type: MSG
+      occasion: 2
+      delay: 1
+    '10':
+      message: '&a[Objective] &bAltar "D" has been lit.'
+      type: MSG
+      occasion: 3
+      delay: 1
+    '11':
+      location: -415.57;88.50;-1085.75;RPG;202.40;44.85;
+      type: LIGHTNING
+      occasion: 1
+      delay: 1
+    '12':
+      message: '&4[%p] &3Wow, that was close!'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '13':
+      entity: 50
+      location: -355.74;86.00;-1090.13;RPG;35.60;59.40;
+      type: SPAWN
+      occasion: 2
+      delay: 1
+    '14':
+      message: '&4[%p] &3Well... this altar was more safe than usual.'
+      type: MSG
+      occasion: 3
+      delay: 2
+    '15':
+      message: '&a[Objective] &bReturn to Whicked and obtain your reward.'
+      type: MSG
+      occasion: 4
+      delay: 4
+    '16':
+      block: 0:0
+      location: -413.00;86.00;-1127.00;RPG;0.00;0.00;
+      type: BLOCK
+      occasion: 0
+      delay: 5
+    '17':
+      block: 0:0
+      location: -413.00;86.00;-1088.00;RPG;0.00;0.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '18':
+      block: 0:0
+      location: -355.00;86.00;-1088.00;RPG;0.00;0.00;
+      type: BLOCK
+      occasion: 2
+      delay: 5
+    '19':
+      block: 0:0
+      location: -354.00;86.00;-1127.00;RPG;0.00;0.00;
+      type: BLOCK
+      occasion: 3
+      delay: 5
+    '20':
+      message: '&4[Whicked] &3Nice work on the altar''s, sorry about the Creeper though.'
+      type: MSG
+      occasion: 5
+      delay: 1
+    '21':
+      message: '&4[Whicked] &3Some summoner must have forgot to rinse that altar.'
+      type: MSG
+      occasion: 5
+      delay: 2
+    '22':
+      message: '&4[Whicked] &3Anyhow, you should make a powerful Scarlet Duellist.'
+      type: MSG
+      occasion: 5
+      delay: 3
+    '23':
+      command: pex user %p group add Scarlet
+      type: CMD
+      occasion: 5
+      delay: 4
+    '24':
+      command: class set Scarlet %p
+      type: CMD
+      occasion: 5
+      delay: 4
+    '25':
+      location: 32.50;77.00;-10.50;RPG;179.85;2.10;
+      type: TELE
+      occasion: 5
+      delay: 5
+    '26':
+      command: broadcast %p &3is now a &5Duellist &3in the &5Scarlet Coven&3.
+      type: CMD
+      occasion: 5
+      delay: 5
+    '27':
+      message: '&4[Eilf] &3Scarlet, could you freeze this apple for me?'
+      type: MSG
+      occasion: 5
+      delay: 6
+    '28':
+      message: '&e[Rewards] &7First Scarlet Rank - Access to /spells'
+      type: MSG
+      occasion: 5
+      delay: 7
+    '29':
+      message: '&4[%p] &3Though it should not matter, only a few more to light.'
+      type: MSG
+      occasion: 0
+      delay: 3
+'6':
+  name: The Ropes
+  description: '&a[Quest] &bCourier some packages for a short while, and gain some
+    contacts at the same time. &cDifficulty: &8Coal'
+  flags: ACTIVE;NODESC;
+  objectives:
+    '0':
+      index: 126
+      cancel: true
+      type: NPC
+      description: '&a[Objective] &bSpeak to Cryzen, notifying him of the delivery.
+        (45, 66, -67)'
+    '1':
+      index: 154
+      type: NPC
+      description: '&a[Objective] &bNotify the Balloon Agent that his package has
+        arrived. (63, 81, -46)'
+      prerequisites: '0'
+    '2':
+      index: 31
+      cancel: true
+      type: NPC
+      description: '&a[Objective] &bTalk to Zuriki about his new package. (39, 65,
+        -75)'
+      prerequisites: '0'
+  conditions:
+    '0':
+      quest: The Ropes
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Eilf] &3Hey %p, you mind giving me some help?'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '1':
+      message: '&4[Eilf] &3You see, I''m kinda the unofficial courier around here.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '2':
+      message: '&4[Eilf] &3And well... today I have to deliver quite a few packages.'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '3':
+      message: '&4[Eilf] &3So you see, I would greatly appreciate help.'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '4':
+      message: '&4[%p] &3Sure, I have some time.'
+      type: MSG
+      occasion: -1
+      delay: 5
+    '5':
+      message: '&4[Eilf] &3Super, take these and give them to the listed names.'
+      type: MSG
+      occasion: -1
+      delay: 6
+    '6':
+      objective: 3
+      type: OBJCOM
+      occasion: 4
+      delay: 1
+    '7':
+      objective: 2
+      type: OBJCOM
+      occasion: 5
+      delay: 1
+    '8':
+      message: '&a[Objective] &bSpeak to Cryzen, to notify him of a delivery. (45,
+        66, -67)'
+      type: MSG
+      occasion: -1
+      delay: 8
+    '9':
+      message: '&4[%p] &3So first delivery; Cryzen, he seems to be down on the right.'
+      type: MSG
+      occasion: -1
+      delay: 9
+    '10':
+      message: '&a[Quest Items] &b1 x Courier Bag'
+      type: MSG
+      occasion: -1
+      delay: 8
+    '11':
+      block: '84:0'
+      location: 47.53;67.00;-65.67;RPG;171.58;89.70;
+      type: BLOCK
+      occasion: 0
+      delay: 1
+    '12':
+      message: '&4[Cryzen] &3Thanks very much, now if you ever need a portal, I''m
+        your man!'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '13':
+      message: '&a[Quest] &bThis is the portal hub, these portals take you to other
+        worlds.'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '14':
+      message: '&a[Objective] &bTalk to Zuriki about his new package. (39, 65, -75)'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '15':
+      message: '&a[Objective] &bNotify the Balloon Agent about his package. (63, 81,
+        -46)'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '16':
+      message: '&4[Cryzen] &3Newcomer, I see your working for young Eilf. So what
+        do you have?'
+      type: MSG
+      occasion: 0
+    '17':
+      message: '&4[%p] &3Ah, 1 x Jukebox for you.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '18':
+      command: rpgitem MasterofjumpingIT give %p 1
+      type: CMD
+      occasion: -1
+      delay: 8
+    '19':
+      message: '&4[%p] &3Zuriki, I have 1 x Wheat Bait to deliver to you.'
+      type: MSG
+      occasion: 2
+      delay: 1
+    '20':
+      message: '&4[Zuriki] &3Oie! This is great, now I can bait these damned spiders.'
+      type: MSG
+      occasion: 2
+      delay: 2
+    '21':
+      block: '170:0'
+      location: 40.64;66.00;-76.48;RPG;275.53;90.00;
+      type: BLOCK
+      occasion: 2
+      delay: 2
+    '22':
+      block: 0:0
+      location: 40.63;66.00;-76.53;RPG;275.53;90.00;
+      type: BLOCK
+      occasion: 2
+      delay: 8
+    '23':
+      message: '&a[Objective] &bDeliver to Zuriki complete.'
+      type: MSG
+      occasion: 2
+      delay: 4
+    '24':
+      message: '&a[Quest] &bThis is one of many quest giving NPC''s who inhabit this
+        world.'
+      type: MSG
+      occasion: 2
+      delay: 3
+    '25':
+      message: '&4[Balloon Agent] &3Ah, do you have the repair patch?'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '26':
+      message: '&4[%p] &3I believe so, here it is.'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '27':
+      block: '35:2'
+      location: 63.65;82.00;-44.53;RPG;282.15;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 2
+    '28':
+      message: '&a[Quest] &bThis is the balloon service, use it to travel to other
+        regions.'
+      type: MSG
+      occasion: 1
+      delay: 3
+    '29':
+      message: '&a[Objective] &bDeliver to Balloon Agent complete.'
+      type: MSG
+      occasion: 1
+      delay: 4
+    '30':
+      block: 0:0
+      location: 63.55;82.00;-44.52;RPG;262.95;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 7
+    '31':
+      message: '&e[Rewards] &7$175 - 25 Logs - 1 Quest Point.'
+      type: MSG
+      occasion: -3
+      delay: 5
+    '32':
+      message: '&4[Eilf] &3Really glad you helped, now I hope you put the logs to
+        good use.'
+      type: MSG
+      occasion: -3
+      delay: 6
+    '33':
+      block: 0:0
+      location: 47.49;67.00;-65.67;RPG;194.10;90.00;
+      type: BLOCK
+      occasion: 0
+      delay: 7
+    '34':
+      block: 0:0
+      location: 46.61;67.00;-65.73;RPG;194.10;90.00;
+      type: BLOCK
+      occasion: 0
+      delay: 7
+    '35':
+      amount: 175.0
+      type: MONEY
+      occasion: -3
+      delay: 5
+    '36':
+      amount: 1
+      type: POINT
+      occasion: -3
+      delay: 5
+    '37':
+      item: '17:0'
+      amount: 25
+      type: ITEM
+      occasion: -3
+      delay: 5
+'7':
+  name: A Monster Good Time
+  description: '&a[Quest] &bGolog has started up a resort, but he needs a hand first.
+    By the way, he is also a zombie. &cDifficulty: &7Iron'
+  flags: NODESC;
+  objectives:
+    '0':
+      block: '38'
+      location: 89.62;72.00;38.92;RPG;315.01;29.85;
+      range: 50
+      type: ACTION
+    '1':
+      block: '38:1'
+      location: 85.66;73.00;42.06;RPG;10.35;52.05;
+      range: 50
+      type: ACTION
+      prerequisites: '0'
+  conditions:
+    '0':
+      quest: A Monster Good Time
+      inverted: true
+      type: QUEST
+'8':
+  name: The Love Story
