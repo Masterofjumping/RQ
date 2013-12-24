@@ -2,7 +2,7 @@
   name: New Beginning
   description: '§a[Quest] §bStart you journey, as you leave this place of imprisonment
     with a §3quest. §cDifficulty: §8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       block: '77'
@@ -123,7 +123,7 @@
   name: Decisions
   description: '§a[Quest] §bSpeak with each Caste leader, and learn of their virtues.
     §bThen make the big choice. §cDifficulty: §8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 7
@@ -320,7 +320,7 @@
   name: Hyperion Initiation
   description: '§a[Quest] §bBegin your journey with the §1Hyperion Order§b. §cDifficulty:
     §8Coal'
-  flags: NODESC;DEATHCANCEL;ACTIVE;
+  flags: DEATHCANCEL;ACTIVE;NODESC;
   objectives:
     '0':
       index: 141
@@ -486,7 +486,7 @@
   name: Smith the Blacksmith
   description: '&a[Quest] &bTest a new refined alloy sword and observe the affect
     it has on test dummies. &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       block: '35'
@@ -573,7 +573,7 @@
   name: Shadow Training
   description: '&a[Quest] &bTake your first step towards the &2Shadow Hunters&b.&c
     Difficulty: &7Coal'
-  flags: NODESC;DEATHCANCEL;ACTIVE;
+  flags: DEATHCANCEL;ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|-309.16;90.00;-1162.54;RPG;0.00;0.00;|1.0
@@ -754,7 +754,7 @@
   name: Scarlet Beginnings
   description: '&a[Quest] &bJoin the ranks of the &5Scarlet Coven&b. &cDifficulty:
     &8Coal'
-  flags: NODESC;DEATHCANCEL;ACTIVE;
+  flags: DEATHCANCEL;ACTIVE;NODESC;
   objectives:
     '0':
       hand: '259'
@@ -977,7 +977,7 @@
   name: The Ropes
   description: '&a[Quest] &bCourier some packages for a short while, and gain some
     contacts at the same time. &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 126
@@ -1303,7 +1303,7 @@
       cancel: true
       type: NPC
     '1':
-      region: SPHERE|31.72;72.00;5.30;RPG;-88.80;64.20;|3.0
+      region: SPHERE|31.72;72.00;5.30;RPG;0.00;0.00;|3.0
       type: REGION
   conditions:
     '0':
@@ -1401,7 +1401,7 @@
       occasion: 1
       delay: 1
     '17':
-      message: '&a[Quest Objective] &bGo and speak to Chortana again.'
+      message: '&a[Objective] &bGo and speak to Chortana again.'
       type: MSG
       occasion: 2
       delay: 2
@@ -1433,3 +1433,58 @@
       type: MSG
       occasion: 0
       delay: 10
+'10':
+  name: Spider Infestation
+  description: '&4[Zuriki] &3Help! My mine, my poor mine.. It has been overrun with
+    &4spiders&3. &3Clear my mine of these foul spiders, before it is ruined.'
+  flags: HIDDENOBJS;ACTIVE;
+  objectives:
+    '0':
+      type: MOBKILL
+      amount: 6
+      entity: '59'
+  conditions:
+    '0':
+      type: QUESTNOT
+      quest: Spider Infestation
+      time: 86400
+  events:
+    '0':
+      type: MSG
+      occasion: -1
+      message: '&a[Quest Objective] &bClear the mine of six spiders.'
+    '1':
+      type: MSG
+      occasion: -1
+      delay: 2
+      message: '&a[&6Side &aObjective] &bFind the hidden loot chest.'
+    '2':
+      type: MSG
+      occasion: -3
+      message: '&4[Zuriki] &3My mine is free! Or at least less infested...'
+    '3':
+      type: MSG
+      occasion: -3
+      message: '&e[Completion Reward] $75, 5 x &6Iron Ore &eand &a1 Quest Point.'
+    '4':
+      type: MONEY
+      occasion: -3
+      amount: 75.0
+    '5':
+      type: ITEM
+      occasion: -3
+      item: '15:0'
+      amount: 5
+    '6':
+      type: POINT
+      occasion: -3
+      amount: 1
+    '7':
+      type: MSG
+      occasion: 1
+      message: '&a[Quest Objective] &43&a/&46&a Spiders Killed.'
+    '8':
+      type: MSG
+      occasion: -3
+      delay: 2
+      message: '&9[Daily] &aThis is a daily quest. Come back tomorrow.'
