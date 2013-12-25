@@ -1435,9 +1435,8 @@
       delay: 10
 '10':
   name: Spider Infestation
-  description: '&4[Zuriki] &3Help! My mine, my poor mine.. It has been overrun with
-    &4spiders&3. &3Clear my mine of these foul spiders, before it is ruined.'
-  flags: HIDDENOBJS;ACTIVE;
+  description: '&a[Quest] &bComplete some pest control in Zuriki's mine. &9Daily Quest, &cDifficulty: &8Coal'
+  flags: HIDDENOBJS;ACTIVE;NODESC;
   objectives:
     '0':
       type: MOBKILL
@@ -1452,12 +1451,13 @@
     '0':
       type: MSG
       occasion: -1
+      delay: 1
       message: '&a[Quest Objective] &bClear the mine of six spiders.'
     '1':
       type: MSG
       occasion: -1
       delay: 2
-      message: '&a[&6Side &aObjective] &bFind the hidden loot chest.'
+      message: '&a[Side Objective] &bFind the hidden loot chest.'
     '2':
       type: MSG
       occasion: -3
@@ -1465,7 +1465,7 @@
     '3':
       type: MSG
       occasion: -3
-      message: '&e[Completion Reward] $75, 5 x &6Iron Ore &eand &a1 Quest Point.'
+      message: '&e[Rewards] &7$75 - 5 x Iron Ore - 1 Quest Point.'
     '4':
       type: MONEY
       occasion: -3
@@ -1488,3 +1488,8 @@
       occasion: -3
       delay: 2
       message: '&9[Daily] &aThis is a daily quest. Come back tomorrow.'
+    '9':
+      type: MSG
+      occasion: -1
+      message: '&4[Zuriki] &3Help! My mine, my poor mine.. It has been overrun with
+      &4spiders&3. &3Clear my mine of these foul spiders, before it is ruined.'
