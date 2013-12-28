@@ -1213,7 +1213,7 @@
   name: A Monster Good Time
   description: '&a[Quest] &bGolog has started up a resort, but he needs a hand first.
     By the way, he is also a zombie. &cDifficulty: &7Iron'
-  flags: NODESC;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       block: '38'
@@ -1268,6 +1268,11 @@
       description: '&a[Objective] &bPlace two beds in the empty spots. (142, 71, 41
         - 141, 71, 40)'
       prerequisites: '5'
+    '7':
+      region: SPHERE|145.67;65.00;44.55;RPG;2.26;90.00;|5.0
+      type: REGION
+      description: '&a[Objective] &bHead downstairs. (145, 65, 44)'
+      prerequisites: '6'
   conditions:
     '0':
       quest: A Monster Good Time
@@ -1387,6 +1392,117 @@
       type: MSG
       occasion: 6
       delay: 2
+    '22':
+      entity: 120
+      location: 146.25;65.00;43.27;RPG;7.65;9.45;
+      type: SPAWN
+      occasion: 7
+      delay: 1
+    '23':
+      entity: 120
+      location: 144.76;65.00;43.20;RPG;352.65;3.30;
+      type: SPAWN
+      occasion: 7
+      delay: 1
+    '24':
+      message: '&4[Golog] &3Welcome guests, would you like to hire a room?'
+      type: MSG
+      occasion: 7
+      delay: 2
+    '25':
+      message: '&4[Guests] &3A zombie! What is this place??'
+      type: MSG
+      occasion: 7
+      delay: 3
+    '26':
+      command: killall 7
+      type: CMD
+      occasion: 7
+      delay: 4
+    '27':
+      message: '&4[Golog] &3This could be a problem...'
+      type: MSG
+      occasion: 7
+      delay: 6
+    '28':
+      message: '&e[Rewards] &745 x Glass - 40 x Wool - $650 - 2 Quest Points.'
+      type: MSG
+      occasion: 7
+      delay: 7
+    '29':
+      item: '20:0'
+      amount: 45
+      type: ITEM
+      occasion: 7
+      delay: 7
+    '30':
+      amount: 650.0
+      type: MONEY
+      occasion: 7
+      delay: 7
+    '31':
+      amount: 2
+      type: POINT
+      occasion: 7
+      delay: 7
+    '32':
+      block: 0:0
+      location: 142.37;71.00;41.47;RPG;92.70;90.00;
+      type: BLOCK
+      occasion: 6
+      delay: 10
+    '33':
+      block: 0:0
+      location: 141.30;71.00;40.52;RPG;92.70;90.00;
+      type: BLOCK
+      occasion: 6
+      delay: 10
+    '34':
+      block: 0:0
+      location: 141.30;71.00;41.38;RPG;92.70;90.00;
+      type: BLOCK
+      occasion: 6
+      delay: 10
+    '35':
+      block: 0:0
+      location: 142.27;71.00;40.30;RPG;92.70;90.00;
+      type: BLOCK
+      occasion: 6
+      delay: 10
+    '36':
+      block: 0:0
+      location: 142.43;71.00;49.47;RPG;101.10;90.00;
+      type: BLOCK
+      occasion: 6
+      delay: 10
+    '37':
+      block: 0:0
+      location: 142.31;71.00;39.47;RPG;96.90;90.00;
+      type: BLOCK
+      occasion: 6
+      delay: 10
+    '38':
+      block: '140:0'
+      location: 142.31;71.00;39.48;RPG;85.80;90.00;
+      type: BLOCK
+      occasion: 6
+      delay: 11
+    '39':
+      block: '140:0'
+      location: 142.36;71.00;49.47;RPG;100.05;90.00;
+      type: BLOCK
+      occasion: 6
+      delay: 11
+    '40':
+      objective: 2
+      type: OBJCOM
+      occasion: 7
+    '41':
+      item: '35:0'
+      amount: 40
+      type: ITEM
+      occasion: 7
+      delay: 7
 '8':
   name: The Love Story
   description: '&a[Quest] &BThe classic story of love; Insers and Aheri separated
@@ -1649,7 +1765,6 @@
       delay: 2
     '9':
       message: '&4[Zuriki] &3Help! My mine, my poor mine.. It has been overrun with
-        &4spiders&3. &3Clear my mine of these foul spiders, before it is ruined.'
+        spiders. &3Clear my mine of these foul spiders, before it is ruined.'
       type: MSG
       occasion: -1
-
