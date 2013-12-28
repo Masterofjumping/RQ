@@ -1236,6 +1236,38 @@
       type: MOBKILL
       description: '&a[Side Objective] &bMercifully kill three zombies. Remaining:
         %r'
+    '3':
+      block: '140'
+      hand: '38'
+      click: 2
+      location: 142.44;71.38;49.46;RPG;93.61;90.00;
+      range: 20
+      type: ACTION
+      description: '&a[Objective] &bPlace the Blue Orchid''s into pots. (142, 71,
+        49 & 142, 71, 39)'
+      prerequisites: 1;2
+    '4':
+      block: '140'
+      hand: '38'
+      click: 2
+      location: 142.44;71.38;49.46;RPG;93.61;90.00;
+      range: 20
+      type: ACTION
+      description: '&a[Objective] &bPlace the Blue Orchid''s into pots. (142, 71,
+        49 & 142, 71, 39)'
+      prerequisites: '3'
+    '5':
+      block: '26'
+      type: PLACE
+      description: '&a[Objective] &bPlace two beds in the empty spots. (142, 71, 41
+        - 141, 71, 40)'
+      prerequisites: 3;4
+    '6':
+      block: '26'
+      type: PLACE
+      description: '&a[Objective] &bPlace two beds in the empty spots. (142, 71, 41
+        - 141, 71, 40)'
+      prerequisites: '5'
   conditions:
     '0':
       quest: A Monster Good Time
@@ -1292,6 +1324,68 @@
       amount: 35
       type: ITEM
       occasion: 2
+      delay: 2
+    '10':
+      command: give %p rose 1 1
+      type: CMD
+      occasion: 0
+    '11':
+      command: give %p rose 1 1
+      type: CMD
+      occasion: 1
+    '12':
+      message: '&a[Objective] &b1/2 Blue Orchid''s gathered.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '13':
+      message: '&4[Golog] &3You have all that you need, come back and place them in
+        the pots.'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '14':
+      message: '&a[Objective] &bPlace the two Blue Orchid''s into pots, in the upstairs
+        room.'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '15':
+      message: '&a[Objective] &b1/2 Blue Orchid''s potted.'
+      type: MSG
+      occasion: 3
+      delay: 1
+    '16':
+      message: '&4[Golog] &3Now the only thing missing is beds, I believe they are
+        important.'
+      type: MSG
+      occasion: 4
+      delay: 1
+    '17':
+      message: '&4[Golog] &3Your choice how you get them, but I think there''s a shop
+        nearby.'
+      type: MSG
+      occasion: 4
+      delay: 2
+    '18':
+      message: '&a[Objective] &bObtain two beds and then place them upstairs.'
+      type: MSG
+      occasion: 4
+      delay: 3
+    '19':
+      message: '&a[Objective] &b1/2 Beds placed.'
+      type: MSG
+      occasion: 5
+      delay: 1
+    '20':
+      message: '&4[Golog] &3It looks great! Come down to the bottom level for my thanks.'
+      type: MSG
+      occasion: 6
+      delay: 1
+    '21':
+      message: '&a[Objective] &bHead downstairs.'
+      type: MSG
+      occasion: 6
       delay: 2
 '8':
   name: The Love Story
@@ -1499,7 +1593,7 @@
   name: Spider Infestation
   description: '&a[Quest] &bComplete some pest control in Zuriki''s mine. &9Daily
     Quest, &cDifficulty: &8Coal'
-  flags: HIDDENOBJS;NODESC;
+  flags: ACTIVE;NODESC;HIDDENOBJS;REPEATABLE;
   objectives:
     '0':
       amount: 6
@@ -1558,3 +1652,4 @@
         &4spiders&3. &3Clear my mine of these foul spiders, before it is ruined.'
       type: MSG
       occasion: -1
+
