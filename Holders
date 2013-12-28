@@ -1,15 +1,21 @@
 holders:
   '0':
+    quests: '0'
     name: CaptainAspyr
   '2':
+    quests: '1'
     name: Joe
   '3':
+    quests: '2'
     name: Rauthr
   '4':
+    quests: '4'
     name: Vallelith
   '5':
+    quests: '5'
     name: Whicked
   '6':
+    quests: '6'
     name: Eilf
   '7':
     name: Test
@@ -17,10 +23,13 @@ holders:
     quests: '7'
     name: Golog
   '9':
+    quests: '8'
     name: Insers
   '10':
+    quests: '3'
     name: Smith
   '11':
+    quests: '9'
     name: SignWhitch
 signs:
   '0':
