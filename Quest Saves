@@ -2,7 +2,7 @@
   name: New Beginning
   description: '§a[Quest] §bStart you journey, as you leave this place of imprisonment
     with a §3quest. §cDifficulty: §8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '77'
@@ -123,7 +123,7 @@
   name: Decisions
   description: '§a[Quest] §bSpeak with each Caste leader, and learn of their virtues.
     §bThen make the big choice. §cDifficulty: §8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 7
@@ -320,7 +320,7 @@
   name: Hyperion Initiation
   description: '§a[Quest] §bBegin your journey with the §1Hyperion Order§b. §cDifficulty:
     §8Coal'
-  flags: ACTIVE;NODESC;DEATHCANCEL;
+  flags: NODESC;ACTIVE;DEATHCANCEL;
   objectives:
     '0':
       index: 141
@@ -486,7 +486,7 @@
   name: Smith the Blacksmith
   description: '&a[Quest] &bTest a new refined alloy sword and observe the affect
     it has on test dummies. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '35'
@@ -573,7 +573,7 @@
   name: Shadow Training
   description: '&a[Quest] &bTake your first step towards the &2Shadow Hunters&b.&c
     Difficulty: &7Coal'
-  flags: ACTIVE;NODESC;DEATHCANCEL;
+  flags: NODESC;ACTIVE;DEATHCANCEL;
   objectives:
     '0':
       region: SPHERE|-309.16;90.00;-1162.54;RPG;0.00;0.00;|1.0
@@ -754,7 +754,7 @@
   name: Scarlet Beginnings
   description: '&a[Quest] &bJoin the ranks of the &5Scarlet Coven&b. &cDifficulty:
     &8Coal'
-  flags: ACTIVE;NODESC;DEATHCANCEL;
+  flags: NODESC;ACTIVE;DEATHCANCEL;
   objectives:
     '0':
       hand: '259'
@@ -977,7 +977,7 @@
   name: The Ropes
   description: '&a[Quest] &bCourier some packages for a short while, and gain some
     contacts at the same time. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 126
@@ -1213,7 +1213,7 @@
   name: A Monster Good Time
   description: '&a[Quest] &bGolog has started up a resort, but he needs a hand first.
     By the way, he is also a zombie. &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '38'
@@ -1269,7 +1269,7 @@
         - 141, 71, 40)'
       prerequisites: '5'
     '7':
-      region: SPHERE|145.67;65.00;44.55;RPG;2.26;90.00;|5.0
+      region: SPHERE|145.67;65.00;44.55;RPG;0.00;0.00;|5.0
       type: REGION
       description: '&a[Objective] &bHead downstairs. (145, 65, 44)'
       prerequisites: '6'
@@ -1393,111 +1393,99 @@
       occasion: 6
       delay: 2
     '22':
-      entity: 120
-      location: 146.25;65.00;43.27;RPG;7.65;9.45;
-      type: SPAWN
-      occasion: 7
-      delay: 1
-    '23':
-      entity: 120
-      location: 144.76;65.00;43.20;RPG;352.65;3.30;
-      type: SPAWN
-      occasion: 7
-      delay: 1
-    '24':
       message: '&4[Golog] &3Welcome guests, would you like to hire a room?'
       type: MSG
       occasion: 7
       delay: 2
-    '25':
+    '23':
       message: '&4[Guests] &3A zombie! What is this place??'
       type: MSG
       occasion: 7
       delay: 3
-    '26':
+    '24':
       command: killall 7
       type: CMD
       occasion: 7
       delay: 4
-    '27':
+    '25':
       message: '&4[Golog] &3This could be a problem...'
       type: MSG
       occasion: 7
       delay: 6
-    '28':
+    '26':
       message: '&e[Rewards] &745 x Glass - 40 x Wool - $650 - 2 Quest Points.'
       type: MSG
       occasion: 7
       delay: 7
-    '29':
+    '27':
       item: '20:0'
       amount: 45
       type: ITEM
       occasion: 7
       delay: 7
-    '30':
+    '28':
       amount: 650.0
       type: MONEY
       occasion: 7
       delay: 7
-    '31':
+    '29':
       amount: 2
       type: POINT
       occasion: 7
       delay: 7
-    '32':
+    '30':
       block: 0:0
       location: 142.37;71.00;41.47;RPG;92.70;90.00;
       type: BLOCK
       occasion: 6
       delay: 10
-    '33':
+    '31':
       block: 0:0
       location: 141.30;71.00;40.52;RPG;92.70;90.00;
       type: BLOCK
       occasion: 6
       delay: 10
-    '34':
+    '32':
       block: 0:0
       location: 141.30;71.00;41.38;RPG;92.70;90.00;
       type: BLOCK
       occasion: 6
       delay: 10
-    '35':
+    '33':
       block: 0:0
       location: 142.27;71.00;40.30;RPG;92.70;90.00;
       type: BLOCK
       occasion: 6
       delay: 10
-    '36':
+    '34':
       block: 0:0
       location: 142.43;71.00;49.47;RPG;101.10;90.00;
       type: BLOCK
       occasion: 6
       delay: 10
-    '37':
+    '35':
       block: 0:0
       location: 142.31;71.00;39.47;RPG;96.90;90.00;
       type: BLOCK
       occasion: 6
       delay: 10
-    '38':
+    '36':
       block: '140:0'
       location: 142.31;71.00;39.48;RPG;85.80;90.00;
       type: BLOCK
       occasion: 6
       delay: 11
-    '39':
+    '37':
       block: '140:0'
       location: 142.36;71.00;49.47;RPG;100.05;90.00;
       type: BLOCK
       occasion: 6
       delay: 11
-    '40':
+    '38':
       objective: 2
       type: OBJCOM
       occasion: 7
-    '41':
+    '39':
       item: '35:0'
       amount: 40
       type: ITEM
@@ -1574,9 +1562,39 @@
       index: 46
       cancel: true
       type: NPC
+      description: '&a[Objective] &bSpeak to Chortana in the guard quarters. (40,72,17)'
     '1':
       region: SPHERE|31.72;72.00;5.30;RPG;0.00;0.00;|3.0
       type: REGION
+      description: '&a[Objective] &bOpen Chortana''s chest in the guard room. (39,
+        71, 4)'
+    '2':
+      block: '54'
+      click: 2
+      location: 39.44;72.88;4.39;RPG;180.30;90.00;
+      range: 3
+      type: ACTION
+    '3':
+      item: '375'
+      amount: 1
+      location: 46.70;72.00;6.14;RPG;135.46;73.20;
+      range: 2.0
+      type: DROP
+      description: '&a[Objective] &bDrop the Eye of Newt into a cauldron. (46, 72,
+        6)'
+    '4':
+      block: '54'
+      click: 2
+      location: 25.56;92.00;15.56;RPG;103.96;23.85;
+      range: 3
+      type: ACTION
+      description: '&a[Objective]&b Take burnt meat and an onion from a chest in the
+        royal kitchen, located on the second floor of this castle. Refrain from being
+        spotted by the cook. (24, 92, 15)'
+    '5':
+      region: SPHERE|26.63;92.00;18.48;RPG;0.00;0.00;|2.0
+      type: REGION
+      description: '&a[Objective] &bRefrain from being spotted by the cook.'
   conditions:
     '0':
       quest: Witchery
@@ -1605,111 +1623,202 @@
       occasion: 0
       delay: 4
     '4':
-      message: '&4[%p] &3What do I do?'
-      type: MSG
-      occasion: 0
-      delay: 7
-    '5':
       message: '&4[Chortana] &3Go open my chest in the room opposite me.'
       type: MSG
       occasion: 0
       delay: 9
-    '6':
+    '5':
       item: '261:0'
       type: ITEM
       occasion: 2
       delay: 2
-    '7':
+    '6':
       item: '262:0'
       amount: 12
       type: ITEM
       occasion: 2
       delay: 2
-    '8':
+    '7':
       item: '267:0'
       type: ITEM
       occasion: 2
       delay: 2
-    '9':
+    '8':
       item: '306:0'
       type: ITEM
       occasion: 2
       delay: 2
-    '10':
+    '9':
       item: '308:0'
       type: ITEM
       occasion: 2
       delay: 2
-    '11':
+    '10':
       item: '299:0'
       type: ITEM
       occasion: 2
       delay: 2
-    '12':
+    '11':
       item: '301:0'
       type: ITEM
       occasion: 2
       delay: 2
-    '13':
+    '12':
       item: '297:0'
       amount: 6
       type: ITEM
       occasion: 2
       delay: 2
-    '14':
+    '13':
       message: '&4[Chortana] &3These are just some basics. I suggest taking better
         equipment.'
       type: MSG
       occasion: 2
       delay: 1
-    '15':
-      message: '&4[Chortana] &3Come back and speak to me.'
-      type: MSG
-      occasion: 2
-      delay: 4
-    '16':
+    '14':
       message: '&4[Chortana] &3Yep, just in that room is my chest.'
       type: MSG
       occasion: 1
       delay: 1
-    '17':
-      message: '&a[Objective] &bGo and speak to Chortana again.'
-      type: MSG
-      occasion: 2
-      delay: 2
-    '18':
-      message: '&4[Chortana] &3East of the Castle beyond the guard ledge is the witches
-        cave.'
-      type: MSG
-      occasion: 3
-      delay: 1
-    '19':
-      message: '&4[Chortana] &3Head to her cave, kill her, and bring her plans back
-        to me.'
-      type: MSG
-      occasion: 3
-      delay: 1
-    '20':
-      message: '&a[Objective] &bHead East of the Castle beyond the Guard tower.'
-      type: MSG
-      occasion: 3
-      delay: 4
-    '21':
-      message: '&4[Chortana] &3I''ve just been told there is 7 witches there. Best
-        of luck!'
-      type: MSG
-      occasion: 4
-      delay: 2
-    '22':
+    '15':
       message: '&a[Objective] &bGo into the guard room and open Chortana''s Chest.'
       type: MSG
       occasion: 0
       delay: 10
+    '16':
+      command: ch qm staff &e%p&c starts quest Whitchery. Note if repeat starts for item dupe.
+      type: CMD
+      occasion: -1
+    '17':
+      command: ch qm staff &e%p&c quit quest Whitchery. Note if repeat quits for item dupe.
+      type: CMD
+      occasion: -2
+    '18':
+      message: '&a[Quest Items] &b1 x Weapons/Armour - 6 x Bread - 1 x Eye of Newt'
+      type: MSG
+      occasion: 2
+      delay: 2
+    '19':
+      message: '&4[Chortana] &3There is also an eye of a newt in there, which you
+        will need for the potion.'
+      type: MSG
+      occasion: 2
+      delay: 3
+    '20':
+      message: '&4[%p] &3Potion?'
+      type: MSG
+      occasion: 2
+      delay: 4
+    '21':
+      message: '&4[Chortana] &3A potion which counteracts the Witches magic, throw
+        this Eye of Newt into the cauldron near this chest.'
+      type: MSG
+      occasion: 2
+      delay: 5
+    '22':
+      command: rpgitem WhitchEye give %p 1
+      type: CMD
+      occasion: 2
+      delay: 2
+    '23':
+      message: '&a[Objective] &bDrop the Eye of Newt into the nearby cauldrons. (46,
+        72, 6)'
+      type: MSG
+      occasion: 2
+      delay: 6
+    '24':
+      location: 46.68;72.00;5.65;RPG;263.11;89.25;
+      range: 1
+      type: EXPLOSION
+      occasion: 3
+      delay: 1
+    '25':
+      location: 46.70;72.00;6.68;RPG;263.11;89.25;
+      range: 1
+      type: EXPLOSION
+      occasion: 3
+      delay: 1
+    '26':
+      message: '&4[Chortana] &3Soldier, next up for this potion we need some burnt
+        meat and an onion. These should easily be found in the kitchen.'
+      type: MSG
+      occasion: 3
+      delay: 1
+    '27':
+      message: '&4[Chortana] &3One warning though, if you are spotted by the cook
+        acquiring these items, you did not come from me.'
+      type: MSG
+      occasion: 3
+      delay: 2
+    '28':
+      message: '&a[Objective] &bTake burnt meat and an onion from a chest in the royal
+        kitchen, located on the second floor of this castle. Refrain from being spotted
+        by the cook. (24, 92, 15)'
+      type: MSG
+      occasion: 3
+      delay: 3
+    '29':
+      message: '&4[%p] &3What do I do?'
+      type: MSG
+      occasion: 0
+      delay: 7
+    '30':
+      objective: 5
+      type: OBJCOM
+      occasion: 4
+    '31':
+      message: '&4[Cookei] &3What are you doing sneaking around here?? I’ll take a
+        fine for that, now get going.'
+      type: MSG
+      occasion: 5
+      delay: 1
+    '32':
+      amount: -150.0
+      type: MONEY
+      occasion: 5
+      delay: 2
+    '33':
+      message: '&a[Quest] &b$150 withdrawn from your account.'
+      type: MSG
+      occasion: 5
+      delay: 2
+    '34':
+      message: '&4[%p] &3I should still be able to gather these items.'
+      type: MSG
+      occasion: 5
+      delay: 3
+    '35':
+      message: '&a[Quest Items] &b1 x Burnt Meat + Onion.'
+      type: MSG
+      occasion: 4
+      delay: 1
+    '36':
+      command: rpgitem witchmeat give %p 1
+      type: CMD
+      occasion: 4
+      delay: 1
+    '37':
+      command: rpgitem witchpot give %p 1
+      type: CMD
+      occasion: 4
+      delay: 1
+    '38':
+      message: '&4[Chortana] &3That’s what this cook serves us, yuck. Come back and
+        put it in the cauldron.'
+      type: MSG
+      occasion: 4
+      delay: 2
+    '39':
+      message: '&a[Objective] &bPlace the potatoes and burnt meat into the cauldron.
+        (46, 71, 6)'
+      type: MSG
+      occasion: 4
+      delay: 3
 '10':
   name: Spider Infestation
   description: '&a[Quest] &bComplete some pest control in Zuriki''s mine. &9Daily
     Quest, &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;HIDDENOBJS;REPEATABLE;
+  flags: NODESC;ACTIVE;REPEATABLE;HIDDENOBJS;
   objectives:
     '0':
       amount: 6
@@ -1765,6 +1874,6 @@
       delay: 2
     '9':
       message: '&4[Zuriki] &3Help! My mine, my poor mine.. It has been overrun with
-        spiders. &3Clear my mine of these foul spiders, before it is ruined.'
+        &4spiders&3. Clear my mine of these foul spiders, before it is ruined.'
       type: MSG
       occasion: -1
