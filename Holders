@@ -18,23 +18,27 @@ holders:
     quests: '6'
     name: Eilf
   '7':
-    name: Test
-  '8':
     quests: '7'
     name: Golog
-  '9':
+  '8':
     quests: '8'
     name: Insers
-  '10':
+  '9':
     quests: '3'
     name: Smith
-  '11':
+  '10':
     quests: '9'
     name: SignWhitch
+  '11':
+    quests: '10'
+    name: Zuriki
 signs:
   '0':
     location: 39.00;66.00;-106.00;RPG;0.00;0.00;
     holder: 11
   '1':
+    location: 41.00;73.00;17.00;RPG;0.00;0.00;
+    holder: 11
+  '2':
     location: 18.00;79.00;9.00;RPG;0.00;0.00;
     holder: 11
