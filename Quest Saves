@@ -1923,8 +1923,8 @@
       occasion: 8
       delay: 5
     '51':
-      message: '&a[Objective] &bSlay the four witches in their hideout. (-75, 64,
-        -8)'
+      message: '&a[Objective] &bSlay the four witches in their hideout located 
+        west of the castle. (-75, 64, -8)'
       type: MSG
       occasion: 8
       delay: 6
@@ -1958,12 +1958,12 @@
       type: MSG
       occasion: 11
     '58':
-      message: '&4[%] &3Behind me...'
+      message: '&4[%p] &3Behind me...'
       type: MSG
       occasion: 11
       delay: 1
     '59':
-      command: effect %p 10 25 1
+      command: effect %p 10 5 1
       type: CMD
       occasion: 11
     '60':
@@ -1977,7 +1977,7 @@
       occasion: 12
       delay: 2
     '62':
-      message: '&4[Nranin] &3You are gone!'
+      message: '&4[Nranin] &3I say you are gone!'
       type: MSG
       occasion: 12
       delay: 3
@@ -2023,7 +2023,7 @@
       delay: 1
     '71':
       message: '&4[Chortana] &3We’ll be able to hunt down the remaining witch in short
-        time.'
+        time though.'
       type: MSG
       occasion: 13
       delay: 2
