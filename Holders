@@ -32,13 +32,19 @@ holders:
   '11':
     quests: '10'
     name: Zuriki
+  '12':
+    quests: '12'
+    name: Flambe
+  '13':
+    quests: '13'
+    name: Skauf
 signs:
   '0':
     location: 39.00;66.00;-106.00;RPG;0.00;0.00;
-    holder: 11
+    holder: 10
   '1':
     location: 41.00;73.00;17.00;RPG;0.00;0.00;
-    holder: 11
+    holder: 10
   '2':
     location: 18.00;79.00;9.00;RPG;0.00;0.00;
-    holder: 11
+    holder: 10
