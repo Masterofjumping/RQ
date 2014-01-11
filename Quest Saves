@@ -2,7 +2,7 @@
   name: New Beginning
   description: '§a[Quest] §bStart you journey, as you leave this place of imprisonment
     with a §3quest. §cDifficulty: §8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       block: '77'
@@ -123,7 +123,7 @@
   name: Decisions
   description: '§a[Quest] §bSpeak with each Caste leader, and learn of their virtues.
     §bThen make the big choice. §cDifficulty: §8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 7
@@ -320,7 +320,7 @@
   name: Hyperion Initiation
   description: '§a[Quest] §bBegin your journey with the §1Hyperion Order§b. §cDifficulty:
     §8Coal'
-  flags: NODESC;ACTIVE;DEATHCANCEL;
+  flags: ACTIVE;DEATHCANCEL;NODESC;
   objectives:
     '0':
       index: 141
@@ -486,7 +486,7 @@
   name: Smith the Blacksmith
   description: '&a[Quest] &bTest a new refined alloy sword and observe the affect
     it has on test dummies. &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       block: '35'
@@ -573,7 +573,7 @@
   name: Shadow Training
   description: '&a[Quest] &bTake your first step towards the &2Shadow Hunters&b.&c
     Difficulty: &7Coal'
-  flags: NODESC;ACTIVE;DEATHCANCEL;
+  flags: ACTIVE;DEATHCANCEL;NODESC;
   objectives:
     '0':
       region: SPHERE|-309.16;90.00;-1162.54;RPG;0.00;0.00;|1.0
@@ -754,7 +754,7 @@
   name: Scarlet Beginnings
   description: '&a[Quest] &bJoin the ranks of the &5Scarlet Coven&b. &cDifficulty:
     &8Coal'
-  flags: NODESC;ACTIVE;DEATHCANCEL;
+  flags: ACTIVE;DEATHCANCEL;NODESC;
   objectives:
     '0':
       hand: '259'
@@ -977,7 +977,7 @@
   name: The Ropes
   description: '&a[Quest] &bCourier some packages for a short while, and gain some
     contacts at the same time. &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 126
@@ -1210,10 +1210,10 @@
       occasion: -3
       delay: 5
 '7':
-  name: A Monster Good Time
+  name: A Monster Time
   description: '&a[Quest] &bGolog has started up a resort, but he needs a hand first.
     By the way, he is also a zombie. &cDifficulty: &7Iron'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       block: '38'
@@ -1275,7 +1275,7 @@
       prerequisites: '6'
   conditions:
     '0':
-      quest: A Monster Good Time
+      quest: A Monster Time
       inverted: true
       type: QUEST
   events:
@@ -1496,7 +1496,7 @@
   description: '&a[Quest] &BThe classic story of love; Insers and Aheri separated
     but their hearts still long to be together. Maybe you can help? &cDifficulty:
     &8Coal'
-  flags: NODESC;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|59.00;72.00;-195.42;RPG;0.00;0.00;|3.0
@@ -1506,6 +1506,11 @@
       region: SPHERE|87.98;73.00;-197.53;RPG;0.00;0.00;|3.0
       type: REGION
       description: '&a[Objective] &bLocate Aheri in the skull catacombs.'
+    '2':
+      index: 2
+      type: NPC
+      description: '&a[Objective] &bHand Aheri the rose.'
+      prerequisites: '1'
   conditions:
     '0':
       quest: The Love Story
@@ -1549,6 +1554,79 @@
       objective: 0
       type: OBJCOM
       occasion: 1
+    '7':
+      item: '38:0'
+      type: ITEM
+      occasion: -1
+      delay: 3
+    '8':
+      message: '&4[Aheri] &3Who are you? - Can you help me?'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '9':
+      message: '&a[Objective] &bHand Aheri the rose.'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '10':
+      item: '38'
+      inverted: true
+      type: ITEM
+      occasion: 2
+    '11':
+      message: '&4[Aheri] &3This is from my love, oh thank you, thank you!'
+      type: MSG
+      occasion: 2
+      delay: 1
+    '12':
+      location: 35.38;65.00;-138.48;RPG;186.45;5.25;
+      type: TELE
+      occasion: 2
+      delay: 3
+    '13':
+      message: '&4[Insers] &3What did you she say??'
+      type: MSG
+      occasion: 2
+      delay: 4
+    '14':
+      message: '&4[%p] &3Well, it''s a safe bet that she still loves you.'
+      type: MSG
+      occasion: 2
+      delay: 5
+    '15':
+      message: '&e[Rewards] &72 x Diamonds - 15 x Chicken - 1 Quest Point.'
+      type: MSG
+      occasion: 2
+      delay: 6
+    '16':
+      amount: 1
+      type: POINT
+      occasion: 2
+      delay: 6
+    '17':
+      item: '264:0'
+      amount: 2
+      type: ITEM
+      occasion: 2
+      delay: 6
+    '18':
+      item: '366:0'
+      amount: 15
+      type: ITEM
+      occasion: 2
+      delay: 6
+    '19':
+      block: '38:0'
+      location: 89.57;73.00;-201.33;RPG;4.50;90.00;
+      type: BLOCK
+      occasion: 2
+    '20':
+      block: 0:0
+      location: 89.51;73.00;-201.21;RPG;4.50;90.00;
+      type: BLOCK
+      occasion: 2
+      delay: 5
 '9':
   name: Witchery
   description: '&a[Notice] &bSeeking a Witch Hunter to locate, loot and kill an unwelcome
@@ -1556,7 +1634,7 @@
     to me, Chortana in the guards quarters under the Castle. &cDifficulty: &3Diamond'
   worlds:
   - rpg
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 46
@@ -1918,7 +1996,7 @@
       occasion: 8
       delay: 6
     '50':
-      command: effect %p 21 1 2
+      command: effect %p 2 1 2
       type: CMD
       occasion: -2
     '51':
@@ -2077,7 +2155,7 @@
   name: Spider Infestation
   description: '&a[Quest] &bComplete some pest control in Zuriki''s mine. &9Daily
     Quest, &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;HIDDENOBJS;REPEATABLE;
+  flags: ACTIVE;REPEATABLE;NODESC;HIDDENOBJS;
   objectives:
     '0':
       amount: 6
@@ -2136,3 +2214,459 @@
         &4spiders&3. Clear my mine of these foul spiders, before it is ruined.'
       type: MSG
       occasion: -1
+'12':
+  name: Run `n` Seek
+  description: '&a[Quest] &bFlambe here has a brother you must find, and doing so
+    might just &bprove the honour of young adventurers. &cDifficulty: &8Coal'
+  flags: ACTIVE;NODESC;
+  objectives:
+    '0':
+      index: 55
+      type: NPC
+      description: '&a[Objective] &bSpeak with Kusp. (Between: 100, 65, 125 & -25,
+        65, 115)'
+    '1':
+      index: 42
+      cancel: true
+      type: NPC
+      description: '&a[Objective] &bHead back and report to Flambe. (74, 65, -111)'
+      prerequisites: '0'
+  conditions:
+    '0':
+      quest: Run `n` Seek
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Flambe] &3A drink after hard work is good; you know what’s even
+        better?'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '1':
+      message: '&4[Flambe] &3Good help for once, young adventures these days are all
+        lazy.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '2':
+      message: '&4[Flambe] &3Let’s see if you can prove me wrong, maybe do some actual
+        work.'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '3':
+      message: '&4[Flambe] &3Find my crazy brother Kusp, he’s wandering around this
+        region.'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '4':
+      message: '&4[Flambe] &3If you want to earn some coin you’ll do it quick as well.'
+      type: MSG
+      occasion: -1
+      delay: 6
+    '5':
+      message: '&a[Objective] &bSpeak with Kusp. (Between: 100, 65, 125 & -25, 65,
+        115)'
+      type: MSG
+      occasion: -1
+      delay: 7
+    '6':
+      message: '&4[Kusp] &3Cooked chickens flying across blazing moons...'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '7':
+      message: '&4[%p] &3Definitely not right in the head, I should head back & tell
+        Flambe.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '8':
+      message: '&a[Objective] &bHead back and report to Flambe. (74, 65, -111)'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '9':
+      command: effect %p 19 5 1
+      type: CMD
+      occasion: 0
+      delay: 3
+    '10':
+      message: '&4[%p] &3Whoa! What has this person given me?'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '11':
+      message: '&4[Flambe] &3Maybe you new age warriors are worth something.'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '12':
+      message: '&4[Flambe] &3Thanks for checking up on him, as you saw he is unstable.'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '13':
+      message: '&4[Flambe] &3Probably also in need of a bath, take this for your trouble.'
+      type: MSG
+      occasion: 1
+      delay: 3
+    '14':
+      message: '&4[Flambe] &3By the way, this occurred when he took a job for Shadow
+        Hunters.'
+      type: MSG
+      occasion: 1
+      delay: 5
+    '15':
+      message: '&e[Rewards] &715 x Porkchop - 20 x Webs - 1 x Horse Armour - $377
+        - 1 Point.'
+      type: MSG
+      occasion: 1
+      delay: 4
+    '16':
+      item: '30:0'
+      amount: 20
+      type: ITEM
+      occasion: 1
+      delay: 4
+    '17':
+      item: '320:0'
+      amount: 15
+      type: ITEM
+      occasion: 1
+      delay: 4
+    '18':
+      item: '417:0'
+      type: ITEM
+      occasion: 1
+      delay: 4
+    '19':
+      amount: 1
+      type: POINT
+      occasion: 1
+      delay: 4
+    '20':
+      amount: 377.0
+      type: MONEY
+      occasion: 1
+      delay: 4
+'13':
+  name: Desilverfishing
+  description: '&a[Quest] &bThe city sewers are obviously of importance, but keeping
+    them clear of critters seems less important to a fighter such as yourself. But
+    a job is being offered and coin is alluring. &cDifficulty: &7Iron'
+  flags: ACTIVE;NODESC;
+  objectives:
+    '0':
+      index: 72
+      cancel: true
+      type: NPC
+      description: '&a[Objective] &bTo confirm your willingness to begin right click
+        Skauf.'
+    '1':
+      region: SPHERE|-32.71;33.00;-4.60;RPG;0.00;0.00;|5.0
+      type: REGION
+      description: '&a[Objective] &bHead down into the Western Sewers. (-32, 33, -4.6)'
+      prerequisites: '0'
+    '2':
+      region: SPHERE|-33.51;32.02;-45.51;RPG;0.00;0.00;|7.0
+      type: REGION
+      description: '&a[Objective] &bProgress further down the sewer. (-33, 32, -45)'
+      prerequisites: '1'
+    '3':
+      region: SPHERE|-16.75;32.02;-94.11;RPG;0.00;0.00;|7.0
+      type: REGION
+      description: '&a[Objective] &bProgress further down the sewer. (-16, 32, -94)'
+      prerequisites: '2'
+    '4':
+      region: SPHERE|29.14;33.00;-97.96;RPG;0.00;0.00;|5.0
+      type: REGION
+      description: '&a[Objective] &bProgress further down the sewer. (29, 33, -97)'
+      prerequisites: '3'
+    '5':
+      region: SPHERE|51.67;33.00;-92.63;RPG;0.00;0.00;|3.0
+      type: REGION
+      description: '&a[Objective] &bApproach and destroy the nest. (52, 33, -92)'
+      prerequisites: '4'
+    '6':
+      block: '17:2'
+      hand: '259'
+      click: 2
+      location: 55.59;33.00;-93.45;RPG;312.15;88.65;
+      range: 1
+      type: ACTION
+      description: '&a[Objective] &bDestroy the nest using the Flint and Steel.'
+      prerequisites: '5'
+    '7':
+      index: 72
+      cancel: true
+      type: NPC
+      description: '&a[Objective] &bReturn to Skauf to collect your reward.'
+      prerequisites: '6'
+  conditions:
+    '0':
+      quest: Desilverfishing
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Skauf] &3Those damned silverfish are everywhere!'
+      type: MSG
+      occasion: -1
+    '1':
+      message: '&4[Skauf] &3Can you help me and go burn out their nest?'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '2':
+      message: '&a[Objective] &bRight click to Skauf if you wish to help him.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '3':
+      message: '&4[Skauf] &3Good, let me give you the rundown...'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '4':
+      message: '&4[Skauf] &3Though, every Silverfish nest has a weak point:'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '5':
+      message: '&4[Skauf] &3They need a log to make home and reproduce!'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '6':
+      message: '&4[Skauf] &3Silverfish are nasty, vile, mean creatures.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '7':
+      message: '&4[Skauf] &3Just burn that log, and the Silverfish will stop!'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '8':
+      message: '&a[Objective] &bHead down into the Western Sewers.'
+      type: MSG
+      occasion: 0
+      delay: 6
+    '9':
+      item: '259:0'
+      type: ITEM
+      occasion: 0
+      delay: 6
+    '10':
+      message: '&a[Quest Item] &b1 x Flint & Steel'
+      type: MSG
+      occasion: 0
+      delay: 7
+    '11':
+      message: '&4[%p] &3Urgh! What a stench! This is the right place.'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '12':
+      message: '&4[%p] &3I need to find that nest and destroy it.'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '13':
+      message: '&a[Objective] &bFind the nest.'
+      type: MSG
+      occasion: 1
+      delay: 3
+    '14':
+      entity: 60
+      amount: 3
+      location: -36.65;33.00;-38.70;RPG;186.52;25.80;
+      range: 7
+      type: SPAWN
+      occasion: 1
+    '15':
+      message: '&4[%p] &3I can hear some rattling up ahead...'
+      type: MSG
+      occasion: 2
+      delay: 1
+    '16':
+      entity: 60
+      amount: 4
+      location: -37.02;33.00;-72.09;RPG;200.47;8.40;
+      range: 7
+      type: SPAWN
+      occasion: 2
+    '17':
+      message: '&4[%p] &3The rattle is getting stronger, the nest must be up ahead...'
+      type: MSG
+      occasion: 3
+      delay: 1
+    '18':
+      entity: 60
+      amount: 4
+      location: 5.38;33.00;-97.05;RPG;93.15;16.65;
+      range: 7
+      type: SPAWN
+      occasion: 3
+    '19':
+      entity: 60
+      amount: 2
+      location: -0.79;33.00;-91.23;RPG;111.15;27.75;
+      range: 7
+      type: SPAWN
+      occasion: 3
+    '20':
+      entity: 60
+      amount: 4
+      location: 25.91;33.00;-93.79;RPG;273.15;6.60;
+      range: 7
+      type: SPAWN
+      occasion: 3
+    '21':
+      message: '&4[%p] &3The rattle seems to be coming from over there, in that construction.'
+      type: MSG
+      occasion: 4
+      delay: 1
+    '22':
+      message: '&a[Objective] &bApproach and destroy the nest. (52, 33, -92)'
+      type: MSG
+      occasion: 4
+      delay: 2
+    '23':
+      entity: 60
+      amount: 2
+      location: 48.58;33.00;-92.71;RPG;125.10;18.45;
+      range: 7
+      type: SPAWN
+      occasion: 4
+    '24':
+      entity: 60
+      amount: 4
+      location: 57.70;33.00;-94.21;RPG;98.40;20.55;
+      range: 7
+      type: SPAWN
+      occasion: 4
+    '25':
+      message: '&4[%p] &3That’s the nest, now I need to light that log on fire!'
+      type: MSG
+      occasion: 5
+      delay: 1
+    '26':
+      message: '&a[Objective] &bDestroy the nest using the Flint and Steel.'
+      type: MSG
+      occasion: 5
+      delay: 2
+    '27':
+      message: '&4[%p] &3Burn, baby, burn!'
+      type: MSG
+      occasion: 6
+      delay: 1
+    '28':
+      message: '&4[%p] &3Seems like the nest is about to burst!'
+      type: MSG
+      occasion: 6
+      delay: 2
+    '29':
+      entity: 60
+      amount: 4
+      location: 58.16;33.00;-98.33;RPG;61.05;4.35;
+      range: 7
+      type: SPAWN
+      occasion: 6
+      delay: 2
+    '30':
+      entity: 60
+      amount: 2
+      location: 58.08;33.00;-90.75;RPG;112.95;-0.90;
+      range: 7
+      type: SPAWN
+      occasion: 6
+      delay: 4
+    '31':
+      block: 0:0
+      location: 55.51;34.00;-93.43;RPG;204.75;89.55;
+      type: BLOCK
+      occasion: 6
+      delay: 5
+    '32':
+      block: 0:0
+      location: 55.51;33.00;-93.43;RPG;204.45;89.55;
+      type: BLOCK
+      occasion: 6
+      delay: 5
+    '33':
+      location: 55.51;33.00;-93.43;RPG;204.45;89.55;
+      range: 1
+      type: EXPLOSION
+      occasion: 6
+      delay: 5
+    '34':
+      block: '17:2'
+      location: 55.51;33.00;-93.43;RPG;204.45;89.55;
+      type: BLOCK
+      occasion: 6
+      delay: 10
+    '35':
+      message: '&a[Objective] &bReturn to Skauf to collect your reward.'
+      type: MSG
+      occasion: 6
+      delay: 6
+    '36':
+      message: '&4[Skauf] &3Ah you''re back! I see that Silverfish blood suits you!'
+      type: MSG
+      occasion: 7
+      delay: 1
+    '37':
+      message: '&4[Skauf] &3Thanks for helping me out, here is some cash for your
+        trouble...'
+      type: MSG
+      occasion: 7
+      delay: 2
+    '38':
+      message: '&4[Skauf] &3You should take these potions too, they are for speed.'
+      type: MSG
+      occasion: 7
+      delay: 3
+    '39':
+      message: '&4[Skauf] &3I''ll put in a good word for you at the castle, Bye now!'
+      type: MSG
+      occasion: 7
+      delay: 4
+    '40':
+      amount: 850.0
+      type: MONEY
+      occasion: 7
+      delay: 5
+    '41':
+      item: 373:8226
+      amount: 3
+      type: ITEM
+      occasion: 7
+      delay: 5
+    '42':
+      amount: 2
+      type: POINT
+      occasion: 7
+      delay: 5
+    '43':
+      message: '&e[Rewards] &73 x Speed Potions - $850 Coins - 2 Quest Points.'
+      type: MSG
+      occasion: 7
+      delay: 5
+'14':
+  name: Zombie Population
+  flags: REPEATABLE;NODESC;
+  conditions:
+    '0':
+      quest: Zombie Population
+      time: 86400
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&9[Daily] &aThis is a daily quest. Come back tomorrow.'
+      type: MSG
+      occasion: -3
