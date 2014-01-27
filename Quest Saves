@@ -2807,7 +2807,7 @@
       range: 2
       type: ACTION
       description: '&a[Objective] &bPlace the TNT on top of the dirt, located at the
-        rear of the bank. (59, 67, -83)’
+        rear of the bank. (59, 67, -83)'
       prerequisites: '3'
     '5':
       region: SPHERE|56.37;66.00;-89.52;RPG;0.00;0.00;|2.0
@@ -2843,7 +2843,7 @@
       delay: 3
     '3':
       message: '&4[Tark] &3A rival guild is competing for our bank heist; I need
-        you to beat them to the gold. First step is to survey; checking for guards.’
+        you to beat them to the gold. First step is to survey; checking for guards.'
       type: MSG
       occasion: -1
       delay: 2
@@ -2870,13 +2870,13 @@
       delay: 3
     '8':
       message: '&4[Tark] &3So you now know that there is obvious issues with this
-        heist. The next step is to acquire a way into the bank.’
+        heist. The next step is to acquire a way into the bank.'
       type: MSG
       occasion: 1
       delay: 1
     '9':
       message: '&4[Tark] &3At the rear of the bank the wall is thin and old; a small
-        explosion should create a good point of entry.’
+        explosion should create a good point of entry.'
       type: MSG
       occasion: 1
       delay: 2
@@ -2953,7 +2953,7 @@
       occasion: 3
       delay: 1
     '23':
-      message: '&4[%p] &3I now have a way in, time to plant this explosive!’
+      message: '&4[%p] &3I now have a way in, time to plant this explosive!'
       type: MSG
       occasion: 3
       delay: 2
