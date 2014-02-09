@@ -38,6 +38,15 @@ holders:
   '13':
     quests: '13'
     name: Skauf
+  '14':
+    quests: '14'
+    name: Panzan
+  '15':
+    quests: '15'
+    name: Tark
+  '16':
+    quests: '16'
+    name: Aneirra
 signs:
   '0':
     location: 39.00;66.00;-106.00;RPG;0.00;0.00;
