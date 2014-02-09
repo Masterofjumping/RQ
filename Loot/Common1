@@ -1,0 +1,109 @@
+items:
+  wood_sword:
+    spawn:
+      chance: 100
+      stack: '1-1'
+    properties:
+      data: 'random'
+      name: "&7[Trash] &6Rough Cut Sword"
+      lore:
+      - "&r&7  Sword - Trash - Wood"
+      - "&r&8====================="
+      - "&r&a + &74 Damage" 
+      - "&r&a + &72 &mDexterity"
+      - "&r&a + &73 &mSpirit"
+      - "&r&8====================="
+      - "&r&7&oSeen better day's." 
+  wood_sword-1:
+    spawn:
+      chance: 100
+      stack: '1-1'
+    effects:
+      loot_bonus_mobs:
+        chance: 100
+        lvl: '1-1'
+    properties:
+      data: 'random'
+      name: "&7[Trash] &6Veteran Sword"
+      lore:
+      - "&r&7 Sword - Trash - Wood"
+      - "&r&8===================="
+      - "&r&a + &74 Damage" 
+      - "&r&a + &77 &mLuck"
+      - "&r&c - &73 &mSpirit"
+      - "&r&9 > &7Enchant: Looting"
+      - "&r&8===================="
+      - "&r&7&oSeen enough loot, to"
+      - "&r&7&oknow the good stuff."
+  wood_sword-2:
+    spawn:
+      chance: 100
+      stack: '1-1'
+    properties:
+      data: 'random'
+      name: "&7[Trash] &6Short Sword"
+      lore:
+      - "&r&7 Sword - Trash - Wood"
+      - "&r&8===================="
+      - "&r&a + &74 Damage" 
+      - "&r&c - &71 &mIntellect"
+      - "&r&8===================="
+      - "&r&7&oA poor sword."
+  wood_sword-3:
+    spawn:
+      chance: 100
+      stack: '1-1'
+    properties:
+      data: 'random'
+      name: "&7[Trash] &6Scimitar"
+      lore:
+      - "&r&7 Sword - Trash - Wood"
+      - "&r&8===================="
+      - "&r&a + &74 Damage" 
+      - "&r&a + &72 &mStrength"
+      - "&r&a + &75 &mDexterity"
+      - "&r&c - &74 &mVitality"
+      - "&r&8===================="
+      - "&r&7&oSharp, but lacks reach."
+  iron_sword:
+    spawn:
+      chance: 100
+      stack: '1-1'
+    properties:
+      data: 'random'
+      name: "&7[&fCommon&7] &6Keen Short Sword"
+      lore:
+      - "&r&7   Sword - Common - Iron"
+      - "&r&8========================"
+      - "&r&a + &76 Damage"
+      - "&r&a + &73 &mVitality"
+      - "&r&c - &72 &mIntellect"
+      - "&r&8========================"
+      - "&r&7&oAn average sword."
+  gold_sword:
+    spawn:
+      chance: 100
+      stack: '1-1'
+    effects:
+      random:
+        chance: 100
+        lvl: '1-1'
+      random:
+        chance: 100
+        lvl: '1-1'
+      random:
+        chance: 100
+        lvl: '1-1'
+    properties:
+      data: 'random'
+      name: "&7[&aUncommon&7] &5Rune Base Sword"
+      lore:
+      - "&r&7   Sword - Uncommon - Gold"
+      - "&r&8========================"
+      - "&r&a + &76 Damage"
+      - "&r&9 > &7Enchant: Random"
+      - "&r&9 > &7Enchant: Random"
+      - "&r&9 > &7Enchant: Random"
+      - "&r&8========================"
+      - "&r&7&oRare rune metals have been"
+      - "&r&7&oimbued into this metal."
