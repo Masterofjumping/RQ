@@ -2,7 +2,7 @@
   name: New Beginning
   description: '§a[Quest] §bStart you journey, as you leave this place of imprisonment
     with a §3quest. §cDifficulty: §8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       block: '77'
@@ -123,7 +123,7 @@
   name: Decisions
   description: '§a[Quest] §bSpeak with each Caste leader, and learn of their virtues.
     §bThen make the big choice. §cDifficulty: §8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 7
@@ -320,7 +320,7 @@
   name: Hyperion Initiation
   description: '§a[Quest] §bBegin your journey with the §1Hyperion Order§b. §cDifficulty:
     §8Coal'
-  flags: NODESC;ACTIVE;DEATHCANCEL;
+  flags: ACTIVE;NODESC;DEATHCANCEL;
   objectives:
     '0':
       index: 141
@@ -486,7 +486,7 @@
   name: Smith the Blacksmith
   description: '&a[Quest] &bTest a new refined alloy sword and observe the affect
     it has on test dummies. &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       block: '35'
@@ -573,7 +573,7 @@
   name: Shadow Training
   description: '&a[Quest] &bTake your first step towards the &2Shadow Hunters&b.&c
     Difficulty: &7Coal'
-  flags: NODESC;ACTIVE;DEATHCANCEL;
+  flags: ACTIVE;NODESC;DEATHCANCEL;
   objectives:
     '0':
       region: SPHERE|-309.16;90.00;-1162.54;RPG;0.00;0.00;|1.0
@@ -754,7 +754,7 @@
   name: Scarlet Beginnings
   description: '&a[Quest] &bJoin the ranks of the &5Scarlet Coven&b. &cDifficulty:
     &8Coal'
-  flags: NODESC;ACTIVE;DEATHCANCEL;
+  flags: ACTIVE;NODESC;DEATHCANCEL;
   objectives:
     '0':
       hand: '259'
@@ -977,7 +977,7 @@
   name: The Ropes
   description: '&a[Quest] &bCourier some packages for a short while, and gain some
     contacts at the same time. &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 126
@@ -1213,7 +1213,7 @@
   name: A Monster Time
   description: '&a[Quest] &bGolog has started up a resort, but he needs a hand first.
     By the way, he is also a zombie. &cDifficulty: &7Iron'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       block: '38'
@@ -1496,7 +1496,7 @@
   description: '&a[Quest] &BThe classic story of love; Insers and Aheri separated
     but their hearts still long to be together. Maybe you can help? &cDifficulty:
     &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|59.00;72.00;-195.42;RPG;0.00;0.00;|3.0
@@ -1634,7 +1634,7 @@
     to me, Chortana in the guards quarters under the Castle. &cDifficulty: &3Diamond'
   worlds:
   - rpg
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 46
@@ -2155,7 +2155,7 @@
   name: Spider Infestation
   description: '&a[Quest] &bComplete some pest control in Zuriki''s mine. &9Daily
     Quest, &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;REPEATABLE;HIDDENOBJS;
+  flags: ACTIVE;REPEATABLE;HIDDENOBJS;NODESC;
   objectives:
     '0':
       amount: 6
@@ -2218,7 +2218,7 @@
   name: Run `n` Seek
   description: '&a[Quest] &bFlambe here has a brother you must find, and doing so
     might just &bprove the honour of young adventurers. &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 55
@@ -2357,7 +2357,7 @@
   description: '&a[Quest] &bThe city sewers are obviously of importance, but keeping
     them clear of critters seems less important to a fighter such as yourself. But
     a job is being offered and coin is alluring. &cDifficulty: &7Iron'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 72
@@ -2660,7 +2660,7 @@
   name: Zombie Population
   description: '&a[Quest] &bA culling of the Zombie population is called for, this
     kingdom must be kept safe. &9Daily Quest. &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;REPEATABLE;
+  flags: ACTIVE;REPEATABLE;NODESC;
   objectives:
     '0':
       amount: 15
@@ -2771,13 +2771,13 @@
   description: '&a[Quest] &bThe bank of Woodbry contains a substantial amount of wealth;
     this is a town of success and good harvests. Perhaps it is time to burrow some
     of this wealth? &cDifficulty: &7Iron'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|52.32;66.00;-80.56;RPG;0.00;0.00;|8.0
       type: REGION
-      description: '&a[Objective] &bHave a look inside the bank, checking for
-        guards. (Around: 52, 66, -80)'
+      description: '&a[Objective] &bHave a look inside the bank, checking for guards.
+        (Around: 52, 66, -80)'
     '1':
       index: 28
       cancel: true
@@ -2826,274 +2826,559 @@
       type: QUEST
   events:
     '0':
-      message: '&4[Tark] &3I''m a representative of Black Hand guild. Which means 
+      message: '&4[Tark] &3I''m a representative of Black Hand guild. Which means
         any ‘acquiring‘ goes through me.'
       type: MSG
       occasion: -1
       delay: 1
     '1':
-      message: '&4[Tark] &3Which means any ‘acquiring‘ goes through me.'
+      message: '&4[Tark] &3A rival guild is competing for our bank heist; I need you
+        to beat them to the gold. First step is to survey; checking for guards.'
       type: MSG
       occasion: -1
       delay: 2
     '2':
-      message: '&4[Tark] &3At the current time this law of nature is being threatened.'
-      type: MSG
-      occasion: -1
-      delay: 3
-    '3':
-      message: '&4[Tark] &3A rival guild is competing for our bank heist; I need
-        you to beat them to the gold. First step is to survey; checking for guards.'
-      type: MSG
-      occasion: -1
-      delay: 2
-    '4':
-      message: '&4[Tark] &3First step is to survey; see if there are any guards within
-        the b'
-      type: MSG
-      occasion: -1
-      delay: 5
-    '5':
       message: '&a[Objective] &bHave a look inside the bank, checking for guards.'
       type: MSG
       occasion: -1
       delay: 3
-    '6':
+    '3':
       message: '&4[%p] &3No guards or security, just the bank manager.'
       type: MSG
       occasion: 0
       delay: 2
-    '7':
+    '4':
       message: '&a[Objective] &bReport back to Tark with the details. (21, 65, -78)'
       type: MSG
       occasion: 0
       delay: 3
-    '8':
+    '5':
       message: '&4[Tark] &3So you now know that there is obvious issues with this
         heist. The next step is to acquire a way into the bank.'
       type: MSG
       occasion: 1
       delay: 1
-    '9':
+    '6':
       message: '&4[Tark] &3At the rear of the bank the wall is thin and old; a small
         explosion should create a good point of entry.'
       type: MSG
       occasion: 1
       delay: 2
-    '10':
-      message: '&4[Tark] &3The next step is to acquire a way in. I took the liberty
-        to scout'
-      type: MSG
-      occasion: 1
-      delay: 2
-    '11':
+    '7':
       message: '&4[Tark] &3In the bakehouse around the corner is a Black Hand supplier.
         Give them the following note and they will equip you with TNT.'
       type: MSG
       occasion: 1
       delay: 3
-    '12':
-      message: '&4[Tark] &3Give them the following note and they will equip you with
-        TNT.'
-      type: MSG
-      occasion: 1
-      delay: 5
-    '13':
+    '8':
       message: '&a[Objective] &bGive note to Notsuru in the nearby bakehouse. (14,
         65, -92)'
       type: MSG
       occasion: 1
       delay: 4
-    '14':
+    '9':
       message: '&a[Quest Item] &b1 x Note.'
       type: MSG
       occasion: 1
       delay: 5
-    '15':
+    '10':
       message: '&a[Quest Item] &bYou hand the note to Notsuru.'
       type: MSG
       occasion: 2
       delay: 1
-    '16':
+    '11':
       item: '339'
       inverted: true
       type: ITEM
       occasion: 2
       delay: 1
-    '17':
+    '12':
       message: '&4[Notsuru] &3Head down the stairs.'
       type: MSG
       occasion: 2
       delay: 2
-    '18':
-      message: '&a[Objective] &bHead down into the store room of this bakehouse
-        and right click the TNT. (19, 58, -86)'
+    '13':
+      message: '&a[Objective] &bHead down into the store room of this bakehouse and
+        right click the TNT. (19, 58, -86)'
       type: MSG
       occasion: 2
       delay: 3
-    '19':
+    '14':
       block: 0:0
       location: 19.44;58.00;-86.30;RPG;9.90;89.55;
       type: BLOCK
       occasion: 3
-    '20':
+    '15':
       block: '46:0'
       location: 19.44;58.00;-86.30;RPG;9.90;89.55;
       type: BLOCK
       occasion: 3
       delay: 5
-    '21':
+    '16':
       command: rpgitem bankrobnote give %p 1
       type: CMD
       occasion: 1
       delay: 4
-    '22':
+    '17':
       message: '&a[Quest Item] &b1 x TNT.'
       type: MSG
       occasion: 3
       delay: 1
-    '23':
+    '18':
       message: '&4[%p] &3I now have a way in, time to plant this explosive!'
       type: MSG
       occasion: 3
       delay: 2
-    '24':
+    '19':
       block: '46:0'
       location: 59.31;67.00;-83.49;RPG;-266.85;90.00;
       type: BLOCK
       occasion: 4
-    '25':
+    '20':
       message: '&4[%p] &3TNT is ready. Will detonate in 5 seconds.'
       type: MSG
       occasion: 4
       delay: 1
-    '26':
+    '21':
       message: '&4[TNT] &c5!'
       type: MSG
       occasion: 4
       delay: 2
-    '27':
+    '22':
       message: '&4[TNT] &c4!'
       type: MSG
       occasion: 4
       delay: 3
-    '28':
+    '23':
       message: '&4[TNT] &c3!'
       type: MSG
       occasion: 4
       delay: 4
-    '29':
+    '24':
       message: '&4[TNT] &c2!'
       type: MSG
       occasion: 4
       delay: 5
-    '30':
+    '25':
       message: '&4[TNT] &c1!'
       type: MSG
       occasion: 4
       delay: 6
-    '31':
+    '26':
       block: 0:0
       location: 59.32;67.00;-83.54;RPG;88.50;90.00;
       type: BLOCK
       occasion: 4
       delay: 6
-    '32':
+    '27':
       location: 59.32;67.00;-83.54;RPG;88.50;90.00;
       range: 1
       type: EXPLOSION
       occasion: 4
       delay: 6
-    '33':
+    '28':
       location: 58.33;67.00;-83.50;RPG;93.15;90.00;
       range: 1
       type: EXPLOSION
       occasion: 4
       delay: 6
-    '34':
+    '29':
       block: 0:0
       location: 58.45;68.00;-83.56;RPG;98.40;88.50;
       type: BLOCK
       occasion: 4
       delay: 6
-    '35':
+    '30':
       block: 0:0
       location: 58.45;67.00;-83.56;RPG;88.65;90.00;
       type: BLOCK
       occasion: 4
       delay: 6
-    '36':
+    '31':
       block: 0:0
       location: 58.38;67.00;-82.44;RPG;96.00;85.50;
       type: BLOCK
       occasion: 4
       delay: 6
-    '37':
+    '32':
       block: '98:2'
       location: 58.29;67.00;-83.48;RPG;88.50;90.00;
       type: BLOCK
       occasion: 5
-    '38':
+    '33':
       block: '98:0'
       location: 58.54;68.00;-83.46;RPG;94.20;90.00;
       type: BLOCK
       occasion: 5
-    '39':
+    '34':
       block: '20:0'
       location: 58.39;67.00;-82.53;RPG;97.50;86.70;
       type: BLOCK
       occasion: 5
-    '40':
+    '35':
       objective: 4
       type: OBJCOM
       occasion: 5
-    '41':
+    '36':
       command: effect %p 7 1 1
       type: CMD
       occasion: 5
       delay: 2
-    '42':
+    '37':
       command: effect %p 6 1 2
       type: CMD
       occasion: 5
       delay: 1
-    '43':
+    '38':
       command: effect %p 15 12 1
       type: CMD
       occasion: 5
       delay: 3
-    '44':
+    '39':
       command: effect %p 16 12 1
       type: CMD
       occasion: 5
       delay: 3
-    '45':
+    '40':
       message: '&4[Guard] &3Clumsy thief! Fell right into the trap...'
       type: MSG
       occasion: 5
       delay: 4
-    '46':
+    '41':
       objective: 5
       runevents: true
       type: OBJCOM
       occasion: 6
-    '47':
+    '42':
       location: 19.57;62.00;-1.05;RPG;270.15;0.60;
       type: TELE
       occasion: 5
       delay: 6
-    '48':
+    '43':
       message: '&e[Rewards] &7Place in Royal Dungeons - 2 Quest Points.'
       type: MSG
       occasion: 5
       delay: 8
-    '49':
+    '44':
       message: '&a[Objective] &bPlace the TNT on top of the dirt mound located. 59,67,-83'
       type: MSG
       occasion: 3
       delay: 3
-    '50':
+    '45':
       message: '&a[Objective] &bQuickly check the bank for possible loot.'
       type: MSG
       occasion: 4
       delay: 7
+'16':
+  name: Prison Break
+  description: '&a[Quest] &bYou have two options; either rot in the less than luxurious
+    prison or &bcomplete some further work for the Black Hand Guild. &cDifficulty:
+    &8Coal'
+  flags: ACTIVE;NODESC;
+  objectives:
+    '0':
+      item: '338'
+      amount: 7
+      type: COLLECT
+      description: '&a[Objective Option #1] &bGather %r more Sugar Cane for the guild.
+        (11, 53, 14)'
+    '1':
+      index: 33
+      cancel: true
+      type: NPC
+      description: '&a[Objective] &bReturn to Aneirra and hand her the Sugar Cane.'
+      prerequisites: '0'
+    '2':
+      block: '23'
+      location: 14.37;51.00;-12.39;RPG;84.15;21.90;
+      range: 4
+      type: ACTION
+      description: '&a[Objective Option #2] &b‘Generously’ give $750 by clicking the
+        dispenser.'
+    '3':
+      block: '23'
+      location: 14.15;51.00;-12.55;RPG;103.05;90.00;
+      range: 4
+      type: ACTION
+      description: '&a[Objective] &bConfirm by clicking again that you wish to donate
+        $750.'
+      prerequisites: '2'
+    '4':
+      amount: 750.0
+      type: MONEY
+      description: '&a[Objective] &bYou must have $750.'
+      prerequisites: '3'
+  conditions:
+    '0':
+      quest: Bank Robbery
+      type: QUEST
+    '1':
+      quest: Prison Break
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Aneirra] &3What is up! Looking for a way out %p?'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '1':
+      message: '&4[Aneirra] &3The Black Hand Guild has lost rep, but some coin might
+        help.'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '2':
+      message: '&4[Aneirra] &3Your badonkadonks if you think we''re helping after
+        that heist.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '3':
+      message: '&a[Objective Option #1] &bGather some Sugar Cane for the guild. (11,
+        53, 14)'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '4':
+      message: '&a[Objective Option #2] &b‘Generously’ give $750 by clicking the donate
+        box.'
+      type: MSG
+      occasion: -1
+      delay: 5
+    '5':
+      message: '&4[%p] &3Ok, that is seven Sugar Cane. Time to return it to Aneirra.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '6':
+      message: '&a[Objective] &bReturn to Aneirra and hand her the Sugar Cane.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '7':
+      message: '&4[Aneirra] &3Sweet, can sell these for gold. Now exit through ‘Sewer
+        Exit’.'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '8':
+      message: '&4[Aneirra] &3Just don’t come back anytime soon, and make it RAIN!'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '9':
+      message: '&a[Quest Item] &bRemoved 7 Sugar Cane.'
+      type: MSG
+      occasion: 1
+      delay: 3
+    '10':
+      message: '&e[Rewards] &732 x Clay - 5 Gold Ore - Sewer Exit Perm - 1 Quest Point.'
+      type: MSG
+      occasion: 1
+      delay: 4
+    '11':
+      item: '82:0'
+      amount: 32
+      type: ITEM
+      occasion: 1
+      delay: 4
+    '12':
+      item: '14:0'
+      amount: 5
+      type: ITEM
+      occasion: 1
+      delay: 4
+    '13':
+      amount: 1
+      type: POINT
+      occasion: 1
+      delay: 4
+    '14':
+      command: pex user %p add multiverse.portal.access.PrisonBreak
+      type: CMD
+      occasion: 1
+      delay: 4
+    '15':
+      item: '338'
+      amount: 7
+      inverted: true
+      type: ITEM
+      occasion: 1
+      delay: 3
+    '16':
+      message: '&a[Objective] &bConfirm by clicking again that you wish to donate
+        $750.'
+      type: MSG
+      occasion: 2
+      delay: 1
+    '17':
+      message: '&a[Money] &b$750 withdrawn.'
+      type: MSG
+      occasion: 4
+      delay: 1
+    '18':
+      amount: -750.0
+      type: MONEY
+      occasion: 4
+      delay: 1
+    '19':
+      message: '&4[Aneirra] &3Oh daaaaayum, that’s some nice money.'
+      type: MSG
+      occasion: 4
+      delay: 2
+    '20':
+      message: '&4[Aneirra] &3Now exit through ‘Sewer Exit’. Just don’t be back anytime
+        soon.'
+      type: MSG
+      occasion: 4
+      delay: 3
+    '21':
+      message: '&e[Rewards] &732 x Clay - 5 Lapis Ore - Sewer Exit Perm - 1 Quest
+        Point.'
+      type: MSG
+      occasion: 4
+      delay: 4
+    '22':
+      item: '82:0'
+      amount: 32
+      type: ITEM
+      occasion: 4
+      delay: 4
+    '23':
+      item: '21:0'
+      amount: 5
+      type: ITEM
+      occasion: 4
+      delay: 4
+    '24':
+      amount: 1
+      type: POINT
+      occasion: 4
+      delay: 4
+    '25':
+      command: pex user %p add multiverse.portal.access.PrisonBreak
+      type: CMD
+      occasion: 4
+      delay: 4
+    '26':
+      objective: 0
+      type: OBJCOM
+      occasion: 4
+      delay: 1
+    '27':
+      objective: 1
+      type: OBJCOM
+      occasion: 4
+      delay: 1
+    '28':
+      objective: 2
+      type: OBJCOM
+      occasion: 1
+      delay: 1
+    '29':
+      objective: 3
+      type: OBJCOM
+      occasion: 1
+      delay: 1
+    '30':
+      objective: 4
+      type: OBJCOM
+      occasion: 1
+      delay: 1
+    '31':
+      message: '&a[Quest] &cYou may now leave this area with the Sewer Exit.'
+      type: MSG
+      occasion: 4
+      delay: 5
+    '32':
+      message: '&a[Quest] &cYou may now leave this area with the Sewer Exit.'
+      type: MSG
+      occasion: 1
+      delay: 5
+    '33':
+      block: '83:0'
+      location: 17.30;54.00;15.52;RPG;105.15;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '34':
+      block: '83:0'
+      location: 17.29;54.00;14.46;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '35':
+      block: '83:0'
+      location: 16.44;54.00;14.47;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '36':
+      block: '83:0'
+      location: 16.29;54.00;15.47;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '37':
+      block: '83:0'
+      location: 15.23;54.00;15.49;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '38':
+      block: '83:0'
+      location: 15.21;54.00;14.64;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '39':
+      block: '83:0'
+      location: 14.36;54.00;14.65;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '40':
+      block: '83:0'
+      location: 14.37;54.00;15.51;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '41':
+      block: '83:0'
+      location: 13.30;54.00;15.53;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '42':
+      block: '83:0'
+      location: 13.28;54.00;14.46;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '43':
+      block: '83:0'
+      location: 12.21;54.00;14.48;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '44':
+      block: '83:0'
+      location: 12.22;54.00;15.33;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '45':
+      block: '83:0'
+      location: 11.19;54.00;15.35;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+    '46':
+      block: '83:0'
+      location: 11.30;54.00;14.31;RPG;87.75;90.00;
+      type: BLOCK
+      occasion: 1
+      delay: 5
+'17':
+  name: Love_Story
