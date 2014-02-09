@@ -80,15 +80,27 @@ items:
       - "&r&c - &72 &mIntellect"
       - "&r&8========================"
       - "&r&7&oAn average sword."
+  iron_sword-2:
+    spawn:
+      chance: 100
+      stack: '1-1'
+    properties:
+      data: 'random'
+      name: "&7[Trash&7] &6Rusted Sword"
+      lore:
+      - "&r&7   Sword - Trash - Iron"
+      - "&r&8====================="
+      - "&r&a + &76 Damage"
+      - "&r&a + &72 &mStrength"
+      - "&r&c - &73 &mVitality"
+      - "&r&8====================="
+      - "&r&7&oBeen left out in the rain."
   gold_sword:
     spawn:
       chance: 100
       stack: '1-1'
     effects:
-      random:
-        chance: 100
-        lvl: '1-1'
-      random:
+      damage_all:
         chance: 100
         lvl: '1-1'
       random:
@@ -96,14 +108,12 @@ items:
         lvl: '1-1'
     properties:
       data: 'random'
-      name: "&7[&aUncommon&7] &5Rune Base Sword"
+      name: "&7[&aUncommon&7] &5Rune Sword"
       lore:
-      - "&r&7   Sword - Uncommon - Gold"
+      - "&r&7  Sword - Uncommon - Gold"
       - "&r&8========================"
-      - "&r&a + &76 Damage"
-      - "&r&9 > &7Enchant: Random"
-      - "&r&9 > &7Enchant: Random"
+      - "&r&a + &75.25 Damage"
       - "&r&9 > &7Enchant: Random"
       - "&r&8========================"
       - "&r&7&oRare rune metals have been"
-      - "&r&7&oimbued into this metal."
+      - "&r&7&oimbued into this sword."
