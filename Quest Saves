@@ -2,7 +2,7 @@
   name: New Beginning
   description: '§a[Quest] §bStart you journey, as you leave this place of imprisonment
     with a §3quest. §cDifficulty: §8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '77'
@@ -123,7 +123,7 @@
   name: Decisions
   description: '§a[Quest] §bSpeak with each Caste leader, and learn of their virtues.
     §bThen make the big choice. §cDifficulty: §8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 7
@@ -320,7 +320,7 @@
   name: Hyperion Initiation
   description: '§a[Quest] §bBegin your journey with the §1Hyperion Order§b. §cDifficulty:
     §8Coal'
-  flags: ACTIVE;NODESC;DEATHCANCEL;
+  flags: NODESC;ACTIVE;DEATHCANCEL;
   objectives:
     '0':
       index: 141
@@ -486,7 +486,7 @@
   name: Smith the Blacksmith
   description: '&a[Quest] &bTest a new refined alloy sword and observe the affect
     it has on test dummies. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '35'
@@ -573,7 +573,7 @@
   name: Shadow Training
   description: '&a[Quest] &bTake your first step towards the &2Shadow Hunters&b.&c
     Difficulty: &7Coal'
-  flags: ACTIVE;NODESC;DEATHCANCEL;
+  flags: NODESC;ACTIVE;DEATHCANCEL;
   objectives:
     '0':
       region: SPHERE|-309.16;90.00;-1162.54;RPG;0.00;0.00;|1.0
@@ -754,7 +754,7 @@
   name: Scarlet Beginnings
   description: '&a[Quest] &bJoin the ranks of the &5Scarlet Coven&b. &cDifficulty:
     &8Coal'
-  flags: ACTIVE;NODESC;DEATHCANCEL;
+  flags: NODESC;ACTIVE;DEATHCANCEL;
   objectives:
     '0':
       hand: '259'
@@ -977,7 +977,7 @@
   name: The Ropes
   description: '&a[Quest] &bCourier some packages for a short while, and gain some
     contacts at the same time. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 126
@@ -1213,7 +1213,7 @@
   name: A Monster Time
   description: '&a[Quest] &bGolog has started up a resort, but he needs a hand first.
     By the way, he is also a zombie. &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '38'
@@ -1496,7 +1496,7 @@
   description: '&a[Quest] &BThe classic story of love; Insers and Aheri separated
     but their hearts still long to be together. Maybe you can help? &cDifficulty:
     &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|59.00;72.00;-195.42;RPG;0.00;0.00;|3.0
@@ -1634,7 +1634,7 @@
     to me, Chortana in the guards quarters under the Castle. &cDifficulty: &3Diamond'
   worlds:
   - rpg
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 46
@@ -2155,7 +2155,7 @@
   name: Spider Infestation
   description: '&a[Quest] &bComplete some pest control in Zuriki''s mine. &9Daily
     Quest, &cDifficulty: &8Coal'
-  flags: ACTIVE;REPEATABLE;HIDDENOBJS;NODESC;
+  flags: NODESC;ACTIVE;HIDDENOBJS;REPEATABLE;
   objectives:
     '0':
       amount: 6
@@ -2218,7 +2218,7 @@
   name: Run `n` Seek
   description: '&a[Quest] &bFlambe here has a brother you must find, and doing so
     might just &bprove the honour of young adventurers. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 55
@@ -2357,7 +2357,7 @@
   description: '&a[Quest] &bThe city sewers are obviously of importance, but keeping
     them clear of critters seems less important to a fighter such as yourself. But
     a job is being offered and coin is alluring. &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 72
@@ -2660,7 +2660,7 @@
   name: Zombie Population
   description: '&a[Quest] &bA culling of the Zombie population is called for, this
     kingdom must be kept safe. &9Daily Quest. &cDifficulty: &8Coal'
-  flags: ACTIVE;REPEATABLE;NODESC;
+  flags: NODESC;ACTIVE;REPEATABLE;
   objectives:
     '0':
       amount: 15
@@ -2771,7 +2771,7 @@
   description: '&a[Quest] &bThe bank of Woodbry contains a substantial amount of wealth;
     this is a town of success and good harvests. Perhaps it is time to burrow some
     of this wealth? &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|52.32;66.00;-80.56;RPG;0.00;0.00;|8.0
@@ -3074,7 +3074,7 @@
   description: '&a[Quest] &bYou have two options; either rot in the less than luxurious
     prison or &bcomplete some further work for the Black Hand Guild. &cDifficulty:
     &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       item: '338'
@@ -3380,5 +3380,146 @@
       type: BLOCK
       occasion: 1
       delay: 5
-'17':
-  name: Love_Story
+'18':
+  name: Quest Voucher`s
+  description: '&a[Quest] &bExchange a looted Quest Voucher for one Quest Point. &eCan
+    be completed once every hour.'
+  flags: HIDDEN;NODESC;ACTIVE;REPEATABLE;
+  objectives:
+    '0':
+      item: '421'
+      type: ITEM
+      description: '&a[Objective] &bConfirm exchange by right clicking Xervan.'
+  conditions:
+    '0':
+      quest: Quest Voucher`s
+      time: 3600
+      inverted: true
+      type: QUEST
+    '1':
+      item: '421'
+      amount: 1
+      type: ITEM
+  events:
+    '0':
+      message: '&4[Xervan] &3The voucher is in order, I have marked the point on the
+        record.'
+      type: MSG
+      occasion: -3
+      delay: 1
+    '1':
+      message: '&a[Quest Item] &b1 x Quest Point Voucher removed.'
+      type: MSG
+      occasion: -3
+      delay: 2
+    '2':
+      message: '&e[Rewards] &71 Quest Point.'
+      type: MSG
+      occasion: -3
+      delay: 3
+    '3':
+      amount: 1
+      type: POINT
+      occasion: -3
+      delay: 3
+    '4':
+      item: '421'
+      inverted: true
+      type: ITEM
+      occasion: -3
+    '5':
+      message: '&a[Objective] &bConfirm exchange by right clicking Xervan.'
+      type: MSG
+      occasion: -1
+      delay: 1
+'19':
+  name: Rank - Dusk Spy
+  flags: NODESC;ACTIVE;
+  objectives:
+    '0':
+      region: SPHERE|-338.14;74.00;-1173.43;RPG;330.20;11.40;|20.0
+      type: REGION
+      description: '&a[Objective] &b15 Quest Points & $20,000'
+  conditions:
+    '0':
+      quest: Rank - Dusk Spy
+      inverted: true
+      type: QUEST
+    '1':
+      quest: Shadow Training
+      type: QUEST
+    '2':
+      amount: 15
+      type: POINT
+    '3':
+      amount: 20000.0
+      type: MONEY
+  events:
+    '0':
+      message: '&4[Hunta] &3Ranger, the Shadow Hunter’s have been watching your progress.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '1':
+      message: '&4[Hunta] &3We acknowledge your training and award you rank of &8Dusk
+        Spy&3.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '2':
+      message: '&4[Hunta] &3Now from me; take these and congratulations!'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '3':
+      amount: -20000.0
+      type: MONEY
+      occasion: 0
+      delay: 4
+    '4':
+      message: '&a[Quest] &b$20,000 removed.'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '5':
+      message: '&e[Rewards] &7Shadow Bow - 10 Golden Apples - Shadow Rank &8Dusk Spy&7.'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '6':
+      item: '322:0'
+      amount: 10
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '7':
+      item: '261:0'
+      enchants: 49:1,48:3
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '8':
+      location: 32.50;77.52;-10.51;RPG;179.70;4.80;
+      type: TELE
+      occasion: 0
+      delay: 7
+    '9':
+      command: pex user %p group add Shadow1
+      type: CMD
+      occasion: 0
+      delay: 7
+    '10':
+      command: pex user %p group remove Shadow
+      type: CMD
+      occasion: 0
+      delay: 7
+    '11':
+      command: broadcast %p &3is now a &aDusk Spy &3of the &aShadow Hunters&3.
+      type: CMD
+      occasion: 0
+      delay: 7
+    '12':
+      command: class set %p Shadow1
+      type: CMD
+      occasion: 0
+      delay: 7
