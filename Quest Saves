@@ -3523,3 +3523,183 @@
       type: CMD
       occasion: 0
       delay: 7
+'20':
+  name: Rank - Neophyte
+  flags: NODESC;ACTIVE;
+  objectives:
+    '0':
+      region: SPHERE|-323.14;61.00;-1240.43;RPG;330.20;11.40;|50.0
+      type: REGION
+      description: '&a[Objective] &b15 Quest Points & $20,000'
+  conditions:
+    '0':
+      quest: Rank - Neophyte
+      inverted: true
+      type: QUEST
+    '1':
+      quest: Hyperion Initiation
+      type: QUEST
+    '2':
+      amount: 15
+      type: POINT
+    '3':
+      amount: 20000.0
+      type: MONEY
+  events:
+    '0':
+      message: '&4[IronValley] &3Trinee, the Hyperion Order has been watching your progress.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '1':
+      message: '&4[IronValley] &3We acknowledge your training and award you the rank of &8Neophyte&3.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '2':
+      message: '&4[IronValley] &3Now from me; take these and congratulations!'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '3':
+      amount: -20000.0
+      type: MONEY
+      occasion: 0
+      delay: 4
+    '4':
+      message: '&a[Quest] &b$20,000 removed.'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '5':
+      message: '&e[Rewards] &7Diamond Leggings - 10 Golden Apples - Hyperion Rank &8Neophyte&7.'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '6':
+      item: '322:0'
+      amount: 10
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '7':
+      item: '312:0'
+      enchants: 0:2
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '8':
+      location: 32.50;77.52;-10.51;RPG;179.70;4.80;
+      type: TELE
+      occasion: 0
+      delay: 7
+    '9':
+      command: pex user %p group add Hyperion1
+      type: CMD
+      occasion: 0
+      delay: 7
+    '10':
+      command: pex user %p group remove Hyperion
+      type: CMD
+      occasion: 0
+      delay: 7
+    '11':
+      command: broadcast %p &3is now a &9Neophyte &3in the &9Hyperion Order&3.
+      type: CMD
+      occasion: 0
+      delay: 7
+    '12':
+      command: class set %p Hyperion1
+      type: CMD
+      occasion: 0
+      delay: 7
+'21':
+  name: Rank - Echo
+  flags: NODESC;ACTIVE;
+  objectives:
+    '0':
+      region: SPHERE|-386.14;76.00;-1102.43;RPG;330.20;11.40;|50.0
+      type: REGION
+      description: '&a[Objective] &b15 Quest Points & $20,000'
+  conditions:
+    '0':
+      quest: Rank - Echo
+      inverted: true
+      type: QUEST
+    '1':
+      quest: Scarlet Beginnings
+      type: QUEST
+    '2':
+      amount: 15
+      type: POINT
+    '3':
+      amount: 20000.0
+      type: MONEY
+  events:
+    '0':
+      message: '&4[Zorgoth] &3Duellist, the Scarlet Coven has been watching your progress.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '1':
+      message: '&4[Zorgoth] &3We acknowledge your training and award you the rank of &8Echo&3.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '2':
+      message: '&4[Zorgoth] &3Now from me; take these and congratulations!'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '3':
+      amount: -20000.0
+      type: MONEY
+      occasion: 0
+      delay: 4
+    '4':
+      message: '&a[Quest] &b$20,000 removed.'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '5':
+      message: '&e[Rewards] &75 x Potions - 10 Golden Apples - Scarlet Rank &8Echo&7.'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '6':
+      item: '322:0'
+      amount: 10
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '7':
+      item: '373:16420'
+      amount: 5
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '8':
+      location: 32.50;77.52;-10.51;RPG;179.70;4.80;
+      type: TELE
+      occasion: 0
+      delay: 7
+    '9':
+      command: pex user %p group add Scarlet1
+      type: CMD
+      occasion: 0
+      delay: 7
+    '10':
+      command: pex user %p group remove Scarlet
+      type: CMD
+      occasion: 0
+      delay: 7
+    '11':
+      command: broadcast %p &3is now the rank of&5Echo &3 in the &5Scarlet Coven&3.
+      type: CMD
+      occasion: 0
+      delay: 7
+    '12':
+      command: class set %p Scarlet1
+      type: CMD
+      occasion: 0
+      delay: 7
