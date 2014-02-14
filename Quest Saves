@@ -3707,3 +3707,276 @@
       type: CMD
       occasion: 0
       delay: 7
+'22':
+  name: Rank - Bane Hunter
+  flags: NODESC;ACTIVE;
+  objectives:
+    '0':
+      region: SPHERE|-324.14;74.00;-1189.43;RPG;0.00;0.00;|50.0
+      type: REGION
+      description: '&a[Objective] &b40 Quest Points & $50,000'
+  conditions:
+    '0':
+      quest: Rank - Bane Hunter
+      inverted: true
+      type: QUEST
+    '1':
+      quest: Rank - Echo
+      type: QUEST
+    '2':
+      amount: 40
+      type: POINT
+    '3':
+      amount: 50000.0
+      type: MONEY
+  events:
+    '0':
+      message: '&4[Alysius] &3Dusk Spy, the Shadow Hunters have continued to watch your progress.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '1':
+      message: '&4[Alysius] &3We acknowledge your training and award you the rank
+        of &aBane Hunter&3.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '2':
+      message: '&4[Alysius] &3Now from me; take these and continue to fight for the Shadow Hunters!'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '3':
+      amount: -50000.0
+      type: MONEY
+      occasion: 0
+      delay: 4
+    '4':
+      message: '&a[Quest] &b$50,000 removed.'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '5':
+      message: '&e[Rewards] &716 x Ender Pearl - 32 Iron Ingots - Shadow Rank &a&aBane Hunter.'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '6':
+      item: '265:0'
+      amount: 32
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '7':
+      item: '368:0'
+      amount: 16
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '8':
+      location: 32.50;77.52;-10.51;RPG;179.70;4.80;
+      type: TELE
+      occasion: 0
+      delay: 7
+    '9':
+      command: pex user %p group add Shadow2
+      type: CMD
+      occasion: 0
+      delay: 7
+    '10':
+      command: pex user %p group remove Shadow1
+      type: CMD
+      occasion: 0
+      delay: 7
+    '11':
+      command: broadcast %p &3is now the rank of&a Bane Hunter&3 in the &aShadow Hunters&3.
+      type: CMD
+      occasion: 0
+      delay: 7
+    '12':
+      command: class set %p Shadow2
+      type: CMD
+      occasion: 0
+      delay: 7
+'23':
+  name: Rank - Disciple
+  flags: NODESC;ACTIVE;
+  objectives:
+    '0':
+      region: SPHERE|-300.14;61.00;-1250;RPG;0.00;0.00;|50.0
+      type: REGION
+      description: '&a[Objective] &b40 Quest Points & $50,000'
+  conditions:
+    '0':
+      quest: Rank - Disciple
+      inverted: true
+      type: QUEST
+    '1':
+      quest: Rank - Neophyte
+      type: QUEST
+    '2':
+      amount: 40
+      type: POINT
+    '3':
+      amount: 50000.0
+      type: MONEY
+  events:
+    '0':
+      message: '&4[Neofelis] &3Neophyte, the Hyperion Order has continued to watch your progress.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '1':
+      message: '&4[Neofelis] &3We acknowledge your training and award you the rank
+        of &aDisciple&3.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '2':
+      message: '&4[Neofelis] &3Now from me; take these and continue to fight for the Hyperion Order!'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '3':
+      amount: -50000.0
+      type: MONEY
+      occasion: 0
+      delay: 4
+    '4':
+      message: '&a[Quest] &b$50,000 removed.'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '5':
+      message: '&e[Rewards] &716 x Ender Pearl - 32 Iron Ingots - Hyperion Rank &a&aDisciple.'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '6':
+      item: '265:0'
+      amount: 32
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '7':
+      item: '368:0'
+      amount: 16
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '8':
+      location: 32.50;77.52;-10.51;RPG;179.70;4.80;
+      type: TELE
+      occasion: 0
+      delay: 7
+    '9':
+      command: pex user %p group add Hyperion2
+      type: CMD
+      occasion: 0
+      delay: 7
+    '10':
+      command: pex user %p group remove Hyperion1
+      type: CMD
+      occasion: 0
+      delay: 7
+    '11':
+      command: broadcast %p &3is now the rank of&9 Disciple&3 in the &9Hyperion Order&3.
+      type: CMD
+      occasion: 0
+      delay: 7
+    '12':
+      command: class set %p Hyperion2
+      type: CMD
+      occasion: 0
+      delay: 7
+'24':
+  name: Rank - Reaver
+  flags: NODESC;ACTIVE;
+  objectives:
+    '0':
+      region: SPHERE|-327.14;105.00;-1116.43;RPG;0.00;0.00;|50.0
+      type: REGION
+      description: '&a[Objective] &b40 Quest Points & $50,000'
+  conditions:
+    '0':
+      quest: Rank - Echo
+      inverted: true
+      type: QUEST
+    '1':
+      quest: Rank - Reaver
+      type: QUEST
+    '2':
+      amount: 40
+      type: POINT
+    '3':
+      amount: 50000.0
+      type: MONEY
+  events:
+    '0':
+      message: '&4[Dread] &3Echo, the Scarlet Coven has continued to watch your progress.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '1':
+      message: '&4[Dread] &3We acknowledge your training and award you the rank
+        of &aReaver&3.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '2':
+      message: '&4[Dread] &3Now from me; take these and continue to fight for the Scarlet Coven!'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '3':
+      amount: -50000.0
+      type: MONEY
+      occasion: 0
+      delay: 4
+    '4':
+      message: '&a[Quest] &b$50,000 removed.'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '5':
+      message: '&e[Rewards] &716 x Ender Pearl - 32 Iron Ingots - Scarlet Rank &a&aReaver.'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '6':
+      item: '265:0'
+      amount: 32
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '7':
+      item: '368:0'
+      amount: 16
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '8':
+      location: 32.50;77.52;-10.51;RPG;179.70;4.80;
+      type: TELE
+      occasion: 0
+      delay: 7
+    '9':
+      command: pex user %p group add Scarlet2
+      type: CMD
+      occasion: 0
+      delay: 7
+    '10':
+      command: pex user %p group remove Scarlet1
+      type: CMD
+      occasion: 0
+      delay: 7
+    '11':
+      command: broadcast %p &3is now the rank of&5 Reaver&3 in the &5Scarlet Coven&3.
+      type: CMD
+      occasion: 0
+      delay: 7
+    '12':
+      command: class set %p Scarlet2
+      type: CMD
+      occasion: 0
+      delay: 7
