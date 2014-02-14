@@ -3721,7 +3721,7 @@
       inverted: true
       type: QUEST
     '1':
-      quest: Rank - Echo
+      quest: Rank - Dusk Spy
       type: QUEST
     '2':
       amount: 40
@@ -3899,11 +3899,11 @@
       description: '&a[Objective] &b40 Quest Points & $50,000'
   conditions:
     '0':
-      quest: Rank - Echo
+      quest: Rank - Reaver
       inverted: true
       type: QUEST
     '1':
-      quest: Rank - Reaver
+      quest: Rank - Echo
       type: QUEST
     '2':
       amount: 40
@@ -3977,6 +3977,276 @@
       delay: 7
     '12':
       command: class set %p Scarlet2
+      type: CMD
+      occasion: 0
+      delay: 7
+'25':
+  name: Rank - Temporal
+  flags: NODESC;ACTIVE;
+  objectives:
+    '0':
+      region: SPHERE|-325.14;64.00;-1177.43;RPG;0.00;0.00;|50.0
+      type: REGION
+      description: '&a[Objective] &b60 Quest Points & $90,000'
+  conditions:
+    '0':
+      quest: Rank - Temporal
+      inverted: true
+      type: QUEST
+    '1':
+      quest: Rank - Bane Hunter
+      type: QUEST
+    '2':
+      amount: 60
+      type: POINT
+    '3':
+      amount: 90000.0
+      type: MONEY
+  events:
+    '0':
+      message: '&4[Kucic] &3Bane Hunter, the Shadow Hunter leadership have taken an interest in your training.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '1':
+      message: '&4[Kucic] &3They acknowledge your hardwork and award you the rank
+        of &2Temporal&3.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '2':
+      message: '&4[Kucic] &3As a personal gift from the leadership, take these items.'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '3':
+      amount: -90000.0
+      type: MONEY
+      occasion: 0
+      delay: 4
+    '4':
+      message: '&a[Quest] &b$90,000 removed.'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '5':
+      message: '&e[Rewards] &71 x Nether Star - 1 x Special Item - Shadow Rank &2Temporal.'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '6':
+      item: '399:0'
+      amount: 1
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '7':
+      command: rpgitem ShizDirt give %p 1
+      type: CMD
+      occasion: 0
+      delay: 5
+    '8':
+      location: 32.50;77.52;-10.51;RPG;179.70;4.80;
+      type: TELE
+      occasion: 0
+      delay: 7
+    '9':
+      command: pex user %p group add Shadow3
+      type: CMD
+      occasion: 0
+      delay: 7
+    '10':
+      command: pex user %p group remove Shado2
+      type: CMD
+      occasion: 0
+      delay: 7
+    '11':
+      command: broadcast %p &3is now the rank of&a Temporal&3 in the &aShadow Hunters&3.
+      type: CMD
+      occasion: 0
+      delay: 7
+    '12':
+      command: class set %p Shadow3
+      type: CMD
+      occasion: 0
+      delay: 7
+'26':
+  name: Rank - Deacon
+  flags: NODESC;ACTIVE;
+  objectives:
+    '0':
+      region: SPHERE|-310.14;61.00;-1233.43;RPG;0.00;0.00;|50.0
+      type: REGION
+      description: '&a[Objective] &b60 Quest Points & $90,000'
+  conditions:
+    '0':
+      quest: Rank - Deacon
+      inverted: true
+      type: QUEST
+    '1':
+      quest: Rank - Disciple
+      type: QUEST
+    '2':
+      amount: 60
+      type: POINT
+    '3':
+      amount: 90000.0
+      type: MONEY
+  events:
+    '0':
+      message: '&4[RetroGeir] &3Disciple, the Hyperion Order leadership have taken an interest in your training.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '1':
+      message: '&4[RetroGeir] &3They acknowledge your hardwork and award you the rank
+        of &2Deacon&3.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '2':
+      message: '&4[RetroGeir] &3As a personal gift from the leadership, take these items.'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '3':
+      amount: -90000.0
+      type: MONEY
+      occasion: 0
+      delay: 4
+    '4':
+      message: '&a[Quest] &b$90,000 removed.'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '5':
+      message: '&e[Rewards] &71 x Nether Star - 1 x Special Item - Hyperion Rank &2Deacon.'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '6':
+      item: '399:0'
+      amount: 1
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '7':
+      command: rpgitem ShizDirt give %p 1
+      type: CMD
+      occasion: 0
+      delay: 5
+    '8':
+      location: 32.50;77.52;-10.51;RPG;179.70;4.80;
+      type: TELE
+      occasion: 0
+      delay: 7
+    '9':
+      command: pex user %p group add Hyperion3
+      type: CMD
+      occasion: 0
+      delay: 7
+    '10':
+      command: pex user %p group remove Hyperion2
+      type: CMD
+      occasion: 0
+      delay: 7
+    '11':
+      command: broadcast %p &3is now the rank of&9 Deacon&3 in the &9Hyperion Order&3.
+      type: CMD
+      occasion: 0
+      delay: 7
+    '12':
+      command: class set %p Hyperion3
+      type: CMD
+      occasion: 0
+      delay: 7
+'27':
+  name: Rank - Summoner
+  flags: NODESC;ACTIVE;
+  objectives:
+    '0':
+      region: SPHERE|-399.14;105.00;-1024.43;RPG;0.00;0.00;|50.0
+      type: REGION
+      description: '&a[Objective] &b60 Quest Points & $90,000'
+  conditions:
+    '0':
+      quest: Rank - Summoner
+      inverted: true
+      type: QUEST
+    '1':
+      quest: Rank - Reaver
+      type: QUEST
+    '2':
+      amount: 60
+      type: POINT
+    '3':
+      amount: 90000.0
+      type: MONEY
+  events:
+    '0':
+      message: '&4[Tnt] &3Reaver, the Scarlet Coven leadership have taken an interest in your training.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '1':
+      message: '&4[Tnt] &3They acknowledge your hardwork and award you the rank
+        of &2Summoner&3.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '2':
+      message: '&4[Tnt] &3As a personal gift from the leadership, take these items.'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '3':
+      amount: -90000.0
+      type: MONEY
+      occasion: 0
+      delay: 4
+    '4':
+      message: '&a[Quest] &b$90,000 removed.'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '5':
+      message: '&e[Rewards] &71 x Nether Star - 1 x Special Item - Scarlet Rank &2Summoner.'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '6':
+      item: '399:0'
+      amount: 1
+      type: ITEM
+      occasion: 0
+      delay: 5
+    '7':
+      command: rpgitem ShizDirt give %p 1
+      type: CMD
+      occasion: 0
+      delay: 5
+    '8':
+      location: 32.50;77.52;-10.51;RPG;179.70;4.80;
+      type: TELE
+      occasion: 0
+      delay: 7
+    '9':
+      command: pex user %p group add Scarlet3
+      type: CMD
+      occasion: 0
+      delay: 7
+    '10':
+      command: pex user %p group remove Scarlet2
+      type: CMD
+      occasion: 0
+      delay: 7
+    '11':
+      command: broadcast %p &3is now the rank of&5 Summoner&3 in the &5Scarlet Coven&3.
+      type: CMD
+      occasion: 0
+      delay: 7
+    '12':
+      command: class set %p Scarlet3
       type: CMD
       occasion: 0
       delay: 7
