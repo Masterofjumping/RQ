@@ -44,9 +44,39 @@ holders:
   '15':
     quests: '15'
     name: Tark
+  '17':
+    quests: '18'
+    name: Xervan
   '16':
     quests: '16'
     name: Aneirra
+  '19':
+    quests: '20'
+    name: IronValley
+  '18':
+    quests: '19'
+    name: RU_Hunta
+  '21':
+    quests: '24'
+    name: Dread
+  '20':
+    quests: '21'
+    name: Zorgoth
+  '23':
+    quests: '23'
+    name: Neofelis
+  '22':
+    quests: '22'
+    name: Alysius
+  '25':
+    quests: '25'
+    name: Kucic
+  '24':
+    quests: '27'
+    name: Tnt
+  '26':
+    quests: '26'
+    name: RetroGeir
 signs:
   '0':
     location: 39.00;66.00;-106.00;RPG;0.00;0.00;
