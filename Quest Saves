@@ -3459,7 +3459,7 @@
     '0':
       region: SPHERE|-338.14;74.00;-1173.43;RPG;0.00;0.00;|20.0
       type: REGION
-      description: '&a[Objective] &b15 Quest Points & $20,000'
+      description: '&a[Objective] &b&m15&r&b8 Quest Points & &m$20,000&r&b $10,000.'
   conditions:
     '0':
       quest: Rank - Dusk Spy
@@ -3469,10 +3469,10 @@
       quest: Shadow Training
       type: QUEST
     '2':
-      amount: 15
+      amount: 8
       type: POINT
     '3':
-      amount: 20000.0
+      amount: 10000.0
       type: MONEY
   events:
     '0':
@@ -3492,12 +3492,12 @@
       occasion: 0
       delay: 3
     '3':
-      amount: -20000.0
+      amount: -10000.0
       type: MONEY
       occasion: 0
       delay: 4
     '4':
-      message: '&a[Quest] &b$20,000 removed.'
+      message: '&a[Quest] &b$10,000 removed.'
       type: MSG
       occasion: 0
       delay: 4
@@ -3550,7 +3550,7 @@
     '0':
       region: SPHERE|-323.14;61.00;-1240.43;RPG;0.00;0.00;|50.0
       type: REGION
-      description: '&a[Objective] &b15 Quest Points & $20,000'
+      description: '&a[Objective] &b&m15&r&b8 Quest Points & &m$20,000&r&b $10,000.'
   conditions:
     '0':
       quest: Rank - Neophyte
@@ -3560,10 +3560,10 @@
       quest: Hyperion Initiation
       type: QUEST
     '2':
-      amount: 15
+      amount: 8
       type: POINT
     '3':
-      amount: 20000.0
+      amount: 10000.0
       type: MONEY
   events:
     '0':
@@ -3584,12 +3584,12 @@
       occasion: 0
       delay: 3
     '3':
-      amount: -20000.0
+      amount: -10000.0
       type: MONEY
       occasion: 0
       delay: 4
     '4':
-      message: '&a[Quest] &b$20,000 removed.'
+      message: '&a[Quest] &b$10,000 removed.'
       type: MSG
       occasion: 0
       delay: 4
@@ -3643,7 +3643,7 @@
     '0':
       region: SPHERE|-386.14;76.00;-1102.43;RPG;0.00;0.00;|50.0
       type: REGION
-      description: '&a[Objective] &b15 Quest Points & $20,000'
+      description: '&a[Objective] &b&m15&r&b8 Quest Points & &m$20,000&r&b $10,000.'
   conditions:
     '0':
       quest: Rank - Echo
@@ -3653,10 +3653,10 @@
       quest: Scarlet Beginnings
       type: QUEST
     '2':
-      amount: 15
+      amount: 8
       type: POINT
     '3':
-      amount: 20000.0
+      amount: 10000.0
       type: MONEY
   events:
     '0':
@@ -3676,12 +3676,12 @@
       occasion: 0
       delay: 3
     '3':
-      amount: -20000.0
+      amount: -10000.0
       type: MONEY
       occasion: 0
       delay: 4
     '4':
-      message: '&a[Quest] &b$20,000 removed.'
+      message: '&a[Quest] &b$10,000 removed.'
       type: MSG
       occasion: 0
       delay: 4
