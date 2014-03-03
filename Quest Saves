@@ -2,7 +2,7 @@
   name: New Beginning
   description: '§a[Quest] §bStart you journey, as you leave this place of imprisonment
     with a §3quest. §cDifficulty: §8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '77'
@@ -138,7 +138,7 @@
   name: Decisions
   description: '§a[Quest] §bSpeak with each Caste leader, and learn of their virtues.
     §bThen make the big choice. §cDifficulty: §8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 7
@@ -193,12 +193,11 @@
       occasion: -1
       delay: 4
     '5':
-      item: 373:16450
-      type: ITEM
-      occasion: -1
-      delay: 4
+      command: effect %p 1 300 2
+      type: CMD
+      occasion: 8
     '6':
-      message: '&4[Joe] &3Take this potion, it will help you travel quickly.'
+      message: '&4[Joe] &3Take this potion effect, it will help you travel quickly.'
       type: MSG
       occasion: -1
       delay: 5
@@ -335,7 +334,7 @@
   name: Hyperion Initiation
   description: '§a[Quest] §bBegin your journey with the §1Hyperion Order§b. §cDifficulty:
     §8Coal'
-  flags: ACTIVE;NODESC;DEATHCANCEL;
+  flags: NODESC;ACTIVE;DEATHCANCEL;
   objectives:
     '0':
       index: 141
@@ -352,17 +351,14 @@
       prerequisites: 0;1
   conditions:
     '0':
-      quest: Decisions
-      type: QUEST
-    '1':
       quest: Hyperion Initiation
       inverted: true
       type: QUEST
-    '2':
+    '1':
       quest: Scarlet Beginnings
       inverted: true
       type: QUEST
-    '3':
+    '2':
       quest: Shadow Training
       inverted: true
       type: QUEST
@@ -468,7 +464,7 @@
       occasion: 2
       delay: 5
     '19':
-      command: pex user %p add Hyperion
+      command: pex user %p group add Hyperion
       type: CMD
       occasion: 2
       delay: 5
@@ -501,7 +497,7 @@
   name: Smith the Blacksmith
   description: '&a[Quest] &bTest a new refined alloy sword and observe the affect
     it has on test dummies. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '35'
@@ -588,7 +584,7 @@
   name: Shadow Training
   description: '&a[Quest] &bTake your first step towards the &2Shadow Hunters&b.&c
     Difficulty: &7Coal'
-  flags: ACTIVE;NODESC;DEATHCANCEL;
+  flags: NODESC;ACTIVE;DEATHCANCEL;
   objectives:
     '0':
       region: SPHERE|-309.16;90.00;-1162.54;RPG;0.00;0.00;|1.0
@@ -611,17 +607,14 @@
       prerequisites: '2'
   conditions:
     '0':
-      quest: Decisions
+      quest: Hyperion Initiation
+      inverted: true
       type: QUEST
     '1':
       quest: Scarlet Beginnings
       inverted: true
       type: QUEST
     '2':
-      quest: Hyperion Initiation
-      inverted: true
-      type: QUEST
-    '3':
       quest: Shadow Training
       inverted: true
       type: QUEST
@@ -769,7 +762,7 @@
   name: Scarlet Beginnings
   description: '&a[Quest] &bJoin the ranks of the &5Scarlet Coven&b. &cDifficulty:
     &8Coal'
-  flags: ACTIVE;NODESC;DEATHCANCEL;
+  flags: NODESC;ACTIVE;DEATHCANCEL;
   objectives:
     '0':
       hand: '259'
@@ -816,19 +809,16 @@
       prerequisites: '4'
   conditions:
     '0':
-      quest: Scarlet Beginnings
+      quest: Hyperion Initiation
       inverted: true
       type: QUEST
     '1':
-      quest: Hyperion Initiation
+      quest: Scarlet Beginnings
       inverted: true
       type: QUEST
     '2':
       quest: Shadow Training
       inverted: true
-      type: QUEST
-    '3':
-      quest: Decisions
       type: QUEST
   events:
     '0':
@@ -959,40 +949,40 @@
       occasion: 5
       delay: 4
     '24':
-      command: class set Scarlet %p
-      type: CMD
-      occasion: 5
-      delay: 4
-    '25':
       location: 32.50;77.00;-10.50;RPG;179.85;2.10;
       type: TELE
       occasion: 5
       delay: 5
-    '26':
+    '25':
       command: broadcast %p &3is now a &5Duellist &3in the &5Scarlet Coven&3.
       type: CMD
       occasion: 5
       delay: 5
-    '27':
+    '26':
       message: '&4[Eilf] &3Scarlet, could you freeze this apple for me?'
       type: MSG
       occasion: 5
       delay: 6
-    '28':
+    '27':
       message: '&e[Rewards] &7First Scarlet Rank - Access to /spells'
       type: MSG
       occasion: 5
       delay: 7
-    '29':
+    '28':
       message: '&4[%p] &3Though it should not matter, only a few more to light.'
       type: MSG
       occasion: 0
       delay: 3
+    '29':
+      command: class set %p Scarlet
+      type: CMD
+      occasion: 5
+      delay: 4
 '6':
   name: The Ropes
   description: '&a[Quest] &bCourier some packages for a short while, and gain some
     contacts at the same time. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 126
@@ -1228,7 +1218,7 @@
   name: A Monster Time
   description: '&a[Quest] &bGolog has started up a resort, but he needs a hand first.
     By the way, he is also a zombie. &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '38'
@@ -1511,7 +1501,7 @@
   description: '&a[Quest] &BThe classic story of love; Insers and Aheri separated
     but their hearts still long to be together. Maybe you can help? &cDifficulty:
     &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|59.00;72.00;-195.42;RPG;0.00;0.00;|3.0
@@ -1649,7 +1639,7 @@
     to me, Chortana in the guards quarters under the Castle. &cDifficulty: &3Diamond'
   worlds:
   - rpg
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 46
@@ -1743,6 +1733,10 @@
       prerequisites: '12'
   conditions:
     '0':
+      quest: Witchery
+      inverted: true
+      type: QUEST
+    '1':
       quest: Witchery
       inverted: true
       type: QUEST
@@ -2170,7 +2164,7 @@
   name: Spider Infestation
   description: '&a[Quest] &bComplete some pest control in Zuriki''s mine. &9Daily
     Quest, &cDifficulty: &8Coal'
-  flags: ACTIVE;REPEATABLE;HIDDENOBJS;NODESC;
+  flags: NODESC;HIDDENOBJS;ACTIVE;REPEATABLE;
   objectives:
     '0':
       amount: 6
@@ -2233,7 +2227,7 @@
   name: Run `n` Seek
   description: '&a[Quest] &bFlambe here has a brother you must find, and doing so
     might just &bprove the honour of young adventurers. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 55
@@ -2372,7 +2366,7 @@
   description: '&a[Quest] &bThe city sewers are obviously of importance, but keeping
     them clear of critters seems less important to a fighter such as yourself. But
     a job is being offered and coin is alluring. &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 72
@@ -2675,7 +2669,7 @@
   name: Zombie Population
   description: '&a[Quest] &bA culling of the Zombie population is called for, this
     kingdom must be kept safe. &9Daily Quest. &cDifficulty: &8Coal'
-  flags: ACTIVE;REPEATABLE;NODESC;
+  flags: NODESC;ACTIVE;REPEATABLE;
   objectives:
     '0':
       amount: 15
@@ -2786,7 +2780,7 @@
   description: '&a[Quest] &bThe bank of Woodbry contains a substantial amount of wealth;
     this is a town of success and good harvests. Perhaps it is time to burrow some
     of this wealth? &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|52.32;66.00;-80.56;RPG;0.00;0.00;|8.0
@@ -3094,7 +3088,7 @@
   description: '&a[Quest] &bYou have two options; either rot in the less than luxurious
     prison or &bcomplete some further work for the Black Hand Guild. &cDifficulty:
     &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       item: '338'
@@ -3404,7 +3398,7 @@
   name: Quest Voucher`s
   description: '&a[Quest] &bExchange a looted Quest Voucher for one Quest Point. &eCan
     be completed once every hour.'
-  flags: ACTIVE;HIDDEN;REPEATABLE;NODESC;
+  flags: NODESC;ACTIVE;REPEATABLE;HIDDEN;
   objectives:
     '0':
       item: '421'
@@ -3454,12 +3448,12 @@
       delay: 1
 '19':
   name: Rank - Dusk Spy
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-338.14;74.00;-1173.43;RPG;0.00;0.00;|20.0
       type: REGION
-      description: '&a[Objective] &b&m15&r&b8 Quest Points & &m$20,000&r&b $10,000.'
+      description: '&a[Objective] &b&m15&r&b 8 Quest Points & &m$20,000&r&b $10,000.'
   conditions:
     '0':
       quest: Rank - Dusk Spy
@@ -3545,12 +3539,12 @@
       delay: 7
 '20':
   name: Rank - Neophyte
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-323.14;61.00;-1240.43;RPG;0.00;0.00;|50.0
       type: REGION
-      description: '&a[Objective] &b&m15&r&b8 Quest Points & &m$20,000&r&b $10,000.'
+      description: '&a[Objective] &b&m15&r&b 8 Quest Points & &m$20,000&r&b $10,000.'
   conditions:
     '0':
       quest: Rank - Neophyte
@@ -3638,12 +3632,12 @@
       delay: 7
 '21':
   name: Rank - Echo
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-386.14;76.00;-1102.43;RPG;0.00;0.00;|50.0
       type: REGION
-      description: '&a[Objective] &b&m15&r&b8 Quest Points & &m$20,000&r&b $10,000.'
+      description: '&a[Objective] &b&m15&r&b 8 Quest Points & &m$20,000&r&b $10,000.'
   conditions:
     '0':
       quest: Rank - Echo
@@ -3729,7 +3723,7 @@
       delay: 7
 '22':
   name: Rank - Bane Hunter
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-324.14;74.00;-1189.43;RPG;0.00;0.00;|50.0
@@ -3823,7 +3817,7 @@
       delay: 7
 '23':
   name: Rank - Disciple
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-300.14;61.00;-1250.00;RPG;0.00;0.00;|50.0
@@ -3916,7 +3910,7 @@
       delay: 7
 '24':
   name: Rank - Reaver
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-327.14;105.00;-1116.43;RPG;0.00;0.00;|50.0
@@ -4008,7 +4002,7 @@
       delay: 7
 '25':
   name: Rank - Temporal
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-325.14;64.00;-1177.43;RPG;0.00;0.00;|50.0
@@ -4098,7 +4092,7 @@
       delay: 7
 '26':
   name: Rank - Deacon
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-310.14;61.00;-1233.43;RPG;0.00;0.00;|50.0
@@ -4189,7 +4183,7 @@
       delay: 7
 '27':
   name: Rank - Summoner
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-399.14;105.00;-1024.43;RPG;0.00;0.00;|50.0
@@ -4277,3 +4271,537 @@
       type: CMD
       occasion: 0
       delay: 7
+'28':
+  name: The Kings Mine
+  flags: NODESC;HIDDENOBJS;
+  objectives:
+    '0':
+      region: SPHERE|37.86;106.00;14.38;RPG;0.00;0.00;|3.0
+      type: REGION
+    '1':
+      region: SPHERE|33.98;120.00;23.34;RPG;0.00;0.00;|2.0
+      type: REGION
+    '2':
+      region: SPHERE|26.42;102.00;26.74;RPG;0.00;0.00;|2.0
+      type: REGION
+    '3':
+      region: SPHERE|28.51;74.00;35.81;RPG;0.00;0.00;|2.0
+      type: REGION
+    '4':
+      region: SPHERE|22.72;59.00;99.27;RPG;0.00;0.00;|2.0
+      type: REGION
+    '5':
+      region: SPHERE|24.95;51.00;103.75;RPG;0.00;0.00;|3.0
+      type: REGION
+    '6':
+      region: SPHERE|24.40;44.00;120.14;RPG;0.00;0.00;|3.0
+      type: REGION
+    '7':
+      region: SPHERE|24.65;44.00;127.49;RPG;0.00;0.00;|1.0
+      type: REGION
+    '8':
+      region: SPHERE|25.30;45.00;133.70;RPG;0.00;0.00;|1.0
+      type: REGION
+  events:
+    '0':
+      message: '&a[Quest] &bClear The Kings Mine of Spiders. &cDifficulty: &3Diamond'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '1':
+      message: '&4[Naxt] &3Great! &4%p&3 Your are one of the bravest men I know.'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '2':
+      message: '&4[Naxt] &3Enter the castle, and climb to the top. The mine switch
+        is there.'
+      type: MSG
+      occasion: -1
+      delay: 6
+    '3':
+      message: '&a[Quest Objective] &bLocate The Kings Mine switch located in the
+        Royal Room.'
+      type: MSG
+      occasion: -1
+      delay: 8
+    '4':
+      message: '&a[Quest] &bNow hit the button, and get to the volcano enterance.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '5':
+      message: '&a[Quest] &bNow wait for the door to open. If it won''t, hit the button
+        again.'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '6':
+      entity: 52
+      amount: 5
+      location: 22.50;59.00;108.21;RPG;-2.40;24.60;
+      range: 3
+      type: SPAWN
+      occasion: 2
+    '7':
+      entity: 52
+      amount: 5
+      location: 18.70;56.00;103.70;RPG;-79.95;61.35;
+      range: 3
+      type: SPAWN
+      occasion: 2
+    '8':
+      entity: 59
+      amount: 3
+      location: 24.91;51.00;103.32;RPG;-19.65;37.05;
+      range: 3
+      type: SPAWN
+      occasion: 2
+      delay: 1
+    '9':
+      entity: 52
+      amount: 5
+      location: 25.13;51.00;108.78;RPG;-91.05;31.20;
+      range: 3
+      type: SPAWN
+      occasion: 2
+      delay: 1
+    '10':
+      message: '&a[Quest Objective] &bNow find the enterance to the Mine.'
+      type: MSG
+      occasion: 2
+      delay: 1
+    '11':
+      message: '&a[Quest] &bYou found it, Be careful.'
+      type: MSG
+      occasion: 3
+    '12':
+      entity: 52
+      amount: 10
+      location: 18.30;46.00;108.28;RPG;-15.75;46.95;
+      range: 3
+      type: SPAWN
+      occasion: 3
+      delay: 1
+    '13':
+      entity: 59
+      amount: 5
+      location: 18.30;46.00;108.28;RPG;-15.75;46.95;
+      range: 3
+      type: SPAWN
+      occasion: 3
+      delay: 2
+    '14':
+      entity: 59
+      amount: 5
+      location: 22.61;59.00;99.08;RPG;-358.35;20.55;
+      range: 3
+      type: SPAWN
+      occasion: 3
+      delay: 2
+    '15':
+      message: '&4[%p] &3Oh no, which path. Maybe this first one.'
+      type: MSG
+      occasion: 4
+    '16':
+      message: '&4[%p] &3Not another, Maybe this 2nd one behind here.'
+      type: MSG
+      occasion: 5
+    '17':
+      entity: 59
+      amount: 3
+      location: 23.42;43.88;110.90;RPG;-190.20;29.70;
+      range: 3
+      type: SPAWN
+      occasion: 5
+    '18':
+      entity: 52
+      amount: 7
+      location: 24.26;43.88;114.18;RPG;-2.55;15.30;
+      range: 4
+      type: SPAWN
+      occasion: 5
+    '19':
+      message: '&4[%p] &3Theres the exit!'
+      type: MSG
+      occasion: 6
+    '20':
+      message: '&4[%p] &3That was close! Thank god I am alive.'
+      type: MSG
+      occasion: 7
+    '21':
+      message: '&a[Quest] &bNow get in the lift to be taken to safety.'
+      type: MSG
+      occasion: 7
+      delay: 2
+    '22':
+      location: 21.80;65.00;-99.91;RPG;-180.45;11.70;
+      type: TELE
+      occasion: 8
+      delay: 2
+    '23':
+      message: '&4[Naxt] &3Good, your awake.'
+      type: MSG
+      occasion: 8
+      delay: 10
+    '24':
+      message: '&4[%p] &3Wait, What happened?'
+      type: MSG
+      occasion: 8
+      delay: 12
+    '25':
+      message: '&4[Naxt] &3You blacked out when we lifted you. The King was very worried.'
+      type: MSG
+      occasion: 8
+      delay: 14
+    '26':
+      message: '&4[%p] &3The King!?!'
+      type: MSG
+      occasion: 8
+      delay: 16
+    '27':
+      message: '&4[Naxt] &3 Yes, The king, Don''t you remember? Your Rewards?'
+      type: MSG
+      occasion: 8
+      delay: 18
+    '28':
+      amount: 4
+      type: POINT
+      occasion: 8
+      delay: 18
+    '29':
+      amount: 250.0
+      type: MONEY
+      occasion: 8
+      delay: 18
+    '30':
+      item: '265:0'
+      amount: 5
+      type: ITEM
+      occasion: 8
+      delay: 18
+    '31':
+      message: '&e[Rewards] &7$250 - 5 Iron - 4 Quest Points - Diamond Sword'
+      type: MSG
+      occasion: 8
+      delay: 20
+    '32':
+      item: '276:0'
+      type: ITEM
+      occasion: 8
+      delay: 18
+'29':
+  name: Birthday Cake
+  description: '&a[Quest] &bThe birthday is all ruined! What birthday doesn’t have
+    cake? &cDifficulty: &8Coal'
+  flags: NODESC;ACTIVE;
+  objectives:
+    '0':
+      item: '296'
+      amount: 6
+      type: COLLECT
+      description: '&a[Objective] &bCollect six wheat for Turcotte. Remaining: %r'
+    '1':
+      region: SPHERE|-23.52;70.00;-118.32;RPG;0.00;0.00;|2.0
+      type: REGION
+      description: '&a[Objective] &bReach the top floor of the old windmill. (-23,
+        70, -118)'
+      prerequisites: '0'
+    '2':
+      item: '296'
+      amount: 6
+      location: -23.48;70.00;-118.77;RPG;-6.60;43.50;
+      range: 5.0
+      type: DROP
+      description: '&a[Objective] &bDrop six wheat into the grinder. Remaining: %r'
+      prerequisites: '1'
+    '3':
+      region: SPHERE|7.89;65.00;-112.51;RPG;0.00;0.00;|3.0
+      type: REGION
+      description: '&a[Objective] &bTake these six cookies to Turcotte. (7, 65, -112)'
+      prerequisites: '2'
+    '4':
+      item: '295'
+      amount: 4
+      type: COLLECT
+      description: '&a[Objective] &bGather four seeds. Remaining: %r'
+      prerequisites: '3'
+    '5':
+      block: '31:1'
+      location: 2.56;65.50;-100.74;RPG;184.20;33.30;
+      range: 1000
+      type: ACTION
+      description: '&a[Objective] &bPlenty of grass around the place, maybe check
+        some of it.'
+      prerequisites: '3'
+    '6':
+      region: SPHERE|8.16;65.00;-112.78;RPG;189.75;22.20;|5.0
+      type: REGION
+      description: '&a[Objective] &bReturn to Turcotte. (8, 64, -114)'
+      prerequisites: '4'
+  conditions:
+    '0':
+      quest: Birthday Cake
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Turcotte] &3My little boy is turning nine, the party was almost
+        ready.'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '1':
+      message: '&4[Turcotte] &3But then the cake shipment was ambushed! I can cook,
+        badly...'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '2':
+      message: '&4[Turcotte] &3Still a bad cake is better than none, just need ingredients.'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '3':
+      message: '&a[Objective] &bCollect six Wheat for Turcotte. (Have already? Drop/Pick-Up)'
+      type: MSG
+      occasion: -1
+      delay: 5
+    '4':
+      message: '&4[Turcotte] &3For my recipe, need six wheat. Try farm across the
+        road.'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '5':
+      message: '&4[Turcotte] &3You have a good amount now, but we need to grind it.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '6':
+      message: '&4[Turcotte] &3Head into the old windmill, it''s just next to this
+        Inn.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '7':
+      message: '&a[Objective] &bReach the top floor of the old windmill. (-23, 70,
+        -118)'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '8':
+      entity: 51
+      location: -27.38;65.00;-117.84;RPG;311.25;-23.40;
+      type: SPAWN
+      occasion: 0
+      delay: 5
+    '9':
+      message: '&4[Turcotte] &3Throw the wheat into that grinder.'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '10':
+      message: '&a[Objective] &bDrop wheat into the grinder.'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '11':
+      message: '&4[Turcotte] &3That it it, you should have six cookies.'
+      type: MSG
+      occasion: 2
+      delay: 1
+    '12':
+      message: '&4[Turcotte] &3The cookies are for my recipe, so don''t eat them!'
+      type: MSG
+      occasion: 2
+      delay: 2
+    '13':
+      message: '&4[Turcotte] &3Just to make sure, you should probably bring them to
+        me.'
+      type: MSG
+      occasion: 2
+      delay: 3
+    '14':
+      message: '&a[Objective] &bTake these six cookies to Turcotte.'
+      type: MSG
+      occasion: 2
+      delay: 4
+    '15':
+      item: '357:0'
+      amount: 6
+      type: ITEM
+      occasion: 2
+      delay: 1
+    '16':
+      message: '&4[Turcotte] &3I''ll just hold those for the moment.'
+      type: MSG
+      occasion: 3
+      delay: 1
+    '17':
+      message: '&a[Quest] &b6 x Cookies Removed.'
+      type: MSG
+      occasion: 3
+      delay: 2
+    '18':
+      item: '357'
+      amount: 6
+      inverted: true
+      type: ITEM
+      occasion: 3
+      delay: 2
+    '19':
+      message: '&4[Turcotte] &3Only other ingredient for my special recipe. Is some
+        seeds...'
+      type: MSG
+      occasion: 3
+      delay: 3
+    '20':
+      message: '&a[Objective] &bGather four seeds. (Already have? Drop/Pick-Up)'
+      type: MSG
+      occasion: 3
+      delay: 4
+    '21':
+      message: '&4[Turcotte] &3You should be able to find them anywhere out in the
+        wild.'
+      type: MSG
+      occasion: 3
+      delay: 5
+    '22':
+      objective: 5
+      type: OBJCOM
+      occasion: 4
+      delay: 1
+    '23':
+      message: '&a[Objective] &bReturn to Turcotte and hand her the seeds.'
+      type: MSG
+      occasion: 4
+      delay: 2
+    '24':
+      message: '&a[Quest] &b4 x Seeds removed.'
+      type: MSG
+      occasion: 6
+      delay: 1
+    '25':
+      item: '295'
+      amount: 4
+      inverted: true
+      type: ITEM
+      occasion: 6
+      delay: 1
+    '26':
+      message: '&4[Turcotte] &3Just let me whip it up quickly...'
+      type: MSG
+      occasion: 6
+      delay: 2
+    '27':
+      message: '&4[Turcotte] &3...'
+      type: MSG
+      occasion: 6
+      delay: 3
+    '28':
+      message: '&4[Turcotte] &3...'
+      type: MSG
+      occasion: 6
+      delay: 4
+    '29':
+      message: '&4[Turcotte] &3...bit of this...'
+      type: MSG
+      occasion: 6
+      delay: 5
+    '30':
+      message: '&4[Turcotte] &3...bit of that...'
+      type: MSG
+      occasion: 6
+      delay: 6
+    '31':
+      message: '&4[Turcotte] &3It''s ready!'
+      type: MSG
+      occasion: 6
+      delay: 7
+    '32':
+      block: '92:0'
+      location: 8.35;66.00;-116.49;RPG;36.60;79.65;
+      type: BLOCK
+      occasion: 6
+      delay: 8
+    '33':
+      message: '&a[Quest] &bJack take''s a bite of the cake!'
+      type: MSG
+      occasion: 6
+      delay: 9
+    '34':
+      message: '&4[Jack] &3Wouaaa wouaaa wu wu wouaaaaaaaaaa, it is terrible!'
+      type: MSG
+      occasion: 6
+      delay: 10
+    '35':
+      location: 6.74;65.00;-114.28;RPG;170.40;23.25;
+      type: LIGHTNING
+      occasion: 6
+      delay: 10
+    '36':
+      message: '&4[Turcotte] &3Jack, it is not that bad... I think.'
+      type: MSG
+      occasion: 6
+      delay: 11
+    '37':
+      message: '&e[Rewards] &71 x Cake - 15 x Wheat - 32 Acacia Logs - $230 - 1 Quest
+        Point.'
+      type: MSG
+      occasion: 6
+      delay: 12
+    '38':
+      amount: 230.0
+      type: MONEY
+      occasion: 6
+      delay: 12
+    '39':
+      amount: 1
+      type: POINT
+      occasion: 6
+      delay: 12
+    '40':
+      item: '354:0'
+      type: ITEM
+      occasion: 6
+      delay: 12
+    '41':
+      item: '296:0'
+      amount: 15
+      type: ITEM
+      occasion: 6
+      delay: 12
+    '42':
+      item: '162:0'
+      amount: 32
+      type: ITEM
+      occasion: 6
+      delay: 12
+    '43':
+      block: 0:0
+      location: 8.23;66.00;-116.58;RPG;94.20;90.00;
+      type: BLOCK
+      occasion: 6
+      delay: 13
+    '44':
+      message: '&4[%p] &3There are some seeds in this grass, should be enough.'
+      type: MSG
+      occasion: 5
+      delay: 1
+    '45':
+      message: '&a[Objective] &bReturn to Turcotte and hand her the seeds.'
+      type: MSG
+      occasion: 5
+      delay: 2
+    '46':
+      objective: 4
+      type: OBJCOM
+      occasion: 5
+      delay: 2
+    '47':
+      item: '295:0'
+      amount: 4
+      type: ITEM
+      occasion: 5
+      delay: 2
