@@ -2,7 +2,7 @@
   name: New Beginning
   description: '§a[Quest] §bStart you journey, as you leave this place of imprisonment
     with a §3quest. §cDifficulty: §8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       block: '77'
@@ -138,7 +138,7 @@
   name: Decisions
   description: '§a[Quest] §bSpeak with each Caste leader, and learn of their virtues.
     §bThen make the big choice. §cDifficulty: §8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 7
@@ -334,7 +334,7 @@
   name: Hyperion Initiation
   description: '§a[Quest] §bBegin your journey with the §1Hyperion Order§b. §cDifficulty:
     §8Coal'
-  flags: NODESC;ACTIVE;DEATHCANCEL;
+  flags: ACTIVE;NODESC;DEATHCANCEL;
   objectives:
     '0':
       index: 141
@@ -497,7 +497,7 @@
   name: Smith the Blacksmith
   description: '&a[Quest] &bTest a new refined alloy sword and observe the affect
     it has on test dummies. &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       block: '35'
@@ -584,7 +584,7 @@
   name: Shadow Training
   description: '&a[Quest] &bTake your first step towards the &2Shadow Hunters&b.&c
     Difficulty: &7Coal'
-  flags: NODESC;ACTIVE;DEATHCANCEL;
+  flags: ACTIVE;NODESC;DEATHCANCEL;
   objectives:
     '0':
       region: SPHERE|-309.16;90.00;-1162.54;RPG;0.00;0.00;|1.0
@@ -762,7 +762,7 @@
   name: Scarlet Beginnings
   description: '&a[Quest] &bJoin the ranks of the &5Scarlet Coven&b. &cDifficulty:
     &8Coal'
-  flags: NODESC;ACTIVE;DEATHCANCEL;
+  flags: ACTIVE;NODESC;DEATHCANCEL;
   objectives:
     '0':
       hand: '259'
@@ -982,7 +982,7 @@
   name: The Ropes
   description: '&a[Quest] &bCourier some packages for a short while, and gain some
     contacts at the same time. &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 126
@@ -1218,7 +1218,7 @@
   name: A Monster Time
   description: '&a[Quest] &bGolog has started up a resort, but he needs a hand first.
     By the way, he is also a zombie. &cDifficulty: &7Iron'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       block: '38'
@@ -1501,7 +1501,7 @@
   description: '&a[Quest] &BThe classic story of love; Insers and Aheri separated
     but their hearts still long to be together. Maybe you can help? &cDifficulty:
     &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|59.00;72.00;-195.42;RPG;0.00;0.00;|3.0
@@ -1639,7 +1639,7 @@
     to me, Chortana in the guards quarters under the Castle. &cDifficulty: &3Diamond'
   worlds:
   - rpg
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 46
@@ -2164,7 +2164,7 @@
   name: Spider Infestation
   description: '&a[Quest] &bComplete some pest control in Zuriki''s mine. &9Daily
     Quest, &cDifficulty: &8Coal'
-  flags: NODESC;HIDDENOBJS;ACTIVE;REPEATABLE;
+  flags: REPEATABLE;ACTIVE;NODESC;HIDDENOBJS;
   objectives:
     '0':
       amount: 6
@@ -2227,7 +2227,7 @@
   name: Run `n` Seek
   description: '&a[Quest] &bFlambe here has a brother you must find, and doing so
     might just &bprove the honour of young adventurers. &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 55
@@ -2366,7 +2366,7 @@
   description: '&a[Quest] &bThe city sewers are obviously of importance, but keeping
     them clear of critters seems less important to a fighter such as yourself. But
     a job is being offered and coin is alluring. &cDifficulty: &7Iron'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       index: 72
@@ -2669,7 +2669,7 @@
   name: Zombie Population
   description: '&a[Quest] &bA culling of the Zombie population is called for, this
     kingdom must be kept safe. &9Daily Quest. &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;REPEATABLE;
+  flags: REPEATABLE;ACTIVE;NODESC;
   objectives:
     '0':
       amount: 15
@@ -2780,7 +2780,7 @@
   description: '&a[Quest] &bThe bank of Woodbry contains a substantial amount of wealth;
     this is a town of success and good harvests. Perhaps it is time to burrow some
     of this wealth? &cDifficulty: &7Iron'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|52.32;66.00;-80.56;RPG;0.00;0.00;|8.0
@@ -3088,7 +3088,7 @@
   description: '&a[Quest] &bYou have two options; either rot in the less than luxurious
     prison or &bcomplete some further work for the Black Hand Guild. &cDifficulty:
     &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       item: '338'
@@ -3398,7 +3398,7 @@
   name: Quest Voucher`s
   description: '&a[Quest] &bExchange a looted Quest Voucher for one Quest Point. &eCan
     be completed once every hour.'
-  flags: NODESC;ACTIVE;REPEATABLE;HIDDEN;
+  flags: REPEATABLE;ACTIVE;NODESC;HIDDEN;
   objectives:
     '0':
       item: '421'
@@ -3448,7 +3448,7 @@
       delay: 1
 '19':
   name: Rank - Dusk Spy
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|-338.14;74.00;-1173.43;RPG;0.00;0.00;|20.0
@@ -3539,7 +3539,7 @@
       delay: 7
 '20':
   name: Rank - Neophyte
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|-323.14;61.00;-1240.43;RPG;0.00;0.00;|50.0
@@ -3632,7 +3632,7 @@
       delay: 7
 '21':
   name: Rank - Echo
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|-386.14;76.00;-1102.43;RPG;0.00;0.00;|50.0
@@ -3723,7 +3723,7 @@
       delay: 7
 '22':
   name: Rank - Bane Hunter
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|-324.14;74.00;-1189.43;RPG;0.00;0.00;|50.0
@@ -3817,7 +3817,7 @@
       delay: 7
 '23':
   name: Rank - Disciple
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|-300.14;61.00;-1250.00;RPG;0.00;0.00;|50.0
@@ -3910,7 +3910,7 @@
       delay: 7
 '24':
   name: Rank - Reaver
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|-327.14;105.00;-1116.43;RPG;0.00;0.00;|50.0
@@ -4002,7 +4002,7 @@
       delay: 7
 '25':
   name: Rank - Temporal
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|-325.14;64.00;-1177.43;RPG;0.00;0.00;|50.0
@@ -4092,7 +4092,7 @@
       delay: 7
 '26':
   name: Rank - Deacon
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|-310.14;61.00;-1233.43;RPG;0.00;0.00;|50.0
@@ -4183,7 +4183,7 @@
       delay: 7
 '27':
   name: Rank - Summoner
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       region: SPHERE|-399.14;105.00;-1024.43;RPG;0.00;0.00;|50.0
@@ -4494,7 +4494,7 @@
   name: Birthday Cake
   description: '&a[Quest] &bThe birthday is all ruined! What birthday doesn’t have
     cake? &cDifficulty: &8Coal'
-  flags: NODESC;ACTIVE;
+  flags: ACTIVE;NODESC;
   objectives:
     '0':
       item: '296'
@@ -4535,7 +4535,7 @@
         some of it.'
       prerequisites: '3'
     '6':
-      region: SPHERE|8.16;65.00;-112.78;RPG;189.75;22.20;|5.0
+      region: SPHERE|8.16;65.00;-112.78;RPG;0.00;0.00;|5.0
       type: REGION
       description: '&a[Objective] &bReturn to Turcotte. (8, 64, -114)'
       prerequisites: '4'
@@ -4805,3 +4805,465 @@
       type: ITEM
       occasion: 5
       delay: 2
+'30':
+  name: Time to Enchant
+  flags: ACTIVE;NODESC;HIDDENOBJS;
+  objectives:
+    '0':
+      region: SPHERE|32.50;77.00;-10.50;RPG;0.00;0.00;|3.0
+      type: REGION
+  events:
+    '0':
+      message: '&a[Quest] &bEnchant your items for the low price of $2000!'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '1':
+      message: '&4[JakeEpps] &3So &4[%p] &3I will take 2000 dollars please.'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '2':
+      amount: -2000.0
+      type: MONEY
+      occasion: -1
+      delay: 6
+    '3':
+      message: '&a[Quest] &3 $2000 Removed from account.'
+      type: MSG
+      occasion: -1
+      delay: 6
+    '4':
+      message: '&4[jakeEpps] &3Thank you, Enjoy! Walk through the portal when done!'
+      type: MSG
+      occasion: -1
+      delay: 8
+    '5':
+      location: 38.27;92.00;11.49;RPG;0.15;10.05;
+      type: TELE
+      occasion: -1
+      delay: 10
+    '6':
+      message: '&4[JakeEpps] &3Thank you, now feel free to come back anytime!'
+      type: MSG
+      occasion: 0
+      delay: 3
+'31':
+  name: Tower of Fun
+  description: '&a[Quest] &bRecruit Steve is in a tight spot, during the recent conflict
+    this &btower was heavily damaged. Now it his responsibility to salvage anything
+    of worth. The only problem is the height! &9Daily Quest, &cDifficulty: &8Coal'
+  flags: REPEATABLE;ACTIVE;NODESC;
+  objectives:
+    '0':
+      region: SPHERE|37.49;77.00;-253.29;RPG;0.00;0.00;|3.0
+      type: REGION
+      description: '&a[Objective] &bClimb to top of the tower. (36, 76, -253)'
+    '1':
+      region: SPHERE|28.71;65.00;-248.40;RPG;0.00;0.00;|4.0
+      type: REGION
+      description: '&a[Objective] &bGo down to Recruit Steve and give him the anvil.'
+      prerequisites: '0'
+  conditions:
+    '0':
+      quest: Tower of Fun
+      time: 86400
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Recruit Steve] &3The Captain told me to salvage all gear from this
+        tower.'
+      type: MSG
+      occasion: -1
+    '1':
+      message: '&4[Recruit Steve] &3I’ve managed to recover most gear, apart from
+        an anvil.'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '2':
+      message: '&4[Recruit Steve] &3It is at the top of this tower, can probably climb
+        it.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '3':
+      message: '&4[Recruit Steve] &3Just... I am not particularly good with heights.'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '4':
+      message: '&a[Objective] &bClimb to the top of this tower and recover the anvil.'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '5':
+      entity: 54
+      location: 38.01;76.00;-251.87;RPG;99.60;49.20;
+      type: SPAWN
+      occasion: 0
+    '6':
+      message: '&a[Quest Item] &b1 x Anvil'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '7':
+      block: 0:0
+      location: 36.30;76.00;-253.50;RPG;85.80;90.00;
+      type: BLOCK
+      occasion: 0
+      delay: 1
+    '8':
+      block: '145:0'
+      location: 36.30;76.00;-253.50;RPG;332.10;69.75;
+      type: BLOCK
+      occasion: 0
+      delay: 4
+    '9':
+      message: '&4[Recruit Steve] &3You got it? Great, just bring it down to me.'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '10':
+      message: '&a[Objective] &bReturn to Recruit Steve with the anvil.'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '11':
+      message: '&a[Quest Item] &b1 x Anvil Removed'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '12':
+      message: '&4[Recruit Steve] &bThat should save myself from further demotions.'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '13':
+      message: '&4[Recruit Steve] &3Now take this stuff, dont tell anyone about my...
+        fear.'
+      type: MSG
+      occasion: 1
+      delay: 3
+    '14':
+      message: '&4[Recruit Steve] &3That should save myself from further demotions.'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '15':
+      message: '&e[Rewards] &77 x Cookies - 35 x Stone - 4 x Leather - $50 - 1 Quest
+        Point.'
+      type: MSG
+      occasion: 1
+      delay: 4
+    '16':
+      item: '357:0'
+      amount: 7
+      type: ITEM
+      occasion: 1
+      delay: 4
+    '17':
+      item: '1:0'
+      amount: 35
+      type: ITEM
+      occasion: 1
+      delay: 4
+    '18':
+      item: '334:0'
+      amount: 4
+      type: ITEM
+      occasion: 1
+      delay: 4
+    '19':
+      amount: 50.0
+      type: MONEY
+      occasion: 1
+      delay: 4
+    '20':
+      amount: 1
+      type: POINT
+      occasion: 1
+      delay: 4
+    '21':
+      message: '&9[Daily] &7You will be able to start this quest again in 24 hours.'
+      type: MSG
+      occasion: 1
+      delay: 5
+'32':
+  name: Stius and Au
+  description: '&a[Quest] &bIt is harvest season for this farm, but Farmer Gro is
+    old and needs the assistance of his son, Au to harvest. Only problem is, his son
+    has run off. &cDifficulty: &7Iron'
+  flags: NODESC;
+  objectives:
+    '0':
+      region: SPHERE|-87.31;121.00;-337.37;RPG;0.00;0.00;|5.0
+      type: REGION
+      description: '&a[Objective] &bFind Au in the old mage tower. (-89, 121, -336)'
+    '1':
+      region: SPHERE|-67.50;85.00;-372.07;RPG;0.00;0.00;|5.0
+      type: REGION
+      description: '&e[Tip] &7Following the path is a good way to find this old tower.'
+    '2':
+      type: DEATH
+      description: '&a[Side Objective] &bDon‘t die once, when locating Au.'
+    '3':
+      region: SPHERE|-87.75;121.00;-332.63;RPG;0.00;0.00;|5.0
+      type: REGION
+      description: '&a[Objective] &bDo not succumb to death.'
+      prerequisites: '0'
+    '4':
+      region: SPHERE|-85.58;121.00;-333.61;RPG;0.00;0.00;|1.0
+      type: REGION
+      description: '&a[Objective] &bStep onto the old golden pad. (-85, 121, -333)'
+      prerequisites: '0'
+    '5':
+      region: SPHERE|154.52;54.00;-269.35;RPG;0.00;0.00;|5.0
+      type: REGION
+      description: '&a[Objective] &bMake your way through the dungeon. (154, 54, -269)'
+      prerequisites: '4'
+    '6':
+      region: SPHERE|208.63;74.00;-327.77;RPG;0.00;0.00;|7.0
+      type: REGION
+      description: '&a[Objective] &bReach the surface and find Stius. (211, 74, -327'
+      prerequisites: '5'
+  events:
+    '0':
+      message: '&4[Farmer Gro] &3I can not believe my son has run off!'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '1':
+      message: '&4[Farmer Gro] &3He knows it is nearing the end of harvest time.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '2':
+      message: '&4[Farmer Gro] &3Soon the snow will start falling, we must gather
+        it now.'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '3':
+      message: '&4[Farmer Gro] &3Go check his favourite place, and bring him back.'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '4':
+      message: '&4[Farmer Gro] &3Do not be too gentle about it either!'
+      type: MSG
+      occasion: -1
+      delay: 5
+    '5':
+      message: '&a[Objective] &bFind Au in the old mage tower, follow path. (-89,
+        121, -336)'
+      type: MSG
+      occasion: -1
+      delay: 5
+    '6':
+      message: '&a[Side Objective] &cFailed side objective.'
+      type: MSG
+      occasion: 2
+      delay: 2
+    '7':
+      objective: 3
+      type: OBJCOM
+      occasion: 2
+      delay: 1
+    '8':
+      message: '&a[Side Objective] &bReached Au without any death on your part.'
+      type: MSG
+      occasion: 3
+      delay: 1
+    '9':
+      message: '&e[Side Obj Rewards] &75 x Emeralds - 2 x Water Buckets.'
+      type: MSG
+      occasion: 3
+      delay: 2
+    '10':
+      item: '388:0'
+      amount: 5
+      type: ITEM
+      occasion: 3
+      delay: 2
+    '11':
+      item: '326:0'
+      amount: 2
+      type: ITEM
+      occasion: 3
+      delay: 2
+    '12':
+      entity: 54
+      amount: 2
+      location: -93.47;89.00;-347.85;RPG;-95.87;-1.65;
+      range: 3
+      type: SPAWN
+      occasion: 1
+    '13':
+      entity: 61
+      location: -81.67;95.00;-339.48;RPG;-226.97;5.85;
+      range: 2
+      type: SPAWN
+      occasion: 1
+    '14':
+      message: '&4[Au] &3My father sent you, did he not?'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '15':
+      message: '&4[Au] &3Well stuff him, and stuff the farm!'
+      type: MSG
+      occasion: 0
+      delay: 2
+    '16':
+      message: '&4[Au] &3My friend has gone missing, and that is all I care about.'
+      type: MSG
+      occasion: 0
+      delay: 3
+    '17':
+      message: '&4[Au] &3My friend, Stius went into the skeleton mines. Looking for
+        gems...'
+      type: MSG
+      occasion: 0
+      delay: 4
+    '18':
+      message: '&4[Au] &3I told him not to, it would be too dangerous. He has not
+        come back.'
+      type: MSG
+      occasion: 0
+      delay: 5
+    '19':
+      message: '&4[Au] &3Go find him, please.'
+      type: MSG
+      occasion: 0
+      delay: 6
+    '20':
+      message: '&4[Au] &3Oh, use that golden pad to reach the cave. It might hurt
+        a bit...'
+      type: MSG
+      occasion: 0
+      delay: 7
+    '21':
+      message: '&a[Objective] &bStep onto the old golden pad. (-85, 121, -333)'
+      type: MSG
+      occasion: 0
+      delay: 8
+    '22':
+      message: '&e[?] &8*Some of your blood for this port.*'
+      type: MSG
+      occasion: 4
+      delay: 1
+    '23':
+      location: 41.30;47.00;-289.30;RPG;329.84;53.55;
+      type: TELE
+      occasion: 4
+      delay: 2
+    '24':
+      command: effect %p 6 1 2
+      type: CMD
+      occasion: 4
+      delay: 2
+    '25':
+      command: effect %p 7 1 1
+      type: CMD
+      occasion: 4
+      delay: 3
+    '26':
+      message: '&4[%p] &3This is the skeleton cave... finding Stius might be quite
+        tricky.'
+      type: MSG
+      occasion: 4
+      delay: 5
+    '27':
+      message: '&4[%p] &3Except for that blood trail, will have to follow it.'
+      type: MSG
+      occasion: 4
+      delay: 6
+    '28':
+      message: '&a[Objective] &bMake your way through the dungeon, following the blood
+        trail.'
+      type: MSG
+      occasion: 4
+      delay: 7
+    '29':
+      message: '&4[%p] &3If only I had brought a mine cart, seems I must buy one or
+        walk.'
+      type: MSG
+      occasion: 5
+      delay: 1
+    '30':
+      message: '&4[%p] &3I seem to be on the right path.'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '31':
+      message: '&4[Stius] &3Hello stranger, who are you?'
+      type: MSG
+      occasion: 6
+      delay: 1
+    '32':
+      message: '&4[%p] &3Your friend, Au sent me to find you.'
+      type: MSG
+      occasion: 6
+      delay: 2
+    '33':
+      message: '&4[Stius] &3Oh, he must be worrying. I kind of did just run off...'
+      type: MSG
+      occasion: 6
+      delay: 3
+    '34':
+      message: '&4[Stius] &3Well take these gems I found, as compensation for your
+        time.'
+      type: MSG
+      occasion: 6
+      delay: 4
+    '35':
+      message: '&4[Stius] &3That blood was just from a cut finger, nothing bad.'
+      type: MSG
+      occasion: 6
+      delay: 6
+    '36':
+      message: '&4[Stius] &3I will make sure to send Au a message, and some gems.'
+      type: MSG
+      occasion: 6
+      delay: 7
+    '37':
+      message: '&4[Stius] &3Once again, thanks.'
+      type: MSG
+      occasion: 6
+      delay: 8
+    '38':
+      message: '&4[%p] &3What about Au? And were you not also bleeding?'
+      type: MSG
+      occasion: 6
+      delay: 5
+    '39':
+      message: '&e[Rewards] &716 x Emeralds - 10 x Salmon - 2 x Diamonds - 2 Quest
+        Points.'
+      type: MSG
+      occasion: 6
+      delay: 10
+    '40':
+      item: '388:0'
+      amount: 16
+      type: ITEM
+      occasion: 6
+      delay: 10
+    '41':
+      item: '350:1'
+      amount: 10
+      type: ITEM
+      occasion: 6
+      delay: 10
+    '42':
+      item: '264:0'
+      amount: 2
+      type: ITEM
+      occasion: 6
+      delay: 10
+    '43':
+      amount: 2
+      type: POINT
+      occasion: 6
+      delay: 10
