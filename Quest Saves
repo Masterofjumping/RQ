@@ -2,7 +2,7 @@
   name: New Beginning
   description: '§a[Quest] §bStart you journey, as you leave this place of imprisonment
     with a §3quest. §cDifficulty: §8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '77'
@@ -138,7 +138,7 @@
   name: Decisions
   description: '§a[Quest] §bSpeak with each Caste leader, and learn of their virtues.
     §bThen make the big choice. §cDifficulty: §8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 7
@@ -334,7 +334,7 @@
   name: Hyperion Initiation
   description: '§a[Quest] §bBegin your journey with the §1Hyperion Order§b. §cDifficulty:
     §8Coal'
-  flags: ACTIVE;NODESC;DEATHCANCEL;
+  flags: DEATHCANCEL;NODESC;ACTIVE;
   objectives:
     '0':
       index: 141
@@ -497,7 +497,7 @@
   name: Smith the Blacksmith
   description: '&a[Quest] &bTest a new refined alloy sword and observe the affect
     it has on test dummies. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '35'
@@ -584,7 +584,7 @@
   name: Shadow Training
   description: '&a[Quest] &bTake your first step towards the &2Shadow Hunters&b.&c
     Difficulty: &7Coal'
-  flags: ACTIVE;NODESC;DEATHCANCEL;
+  flags: DEATHCANCEL;NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-309.16;90.00;-1162.54;RPG;0.00;0.00;|1.0
@@ -762,7 +762,7 @@
   name: Scarlet Beginnings
   description: '&a[Quest] &bJoin the ranks of the &5Scarlet Coven&b. &cDifficulty:
     &8Coal'
-  flags: ACTIVE;NODESC;DEATHCANCEL;
+  flags: DEATHCANCEL;NODESC;ACTIVE;
   objectives:
     '0':
       hand: '259'
@@ -982,7 +982,7 @@
   name: The Ropes
   description: '&a[Quest] &bCourier some packages for a short while, and gain some
     contacts at the same time. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 126
@@ -1218,7 +1218,7 @@
   name: A Monster Time
   description: '&a[Quest] &bGolog has started up a resort, but he needs a hand first.
     By the way, he is also a zombie. &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '38'
@@ -1501,7 +1501,7 @@
   description: '&a[Quest] &BThe classic story of love; Insers and Aheri separated
     but their hearts still long to be together. Maybe you can help? &cDifficulty:
     &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|59.00;72.00;-195.42;RPG;0.00;0.00;|3.0
@@ -1639,7 +1639,7 @@
     to me, Chortana in the guards quarters under the Castle. &cDifficulty: &3Diamond'
   worlds:
   - rpg
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 46
@@ -2164,7 +2164,7 @@
   name: Spider Infestation
   description: '&a[Quest] &bComplete some pest control in Zuriki''s mine. &9Daily
     Quest, &cDifficulty: &8Coal'
-  flags: REPEATABLE;ACTIVE;NODESC;HIDDENOBJS;
+  flags: REPEATABLE;NODESC;ACTIVE;HIDDENOBJS;
   objectives:
     '0':
       amount: 6
@@ -2227,7 +2227,7 @@
   name: Run `n` Seek
   description: '&a[Quest] &bFlambe here has a brother you must find, and doing so
     might just &bprove the honour of young adventurers. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 55
@@ -2366,7 +2366,7 @@
   description: '&a[Quest] &bThe city sewers are obviously of importance, but keeping
     them clear of critters seems less important to a fighter such as yourself. But
     a job is being offered and coin is alluring. &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 72
@@ -2669,7 +2669,7 @@
   name: Zombie Population
   description: '&a[Quest] &bA culling of the Zombie population is called for, this
     kingdom must be kept safe. &9Daily Quest. &cDifficulty: &8Coal'
-  flags: REPEATABLE;ACTIVE;NODESC;
+  flags: REPEATABLE;NODESC;ACTIVE;
   objectives:
     '0':
       amount: 15
@@ -2780,7 +2780,7 @@
   description: '&a[Quest] &bThe bank of Woodbry contains a substantial amount of wealth;
     this is a town of success and good harvests. Perhaps it is time to burrow some
     of this wealth? &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|52.32;66.00;-80.56;RPG;0.00;0.00;|8.0
@@ -3088,7 +3088,7 @@
   description: '&a[Quest] &bYou have two options; either rot in the less than luxurious
     prison or &bcomplete some further work for the Black Hand Guild. &cDifficulty:
     &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       item: '338'
@@ -3398,7 +3398,7 @@
   name: Quest Voucher`s
   description: '&a[Quest] &bExchange a looted Quest Voucher for one Quest Point. &eCan
     be completed once every hour.'
-  flags: REPEATABLE;ACTIVE;NODESC;HIDDEN;
+  flags: HIDDEN;REPEATABLE;NODESC;ACTIVE;
   objectives:
     '0':
       item: '421'
@@ -3448,7 +3448,7 @@
       delay: 1
 '19':
   name: Rank - Dusk Spy
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-338.14;74.00;-1173.43;RPG;0.00;0.00;|20.0
@@ -3539,7 +3539,7 @@
       delay: 7
 '20':
   name: Rank - Neophyte
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-323.14;61.00;-1240.43;RPG;0.00;0.00;|50.0
@@ -3632,7 +3632,7 @@
       delay: 7
 '21':
   name: Rank - Echo
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-386.14;76.00;-1102.43;RPG;0.00;0.00;|50.0
@@ -3723,7 +3723,7 @@
       delay: 7
 '22':
   name: Rank - Bane Hunter
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-324.14;74.00;-1189.43;RPG;0.00;0.00;|50.0
@@ -3817,7 +3817,7 @@
       delay: 7
 '23':
   name: Rank - Disciple
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-300.14;61.00;-1250.00;RPG;0.00;0.00;|50.0
@@ -3910,7 +3910,7 @@
       delay: 7
 '24':
   name: Rank - Reaver
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-327.14;105.00;-1116.43;RPG;0.00;0.00;|50.0
@@ -4002,7 +4002,7 @@
       delay: 7
 '25':
   name: Rank - Temporal
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-325.14;64.00;-1177.43;RPG;0.00;0.00;|50.0
@@ -4092,7 +4092,7 @@
       delay: 7
 '26':
   name: Rank - Deacon
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-310.14;61.00;-1233.43;RPG;0.00;0.00;|50.0
@@ -4183,7 +4183,7 @@
       delay: 7
 '27':
   name: Rank - Summoner
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-399.14;105.00;-1024.43;RPG;0.00;0.00;|50.0
@@ -4494,7 +4494,7 @@
   name: Birthday Cake
   description: '&a[Quest] &bThe birthday is all ruined! What birthday doesn’t have
     cake? &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       item: '296'
@@ -4807,7 +4807,7 @@
       delay: 2
 '30':
   name: Time to Enchant
-  flags: ACTIVE;NODESC;HIDDENOBJS;
+  flags: NODESC;ACTIVE;HIDDENOBJS;
   objectives:
     '0':
       region: SPHERE|32.50;77.00;-10.50;RPG;0.00;0.00;|3.0
@@ -4853,7 +4853,7 @@
   description: '&a[Quest] &bRecruit Steve is in a tight spot, during the recent conflict
     this &btower was heavily damaged. Now it his responsibility to salvage anything
     of worth. The only problem is the height! &9Daily Quest, &cDifficulty: &8Coal'
-  flags: REPEATABLE;ACTIVE;NODESC;
+  flags: REPEATABLE;NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|37.49;77.00;-253.29;RPG;0.00;0.00;|3.0
@@ -4995,7 +4995,7 @@
   description: '&a[Quest] &bIt is harvest season for this farm, but Farmer Gro is
     old and needs the assistance of his son, Au to harvest. Only problem is, his son
     has run off. &cDifficulty: &7Iron'
-  flags: NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-87.31;121.00;-337.37;RPG;0.00;0.00;|5.0
@@ -5028,6 +5028,11 @@
       type: REGION
       description: '&a[Objective] &bReach the surface and find Stius. (211, 74, -327'
       prerequisites: '5'
+  conditions:
+    '0':
+      quest: Stius and Au
+      inverted: true
+      type: QUEST
   events:
     '0':
       message: '&4[Farmer Gro] &3I can not believe my son has run off!'
@@ -5267,3 +5272,201 @@
       type: POINT
       occasion: 6
       delay: 10
+    '44':
+      objective: 2
+      type: OBJCOM
+      occasion: 3
+      delay: 1
+'33':
+  name: Bone Hunter
+  description: '&a[Quest] &bFarming this late in winter requires courage, and a lot
+    of bonemeal. &cDifficulty: &8Iron'
+  flags: NODESC;ACTIVE;
+  objectives:
+    '0':
+      region: SPHERE|-73.18;72.00;-276.00;RPG;0.00;0.00;|5.0
+      type: REGION
+      description: '&a[Objective] &bLocate the Burial Dungeon. (-73, 72, -276)'
+    '1':
+      item: '352'
+      amount: 25
+      type: COLLECT
+      description: '&a[Objective] &bCollect 25 Bone''s. Remaining: %r'
+    '2':
+      item: '352'
+      amount: 5
+      type: COLLECT
+      description: '&a[Objective] &bCollect a further 5 Bone''s. Remaining: %r'
+      prerequisites: '1'
+    '3':
+      region: SPHERE|-16.45;66.00;-260.14;RPG;0.00;0.00;|4.0
+      type: REGION
+      description: '&a[Objective] &bReturn to Kabby with the collected Bone''s. (-16,
+        66, -258)'
+      prerequisites: '1'
+  conditions:
+    '0':
+      quest: Bone Hunter
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Kabby] &3Your an explorer right? If so, I have a request for you.'
+      type: MSG
+      occasion: -1
+      delay: 1
+    '1':
+      message: '&4[Kabby] &3My harvest this summer was bad, like most farmer''s around
+        here.'
+      type: MSG
+      occasion: -1
+      delay: 2
+    '2':
+      message: '&4[Kabby] &3To make sure I survive through winter, I need something
+        extra.'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '3':
+      message: '&4[Kabby] &3That is why I need another crop, which is where you come
+        in.'
+      type: MSG
+      occasion: -1
+      delay: 4
+    '4':
+      message: '&4[Kabby] &3Bonemeal is the only sure way for the crops to grow in
+        time.'
+      type: MSG
+      occasion: -1
+      delay: 5
+    '5':
+      message: '&4[Kabby] &3I need a ton of it, and the best place is in the burial
+        dungeon.'
+      type: MSG
+      occasion: -1
+      delay: 6
+    '6':
+      message: '&4[Kabby] &3Bring me at least 25 Bonemeal for something special in
+        return.'
+      type: MSG
+      occasion: -1
+      delay: 7
+    '7':
+      objective: 0
+      type: OBJCOM
+      occasion: 1
+    '8':
+      message: '&a[Objective] &bCollect 25 Bone''s in the Burial Dungeon. (-83, 58,
+        -265)'
+      type: MSG
+      occasion: -1
+      delay: 8
+    '9':
+      message: '&a[Side Objective] &bCollect an extra 5 Bone''s.'
+      type: MSG
+      occasion: -1
+      delay: 9
+    '10':
+      message: '&4[%p] &3There is a definite rattle of bones down here.'
+      type: MSG
+      occasion: 0
+    '11':
+      message: '&a[Objective] &bReturn to Kabby with the collected Bone''s. (-16,
+        66, -258)'
+      type: MSG
+      occasion: 1
+      delay: 1
+    '12':
+      message: '&a[Side Objective] &bGather an extra 5 Bone''s, then return to Kabby.'
+      type: MSG
+      occasion: 1
+      delay: 2
+    '13':
+      message: '&a[Objective] &bReturn to Kabby with all the collected Bone''s. (-16,
+        66, -258)'
+      type: MSG
+      occasion: 2
+    '14':
+      objective: 2
+      type: OBJCOM
+      occasion: 3
+    '15':
+      message: '&4[Kabby] &3You really gathered all that?'
+      type: MSG
+      occasion: 3
+      delay: 1
+    '16':
+      message: '&e[Rewards] &713 x Wheat - 15 x Sugar Cane - Farm Hoe - $82 - 2 Quest
+        Points.'
+      type: MSG
+      occasion: 3
+      delay: 2
+    '17':
+      amount: 2
+      type: POINT
+      occasion: 3
+      delay: 2
+    '18':
+      amount: 82.0
+      type: MONEY
+      occasion: 3
+      delay: 2
+    '19':
+      command: itemstorage get FarmHoe %p
+      type: CMD
+      occasion: 3
+      delay: 2
+    '20':
+      item: '296:0'
+      amount: 13
+      type: ITEM
+      occasion: 3
+      delay: 2
+    '21':
+      item: '338:0'
+      amount: 15
+      type: ITEM
+      occasion: 3
+      delay: 2
+    '22':
+      message: '&e[Side Obj Rewards] &71 x Gold Block - $18.'
+      type: MSG
+      occasion: 2
+      delay: 1
+    '23':
+      item: '41:0'
+      type: ITEM
+      occasion: 2
+      delay: 1
+    '24':
+      amount: 18.0
+      type: MONEY
+      occasion: 2
+      delay: 1
+'34':
+  name: Balloon - North Pass
+  description: '&3[Balloon Agent] &aTo register for this route, right click Balloon
+    Agent again.'
+  flags: NODESC;ACTIVE;
+  objectives:
+    '0':
+      index: 212
+      type: NPC
+      description: '&a[Objective] &bRight click Balloon Agent to complete quest.'
+  conditions:
+    '0':
+      quest: Balloon - North Pass
+      inverted: true
+      type: QUEST
+  events:
+    '0':
+      message: '&4[Balloon Agent] &3This route may now be accessed by you at spawn.'
+      type: MSG
+      occasion: 0
+      delay: 1
+    '1':
+      command: pex user %p add chestcommands.open.North-Pass.yml
+      type: CMD
+      occasion: 0
+      delay: 2
+    
