@@ -1,609 +1,4 @@
-groups:
-  Convict:
-    default: true
-    permissions:
-    - -bm.notify.duplicateips
-    - bm.notify.*
-    - bm.info
-    - essentials.pm
-    - coloredtags.convict
-    - automessage.receive.default
-    - essentials.info
-    - essentials.motd
-    - essentials.signs.use.heal
-    - essentials.kits.helpkit
-    - essentials.signs.use.buy
-    - essentials.signs.use.sell
-    - essentials.help
-    - essentials.msg
-    - essentials.list
-    - essentials.balance
-    - essentials.balance.others
-    - essentials.pay
-    - essentials.mail
-    - essentials.spawn
-    - essentials.mail.send
-    - essentials.kit
-    - essentials.sethome
-    - essentials.home
-    - essentials.delhome
-    - essentials.signs.break.disposal
-    - essentials.signs.use.warp
-    - herochat.autojoin.Global
-    - herochat.force.join.Global
-    - herochat.speak.Global
-    - -herochat.force.leave.*
-    - herochat.pm
-    - -multiverse.portal.access.New_Spawn
-    - -bukkit.command.help
-    - loot.list.*
-    - arena.skirmish.join
-    - arena.espleef.join
-    - arena.spleef.join
-    - arena.paintball.join
-    - arena.arena.join
-    - arena.Shattered-Prison.join
-    - AncientRPG.classes.bind
-    - ecocreature.reward.*
-    - ecocreature.gain.*
-    - citizens.npc.talk
-    - simpleregionmarket.signs.*
-    - ChestShop.shop.create*s
-    - quester.use.*
-    - -multiverse.portal.access.PrisonBreak
-    - -multiverse.portal.access.Donor_In
-    - -multiverse.portal.access.WH_Dungeon
-    - -multiverse.portal.access.WHN_Nether
-    - -multiverse.portal.access.WHN_Warzone
-    - multiverse.portal.access*
-    - -multiverse.access.Scarlet
-    - -multiverse.access.Hyperion
-    - -multiverse.access.Shadow
-    - multiverse.access.*
-    - -multiverse.portal.access.WH_Shadow1
-    - -multiverse.portal.access.WH_Scarlet1
-    - -multiverse.portal.access.WH_Hyperion1
-    - -multiverse.portal.access.WH_Nether
-    - automessage.receive.default
-    - sht.ticket
-    - mcmmo.commands.mcstats
-    - mcmmo.skills.*
-    - -mcmmo.*
-    - modifyworld.*
-    prefix: '&f[&d&oConvict&f] &7'
-  Wanderer:
-    inheritance:
-    - Convict
-    permissions:
-    - -bm.notify.duplicateips
-    - essentials.warps.rankup
-    - -coloredtags.convict
-    - GriefPrevention.Lava
-    - chestcommands.open.rank.yml
-    - arena.join.arena
-    - arena.leave
-    - -multiverse.portal.access.TempFix**
-    - essentials.spawn
-    - essentials.tpaccept
-    - essentials.tpdeny
-    prefix: '&f[&3Wanderer&f]&7 '
-  Hyperion:
-    inheritance:
-    - Wanderer
-    permissions:
-    - -coloredtags.wanderer
-    - -coloredtags.convict
-    - coloredtags.hyperion
-    - caste.hyperion
-    - -multiverse.portal.access.WH_Shadow1
-    - -multiverse.portal.access.WH_Scarlet1
-    - multiverse.access.Hyperion
-    - herochat.force.join.Hyperion
-    - herochat.speak.Hyperion
-    - herochat.join.Hyperion
-    - herochat.leave.Hyperion
-    - spell.DR_HO
-    - AncientRPG.classes.spells
-    - class.hyperion
-    - essentials.kits.Order
-    - spell.SacredB
-    - nametags.color.blue
-    prefix: '&f[&9HO&f-&7Trainee&f]&7 '
-    options:
-      rank: '10000'
-  Hyperion1:
-    inheritance:
-    - Hyperion
-    permissions:
-    - spell.SacredB
-    - multiverse.portal.access.WHN_Warzone
-    prefix: '&f[&9HO&f-&8Neophyte&f]&7 '
-    options:
-      rank: '9900'
-  Hyperion2:
-    inheritance:
-    - Hyperion1
-    permissions:
-    - spell.disciple_chance
-    - multiverse.portal.access.WHN_Nether
-    - multiverse.portal.access.WH_Nether
-    prefix: '&f[&9HO&f-&aDisciple&f]&7 '
-    options:
-      rank: '9800'
-  Hyperion3:
-    inheritance:
-    - Hyperion2
-    permissions:
-    - class.hyperions
-    prefix: '&f[&9HO&f-&2Deacon&f]&7 '
-    options:
-      rank: '9700'
-  Scarlet:
-    inheritance:
-    - Wanderer
-    permissions:
-    - -coloredtags.wanderer
-    - -coloredtags.convict
-    - coloredtags.scarlet
-    - caste.scarlet
-    - -multiverse.portal.access.WH_Hyperion
-    - -multiverse.portal.access.WH_Shadow
-    - -multiverse.portal.access.WH_Hyperion1
-    - -multiverse.portal.access.WH_Shadow1
-    - multiverse.access.Scarlet
-    - AncientRPG.classes.spells
-    - herochat.force.join.Scarlet
-    - herochat.speak.Scarlet
-    - essentials.kits.Scarlet
-    - nametags.color.dark_purple
-    prefix: '&f[&5SC&f-&7Duellist&f]&7 '
-  Scarlet1:
-    inheritance:
-    - Scarlet
-    permissions:
-    - essentials.kits.Scarlet
-    - multiverse.portal.access.WHN_Warzone
-    prefix: '&f[&5SC&f-&8Echo&f]&7 '
-  Scarlet2:
-    inheritance:
-    - Scarlet1
-    permissions:
-    - essentials.kits.Scarlet
-    - multiverse.portal.access.WHN_Nether
-    - multiverse.portal.access.WH_Nether
-    prefix: '&f[&5SC&f-&aReaver&f]&7 '
-  Scarlet3:
-    inheritance:
-    - Scarlet2
-    prefix: '&f[&5SC&f-&2Summoner&f]&7 '
-  Shadow:
-    inheritance:
-    - Wanderer
-    permissions:
-    - -coloredtags.wanderer
-    - -coloredtags.convict
-    - coloredtags.shadow
-    - caste.shadow
-    - -multiverse.portal.access.WH_Scarlet
-    - -multiverse.portal.access.WH_Hyperion
-    - -multiverse.portal.access.WH_Scarlet1
-    - -multiverse.portal.access.WH_Hyperion1
-    - multiverse.access.Shadow
-    - herochat.force.join.Shadow
-    - herochat.speak.Shadow
-    - herochat.join.Shadow
-    - herochat.leave.Shadow
-    - essentials.kits.Shadow
-    - AncientRPG.classes.spells
-    - nametags.color.dark_green
-    prefix: '&f[&2SH&f-&7Ranger&f]&7 '
-  Shadow1:
-    inheritance:
-    - Shadow
-    permissions:
-    - essentials.kits.Shadow
-    - multiverse.portal.access.WHN_Warzone
-    prefix: '&f[&2SH&f-&8Dusk Spy&f]&7 '
-  Shadow2:
-    inheritance:
-    - Shadow1
-    permissions:
-    - essentials.kits.Shadow
-    - multiverse.portal.access.WHN_Nether
-    - multiverse.portal.access.WH_Nether
-    prefix: '&f[&2SH&f-&aBane Hunter&f]&7 '
-  Shadow3:
-    inheritance:
-    - Shadow2
-    permissions:
-    - essentials.kits.Shadow
-    prefix: '&f[&2SH&f-&2Temporal&f]&7 '
-  Supporter:
-    permissions:
-    - essentials.sethome.multiple.supporter
-    - trail.off
-    - trail.help
-    - trail.fire
-    suffix: '&8+'
-  Vip:
-    permissions:
-    - simplereserve.kick.prevent
-    - essentials.kits.donor
-    - simplereserve.enter.kick
-    - essentials.tpahere
-    - essentials.tpa
-    - essentials.clearinventory
-    - essentials.suicide
-    - essentials.sethome.multiple
-    - trail.off
-    - trail.help
-    - trail.fire
-    - trail.smoke
-    - trail.firework
-    suffix: '&6+'
-  Gold:
-    inheritance:
-    - Vip
-    permissions:
-    - essentials.sethome.multiple.vip
-    - essentials.hat
-    - herochat.force.join.Donor
-    - herochat.speak.Donor
-    - herochat.join.Donor
-    - herochat.leave.Donor
-    - essentials.signs.create.disposal
-    - essentials.signs.use.disposal
-    - essentials.signs.color
-    - trail.magic
-    - trail.splash
-    - trail.spark
-    suffix: ' &6[Gold]'
-  Lapis:
-    inheritance:
-    - Gold
-    permissions:
-    - multiverse.portal.access.DonorPortal
-    - essentials.sethome.multiple.staff
-    - essentials.near
-    - essentials.teleport.timer.bypass
-    - multiverse.portal.access.Donor_In
-    - trail.portal
-    - trail.ember
-    - trail.spell
-    suffix: ' &9[Lapis]'
-  Redstone:
-    inheritance:
-    - Lapis
-    permissions:
-    - essentials.kits.edonor
-    - essentials.sethome.multiple.redstone
-    - essentials.invsee
-    - -essentials.invsee.modify
-    - essentials.afk
-    - trail.snowball
-    - trail.slime
-    - trail.heart
-    suffix: ' &c[Redstone]'
-  Emerald:
-    inheritance:
-    - Redstone
-    permissions:
-    - essentials.sethome.multiple.emerald
-    - essentials.workbench
-    - trail.color
-    - trail.angry
-    - trail.void
-    suffix: ' &a[Emerald]'
-  Diamond:
-    inheritance:
-    - Emerald
-    permissions:
-    - essentials.kits.hdonor
-    - essentials.sethome.multiple.unlimited
-    - essentials.lightning
-    - essentials.keepxp
-    - trail.code
-    suffix: ' &b[Diamond]'
-  Bedrock:
-    inheritance:
-    - Diamond
-    permissions:
-    - essentials.sethome.multiple.unlimited
-    - essentials.me
-    suffix: ' &5[Bedrock]'
-  ContentDev:
-    inheritance:
-    - Wanderer
-    permissions:
-    - essentials.sethome.multiple.unlimited
-    - loot.sign.*
-    - essentials.itemspawn.*
-    - essentials.time.*
-    - essentials.weather
-    - -worldguard.halt-activity
-    - -worldedit.reload
-    - -worldedit.limit.unrestricted
-    - essentials.warps.Builds
-    - essentials.teleport.timer.bypass
-    - -multiverse.portal.access.TempFix**
-    - essentials.spawner
-    - essentials.spawner.*
-    - customspawners.*
-    - essentials.item
-    - multiverse.access.*
-    - worldguard.region.bypass.*
-    - essentials.back.ondeath
-    - essentials.back
-    - essentials.warp.list
-    - essentials.warp
-    - essentials.signs.color
-    - multiverse.portal.access.RPG
-    - modifyworld.*
-    - modifyworld.blocks.interact
-    - essentials.gamemode
-    - bukkit.command.gamemode
-    - worldedit.*
-    - multiverse.portal.access.newportal
-    - bukkit.command.teleport
-    - essentials.spawn
-    - simplereserve.kick.prevent
-    - griefprevention.lava
-    - herochat.force.join.Staff
-    - herochat.speak.Staff
-    - essentials.signs.use.warp
-    - essentials.tpa
-    - essentials.tp.others
-    - essentials.tp
-    - nocheatplus.checks.silent
-    - nametags.color.gold
-    - quester.*
-    - worldguard.*
-    - essentials.vanish
-    - citizens.npc.*
-    - citizens.admin.*
-    prefix: '&f[&aContent-Dev&f]&e '
-  Mod:
-    inheritance:
-    - Wanderer
-    prefix: '&f[&3Mod&f]&3 '
-    permissions:
-    - bm.notify.duplicateips
-    - bm.info
-    - bm.unmute
-    - bm.tempbanoffline
-    - bm.banoffline
-    - bm.warn
-    - bm.mute
-    - bm.tempmute
-    - bm.kick
-    - bm.tempban
-    - bm.ban
-    - -support.admin.tp
-    - support.admin.*
-    - helpticket.admin.*
-    - et.level.1
-    - -coloredtags.wanderer
-    - -coloredtags.convict
-    - -coloredtags.shadow
-    - -coloredtags.dev
-    - -coloredtags.scarlet
-    - -coloredtags.hyperion
-    - coloredtags.mod
-    - chestcommands.open.rank.yml
-    - essentials.info
-    - arena.leave
-    - arena.leave.arena
-    - arena.join.arena
-    - ChestShop.shop.create*
-    - -multiverse.portal.access.TempFix**
-    - essentials.motd
-    - arena.skirmish.join
-    - multiverse.access.*
-    - AncientRPG.classes.bind
-    - AncientRPG.classes.spells
-    - arena.espleef.join
-    - arena.spleef.join
-    - arena.paintball.join
-    - herochat.force.join.Staff
-    - herochat.speak.Staff
-    - herochat.join.Staff
-    - herochat.leave.Staff
-    - essentials.mute.exempt
-    - essentials.mute.notify
-    - simplereserve.kick.prevent
-    - worldguard.notify
-    - sht.admin
-    - essentials.signs.use.heal
-    - citizens.npc.talk
-    - nautomessage.receive.vip!
-    - nautomessage.receive.vip
-    - essentials.signs.use.buy
-    - essentials.signs.use.sell
-    - simpleregionmarket.signs.*
-    - quester.use.*
-    - multiverse.portal.access*
-    - essentials.signs.break.disposal
-    - essentials.signs.use.warp
-    - essentials.gc
-    - prison.mine.protection.break
-    - essentials.tpa
-    - essentials.tphere
-    - essentials.tp.others
-    - essentials.tp
-    - logblock.tools.toolblock
-    - logblock.tools.tool
-    - logblock.lookup
-    - essentials.seen.banreason
-    - essentials.ban.notify
-    - essentials.ban.exempt
-    - essentials.tempban.exempt
-    - essentials.tempban.offline
-    - essentials.vanish
-    - essentials.ban.offline
-    options:
-      rank: '25'
-  Admin:
-    inheritance:
-    - Mod
-    prefix: '&f[&4Admin&f] '
-    options:
-      rank: '15'
-    permissions:
-    - support.general.*
-    - support.admin.*
-    - helpticket.general.*
-    - helpticket.admin.*
-    - et.level.2
-    - playertrail.*
-    - playertrails.*
-    - coloredtags.admin
-    - -coloredtags.mod
-    - -coloredtags.wanderer
-    - -coloredtags.convict
-    - -coloredtags.dev
-    - -coloredtags.scarlet
-    - -coloredtags.hyperion
-    - -coloredtags.shadow
-    - citizens.admin.*
-    - citizens.npc.*
-    - worldguard.*
-    - quester.*
-    - essentials.kit.admin
-    - -herochat.force.leave.*
-    - multiverse.portal.access.Donor_In
-    - -bukkit.command.help
-    - commander.*
-    - loot.*
-    - monsterbox.spawn.*
-    - monsterbox.place
-    - monsterbox.set
-    - craftconomy.*
-    - AncientRPG.classes.set
-    - arena.espleef.join
-    - arena.spleefjoin
-    - arena.Espleefjoin
-    - herochat.force.*
-    - herochat.speak.*
-    - herochat.join.*
-    - herochat.leave.*
-    - worldguard.region.flag.regions.*
-    - worldguard.region.flag.flags.*
-    - worldguard.region.flag.regions.own.*
-    - quester.admin
-    - simpleregionmarket.*
-    - worldguard.region.info
-    - worldguard.region.define
-    - prison.mine.reset.manual
-    - nocheatplus.checks.chat.logins
-    - nocheatplus.checks.chat.relog
-    - nocheatplus.checks.chat.text
-    - nocheatplus.checks.chat.commands
-    - worldguard.region.bypass.Warzone
-    - worldguard.region.bypass.RPG
-    - worldguard.region.bypass.Spawn
-    - ChestShop.*
-    - -essentials.help
-    - -essentials.nuke
-    - essentials.*
-    - mv.bypass.gamemode.*
-    - multiverse.portal.access*
-    - multiverse.teleport.other.w
-    - multiverse.core.spawn.other
-    - multiverse.core.tp.*
-    - multiverse.core.list.worlds
-    - multiverse.core.spawn.self
-    - multiverse.teleport.self.w
-    - creaturebox*
-    - creaturebox.placespawner
-    - nolagg.monitor
-    - nolagg.examine
-    - worldguard.region.bypass.*
-    - automessage.receive.default
-    - disguisecraft.seer
-    - disguisecraft.*
-    - nocheatplus.checks.moving.creativefly
-    - nocheatplus.checks.moving.survivalfly
-    - nocheatplus.admin.exempt
-    - nocheatplus.admin.notify
-    - worldguard.region.bypass.spawn
-    - griefprevention.admin.*
-    - griefprevention.adminclaims
-    - worldedit.*
-    - essentials.ban.exempt
-    - essentials.tempban.exempt
-    - essentials.unban
-    - essentials.tempban.offline
-    - nametags.color.red
-    worlds:
-      default:
-        permissions:
-        - automessage.receive.
-      Warzone:
-        permissions:
-        - worldguard.region.bypass
-  Sr-Admin:
-    prefix: '&f[&4SrAdmin&f]&4 '
-    permissions:
-    - et.level.3
-    - coloredtags.owner
-    - -colordtags.wanderer
-    - -colordtags.convict
-    - -coloredtags.dev
-    - -coloredtags.hyperion
-    - -coloredtags.scarlet
-    - -coloredtags.shadow
-    - essentials.kit.admin
-    - -nametags.*
-    - -herochat.force.leave.*
-    - nametags.color.dark_red
-    - -multiverse.portal.access.TempFix**
-    options:
-      rank: '10'
-    inheritance:
-    - Admin
-  Owner:
-    options:
-      rank: '1'
-    prefix: '&f[&4Owner&f]&4 '
-    inheritance:
-    - Sr-Admin
-    permissions:
-    - -coloredtags.convict
-    - -coloredtags.wanderer
-    - -coloredtags.shadow
-    - -coloredtags.hyperion
-    - -coloredtags.dev
-    - -coloredtags.scarlet
-    - -essentials.afk
-    - -herochat.force.leave.*
-    - door.unl
-    - -multiverse.portal.access.TempFix**
-    - '*'
-  builder:
-    permissions:
-    - -coloredtags.dev
-    - -coloredtags.shadow
-    - -coloredtags.scarlet
-    - -coloredtags.hyperion
-    - coloredtags.builder
-  Voter:
-    permissions:
-    - multiverse.portal.access.WH_Dungeon
 users:
-  Masterofjumping:
-    permissions:
-    - -coloredtags.headbuilder
-    - -coloredtags.builder
-    - -coloredtags.mod
-    - -coloredtags.admin
-    - -coloredtags.sradmin
-    - permissions.*
-    - coloredtags.owner
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Owner
-    suffix: ''
-    options: {}
   hyperkyle:
     group:
     - Hyperion1
@@ -679,17 +74,6 @@ users:
   blooper543221:
     group:
     - Wanderer
-  jonthe445:
-    group:
-    - Admin
-    prefix: '&6[&4Admin&6] '
-    permissions:
-    - -coloredtags.convict
-    - -coloredtags.wanderer
-    - coloredtags.admin
-    suffix: '&4'
-    options:
-      group-Voter-until: '1392937506'
   PreadatorEvil:
     group:
     - Wanderer
@@ -990,9 +374,6 @@ users:
   5CentBanana:
     group:
     - Hyperion
-  drag0n_master:
-    group:
-    - Shadow
   mymarioman2:
     group:
     - Hyperion
@@ -1180,9 +561,6 @@ users:
   drtacozz:
     group:
     - Shadow
-  HCQ:
-    group:
-    - Hyperion
   ArcJamie:
     group:
     - Scarlet
@@ -1745,10 +1123,6 @@ users:
   IronApollo:
     group:
     - Hyperion
-  Timyoki11:
-    group:
-    - Mod
-    prefix: ''
   bvachon:
     group:
     - Wanderer
@@ -3084,18 +2458,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Shadow
-  Shizudo:
-    group:
-    - Shadow
-    prefix: ''
-    suffix: ' &8[&3Staff&8]&6+'
-    worlds:
-      '10':
-        group: []
-    permissions:
-    - bm.tempmute
-    - helpticket.general.*
-    - multiverse.portal.access.WH_Dungeon
   brotherhood424:
     permissions:
     - multiverse.portal.access.PrisonBreak
@@ -3122,34 +2484,6 @@ users:
     group:
     - Scarlet
     - Wanderer
-  Shizaye:
-    group:
-    - Sr-Admin
-    worlds:
-      Admin:
-        group:
-        - Sr-Admin
-      coloredtags.sradmin: {}
-      '10': {}
-    permissions:
-    - '*'
-    - coreprotect.*
-    - herochat.*
-    - essentials.*
-    - -coloredtags.convict
-    - permissions.*
-    - -coloredtags.wanderer
-    - coloredtags.owner
-    - coloredtags.reload
-    - permission.*
-    - -coloredtags.headbuilder
-    - -coloredtags.builder
-    - -coloredtags.mod
-    - -coloredtags.sradmin
-    - -coloredtags.admin
-    - SafeCommandBlock.setCommand
-    options: {}
-    suffix: ''
   aser843:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -3586,13 +2920,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  Weaponcraft:
-    permissions:
-    - multiverse.portal.access.PrisonBreak
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Scarlet
-    - Wanderer
   xapeb:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -4016,12 +3343,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  Slushpies:
-    permissions:
-    - SafeCommandBlock.setCommand
-    - multiverse.portal.access.New_Spawn
-    group:
-    - ContentDev
   Dom125445:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -4040,8 +3361,8 @@ users:
     - Wanderer
   ProCraftTV:
     permissions:
-    - multiverse.portal.access.PrisonBreak
     - multiverse.portal.access.New_Spawn
+    - multiverse.portal.access.PrisonBreak
     group:
     - Hyperion
     - Wanderer
@@ -4260,13 +3581,6 @@ users:
     - Wanderer
   Rosey1105:
     permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Hyperion
-    - Wanderer
-  Kaj_2005:
-    permissions:
-    - multiverse.portal.access.PrisonBreak
     - multiverse.portal.access.New_Spawn
     group:
     - Hyperion
@@ -4551,11 +3865,9 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
-    - Voter
     - Shadow
     - Wanderer
-    options:
-      group-Voter-until: '1396220204'
+    options: {}
   HunterPro123:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -4845,18 +4157,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  unlimited444:
-    permissions:
-    - multiverse.portal.access.PrisonBreak
-    - Shadow2
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Voter
-    - Shadow2
-    - Supporter
-    - Wanderer
-    options:
-      group-Voter-until: '1396231872'
   ExplodingIceMan:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -5486,6 +4786,7 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
+    - Shadow
     - Scarlet
     - Wanderer
   lasterjackson:
@@ -7272,12 +6573,6 @@ users:
     group:
     - Hyperion
     - Wanderer
-  bloodshotwout:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Shadow
-    - Wanderer
   shadowzach:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -7467,6 +6762,7 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
+    - Scarlet
     - Wanderer
   Calebkg:
     permissions:
@@ -7496,6 +6792,7 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
+    - Hyperion
     - Wanderer
   ryancraft593:
     permissions:
@@ -8011,6 +7308,7 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
+    - Shadow
     - Scarlet
     - Wanderer
   jacobcowen:
@@ -9248,13 +8546,6 @@ users:
     group:
     - Scarlet
     - Wanderer
-  olip2king:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Hyperion
-    - Wanderer
-    options: {}
   zachary642:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -9648,6 +8939,7 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
+    - Shadow
     - Hyperion
     - Wanderer
   Obeezy23:
@@ -9807,6 +9099,8 @@ users:
   Top_Assin:
     permissions:
     - multiverse.portal.access.New_Spawn
+    group:
+    - Owner
   Adarie:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -10274,19 +9568,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  Appleton:
-    permissions:
-    - multiverse.portal.access.PrisonBreak
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Voter
-    - Shadow3
-    - Vip
-    - Mod
-    options:
-      group-Voter-until: '1395814582'
-    suffix: '&8+&6+'
-    prefix: '&f[&2SH&f-&2Temporal&f] [&3Mod&f] &3'
   Maff_Morrison:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -10421,11 +9702,6 @@ users:
     group:
     - Shadow
     - Wanderer
-  pie35_Pierce:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Wanderer
   XfastasyouX:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -10472,26 +9748,11 @@ users:
   shadowblade63:
     permissions:
     - multiverse.portal.access.New_Spawn
-  bacca143:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Wanderer
   Terekness:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  some2003:
-    permissions:
-    - multiverse.portal.access.PrisonBreak
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Voter
-    - Hyperion1
-    - Wanderer
-    options:
-      group-Voter-until: '1395668131'
   SFcommander:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -10575,14 +9836,6 @@ users:
     group:
     - Shadow
     - Wanderer
-  Chaos6502:
-    permissions:
-    - multiverse.portal.access.PrisonBreak
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Hyperion1
-    - Supporter
-    options: {}
   IAmErdmaennchen:
     permissions:
     - multiverse.portal.access.PrisonBreak
@@ -10808,11 +10061,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  Jack_Sudz_Suther:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Wanderer
   Marvelrocks8:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -10880,13 +10128,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  TexanBacon:
-    permissions:
-    - multiverse.portal.access.PrisonBreak
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Scarlet
-    - Wanderer
   Mac2HD:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -10952,27 +10193,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  willblue13:
-    permissions:
-    - herochat.speak.Staff
-    - herochat.leave.Staff
-    - herochat.join.Staff
-    - coloredtags.mod
-    - herochat.force.join.Staff
-    - essentials.afk
-    - bm.tempban
-    - bm.tempmute
-    - bm.info
-    - bm.kick
-    - multiverse.portal.access.PrisonBreak
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Scarlet2
-    - Vip
-    - Supporter
-    - Wanderer
-    options: {}
-    prefix: '&f[&5SC&f-&8Echo&f] [&6Chat&f-&3Mod&f] &3'
   ChewieH:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -11039,7 +10259,9 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
+    - Shadow
     - Wanderer
+    options: {}
   joshy99utd:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -11214,12 +10436,6 @@ users:
     group:
     - Hyperion
     - Wanderer
-  TehMagix:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Hyperion
-    - Wanderer
   MoonShards:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -11278,12 +10494,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Scarlet
-    - Wanderer
-  drb1251:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Shadow
     - Wanderer
   creeperking1224:
     permissions:
@@ -11955,14 +11165,6 @@ users:
     group:
     - Scarlet
     - Wanderer
-  Steelewall:
-    permissions:
-    - multiverse.portal.access.PrisonBreak
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Shadow
-    - Wanderer
-    options: {}
   Xytric:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -12016,13 +11218,6 @@ users:
   JESUSL30N:
     permissions:
     - multiverse.portal.access.New_Spawn
-  LavaBoyQ:
-    permissions:
-    - multiverse.portal.access.PrisonBreak
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Shadow
-    - Wanderer
   xX_Sh4dyD4sh_Xx:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -12244,39 +11439,12 @@ users:
     group:
     - Scarlet
     - Wanderer
-  Gamer_M:
-    permissions:
-    - herochat.join.Staff
-    - herochat.force.join.Staff
-    - herochat.leave.Staff
-    - herochat.speak.Staff
-    - VIP
-    - bm.notify.*
-    - bm.warn
-    - bm.kick
-    - bm.tempmute
-    - bm.mute
-    - coloredtags.mod
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Voter
-    - Scarlet1
-    - Supporter
-    - Wanderer
-    options:
-      group-Voter-until: '1396228354'
-    suffix: ' &f[&aQuestDev&f] &8+'
   Filaz:
     permissions:
     - multiverse.portal.access.PrisonBreak
     - multiverse.portal.access.New_Spawn
     group:
     - Shadow
-    - Wanderer
-  671810josh:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
     - Wanderer
   Eragon_3000:
     permissions:
@@ -12508,12 +11676,6 @@ users:
     group:
     - Scarlet
     - Wanderer
-  MrWhateverman:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Shadow
-    - Wanderer
   PinkTiger747:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -12643,11 +11805,9 @@ users:
     - multiverse.portal.access.PrisonBreak
     - multiverse.portal.access.New_Spawn
     group:
-    - Voter
     - Scarlet1
     - Wanderer
-    options:
-      group-Voter-until: '1395702657'
+    options: {}
   AJz77x:
     permissions:
     - multiverse.portal.access.PrisonBreak
@@ -12733,12 +11893,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  mjsir911:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Scarlet
-    - Wanderer
   legocity484:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -12749,10 +11903,8 @@ users:
     - multiverse.portal.access.PrisonBreak
     - multiverse.portal.access.New_Spawn
     group:
-    - Voter
     - Hyperion1
-    options:
-      group-Voter-until: '1396194039'
+    options: {}
   Starrsucht:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -12980,14 +12132,6 @@ users:
     group:
     - Hyperion
     - Wanderer
-  Eviltacoteddy:
-    permissions:
-    - multiverse.portal.access.PrisonBreak
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Shadow2
-    - Wanderer
-    options: {}
   alkarin_v:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -13008,12 +12152,6 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
-    - Wanderer
-  Ult1m0:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Scarlet
     - Wanderer
   poopnuggets227:
     permissions:
@@ -13214,12 +12352,6 @@ users:
     group:
     - Scarlet
     - Wanderer
-  ThingJa:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Hyperion
-    - Wanderer
   NickAFOC:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -13268,11 +12400,9 @@ users:
     options: {}
   Firbaelvan:
     group:
-    - Voter
     - Scarlet3
     - Supporter
-    options:
-      group-Voter-until: '1396167409'
+    options: {}
     permissions:
     - multiverse.portal.access.PrisonBreak
     - multiverse.portal.access.New_Spawn
@@ -13476,12 +12606,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Scarlet
-    - Wanderer
-  fh57s:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Shadow
     - Wanderer
   Skyhawk312:
     permissions:
@@ -13858,10 +12982,11 @@ users:
     - multiverse.portal.access.PrisonBreak
     - multiverse.portal.access.New_Spawn
     group:
-    - Shadow1
+    - Shadow2
     - Wanderer
   Brayryan:
     permissions:
+    - multiverse.portal.access.PrisonBreak
     - multiverse.portal.access.New_Spawn
     group:
     - Hyperion1
@@ -13985,13 +13110,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  thach0022:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Hyperion
-    - Wanderer
-    options: {}
   MotoMan724:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -14070,16 +13188,6 @@ users:
     group:
     - Shadow
     - Wanderer
-  CreeperRocks3:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Lapis
-    - Scarlet1
-    - Gold
-    - Wanderer
-    suffix: ' &5Creeper'
-    options: {}
   88baseballman77:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -14149,21 +13257,6 @@ users:
     group:
     - Scarlet
     - Wanderer
-  Ralemir:
-    permissions:
-    - multiverse.portal.access.PrisonBreak
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Shadow3
-    - Voter
-    - Shadow2
-    - Wanderer
-    options:
-      group-Voter-until: '1396230737'
-    worlds:
-      Rank]:
-        suffix: '&5[Special'
-    suffix: ' &2[Scout]'
   BronsonPain:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -14442,11 +13535,9 @@ users:
     - multiverse.portal.access.PrisonBreak
     - multiverse.portal.access.New_Spawn
     group:
-    - Voter
     - Shadow1
     - Wanderer
-    options:
-      group-Voter-until: '1395657599'
+    options: {}
   Jiaqinglim:
     permissions:
     - multiverse.portal.access.PrisonBreak
@@ -14459,12 +13550,6 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
-    - Wanderer
-  skysky13233:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Shadow
     - Wanderer
   Aaronfrymyer:
     permissions:
@@ -14689,11 +13774,9 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
-    - Voter
     - Shadow
     - Wanderer
-    options:
-      group-Voter-until: '1395357662'
+    options: {}
   captainraven19:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -14748,18 +13831,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  Castlette1:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Shadow
-    - Wanderer
-  ghost1399:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Scarlet
-    - Wanderer
   MrBuddha19:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -14803,11 +13874,9 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
-    - Voter
     - Shadow
     - Wanderer
-    options:
-      group-Voter-until: '1395570476'
+    options: {}
   Spillman42:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -14980,11 +14049,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  Epikknezz:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Wanderer
   GravitySmacked:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -15015,10 +14079,8 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Shadow
-    - Voter
     - Wanderer
-    options:
-      group-Voter-until: '1395612931'
+    options: {}
   JoeTheGrouch:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -15069,11 +14131,6 @@ users:
     - Shadow
     - Wanderer
     options: {}
-  Cloeeee:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Wanderer
   nettlebane:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -15227,11 +14284,9 @@ users:
     - multiverse.portal.access.PrisonBreak
     - multiverse.portal.access.New_Spawn
     group:
-    - Voter
     - Scarlet
     - Wanderer
-    options:
-      group-Voter-until: '1396236981'
+    options: {}
   brucereier:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -15320,10 +14375,8 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
-    - Voter
     - Wanderer
-    options:
-      group-Voter-until: '1395803589'
+    options: {}
   Proficiency_:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -15338,11 +14391,9 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
-    - Voter
     - Scarlet
     - Wanderer
-    options:
-      group-Voter-until: '1395875505'
+    options: {}
   Staticrare:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -15364,11 +14415,9 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
-    - Voter
     - Scarlet
     - Wanderer
-    options:
-      group-Voter-until: '1395940345'
+    options: {}
   zombieknight32:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -15429,11 +14478,9 @@ users:
     - multiverse.portal.access.PrisonBreak
     - multiverse.portal.access.New_Spawn
     group:
-    - Voter
     - Shadow1
     - Wanderer
-    options:
-      group-Voter-until: '1396230881'
+    options: {}
   PlayWithMe2001:
     permissions:
     - multiverse.portal.access.PrisonBreak
@@ -15446,11 +14493,6 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Scarlet
-    - Wanderer
-  Entrus:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
     - Wanderer
   Joelulzgaming90:
     permissions:
@@ -15486,12 +14528,6 @@ users:
     - Scarlet
     - Wanderer
   Octavius_layton:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Scarlet
-    - Wanderer
-  epicduck64:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
@@ -15555,12 +14591,6 @@ users:
   DarkLord0308:
     permissions:
     - multiverse.portal.access.New_Spawn
-  knight_clone:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Shadow
-    - Wanderer
   DoomedPigs:
     permissions:
     - multiverse.portal.access.New_Spawn
@@ -15570,13 +14600,6 @@ users:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
-    - Wanderer
-  Alexen37:
-    permissions:
-    - multiverse.portal.access.PrisonBreak
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Shadow
     - Wanderer
   caspita1022:
     permissions:
@@ -15589,9 +14612,7 @@ users:
     group:
     - Shadow
     - Wanderer
-    - Voter
-    options:
-      group-Voter-until: '1396231509'
+    options: {}
     permissions:
     - multiverse.portal.access.New_Spawn
   awesomediamonds9:
@@ -15616,13 +14637,1288 @@ users:
     - multiverse.portal.access.New_Spawn
     group:
     - Wanderer
-  lunnnken:
-    permissions:
-    - multiverse.portal.access.New_Spawn
-    group:
-    - Wanderer
   GRick2002:
     permissions:
     - multiverse.portal.access.New_Spawn
     group:
+    - Scarlet
     - Wanderer
+  Laser_Beak:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  max1701:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+  mcc83:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  atomicminecore:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+  javelyn01:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  tylerboo1:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  _SkyTheKidsRS:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  Sharkbite429:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  supergamerx3:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  Devokiin:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  SqueekingDeath:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  firedude1996:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  DarienBC:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  CreeperJoe82:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  earrick777:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  FireBallBlaster:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+  jniko201:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+    options: {}
+  macrashad:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  PatriotCat:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  EnderMarco:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+  Ken9876:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  xXCanadianFoolXx:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  theultimate0117:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  petlover12:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+  dementedreality:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  jarr585:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options: {}
+  Darst04:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  bonzibros96:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  Xx_Lockstitch_xX:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  ishvahan:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  bionic16:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  LuciusDS:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  cadanoakey:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  FishyKnight:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  all_bat_no_man:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  Jred477:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options: {}
+  scorupe:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  seanfox15:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  Fiskav:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  jaydentanenui:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  ibdillon:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+  ELH101:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  equist03:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  InhaledTbone8:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  jaredbobared1:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  SungTheVassal:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+    options: {}
+  TheFalconGenesis:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+  joez19:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  rolltideisboss:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  XCOOLGUY5000:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  MineKitty_99:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  Pine5773:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+  jarnison:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+  Stallinator2:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+  legodog5678:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  bo_jo30:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  NightRahkshi444:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  zup2012:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  starcatcher77:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+  TraiterNova319:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  Stalker7171:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  Nightphoenix16:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  NimrodReject:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  tdoghigh:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  TotoEgg:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  Totofood:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  AssassinProdigy:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options: {}
+  bannahan:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  snocrafter:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  ShaunSter1239:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+  Jrcreeperx:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+  jbayer:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  Nunov_yabizness:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  Deaducated:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+  JoviF:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+  waggly_doop:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  Simon_Olive:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  WildThreat:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  happyjuiceguy12:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  Eli1020:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  GreenGodOfWar:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  repoocsnogard:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  kronicX101:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet1
+    - Wanderer
+    options: {}
+  WolfSia:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  AxlMX:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  crazy4trucks:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  KingKrafter123:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  RapidFireXLV:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  KrisKazma:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  11crazyneon11:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  Tree_Decapitator:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  varulo:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  pqgarvis:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  karelzzz:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  supershark12345:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow1
+    - Wanderer
+    options: {}
+  spider34yu:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  noodles20:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  hhhhhulk4:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  bornoldis:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  IceboundRacoon:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  bastianxx04:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  joel15715:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options: {}
+  soup5436:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  Taker007:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+  MicahJBeats:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+  Blackwasabi12:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+  goldenfire33:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  AButterDiamond:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  Viper216:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+  Money217:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  Bagface145:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  Capt_Creeper22:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  TheTotalGamer98:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  MartialartsJoey:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  MizLizzie:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+  11mrp11:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  jordygubshop:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  ghost92201:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+  asmith509:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  spud2man:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  LiamCookiez:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  Hazard9898:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  IEzzYI:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  Bluejaygamer101:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  marcp12b:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+  itsmeCR:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+  FaZeWhisper:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+  0a3d845b-73b6-4a04-8f4d-fdc58db6ebae:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow3
+    - Vip
+    - Mod
+    options:
+      name: Appleton
+    suffix: '&8+&6+'
+    prefix: '&f[&2SH&f-&2Temporal&f] [&3Mod&f] &3'
+  75f30b4d-fa50-4861-b90a-47ffcb93b95c:
+    permissions:
+    - chestcommands.open.North-Pass.yml
+    - -coloredtags.headbuilder
+    - -coloredtags.builder
+    - -coloredtags.mod
+    - -coloredtags.admin
+    - -coloredtags.sradmin
+    - permissions.*
+    - coloredtags.owner
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Owner
+    suffix: ''
+    options:
+      name: Masterofjumping
+  39714bf6-059f-4429-b81d-01fa9379ac2b:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow2
+    - Wanderer
+    options:
+      name: Eviltacoteddy
+  29b552f3-d195-4d2b-8076-4a18a9af7b5d:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: bacca143
+  41b03428-b886-4982-8506-6e4da73a3c4a:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: Steelewall
+  5676ed8c-5d88-4beb-b73b-fa70304d8d47:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+    options:
+      name: epicduck64
+  472f6d4c-3809-46a6-ab45-bcadc5a00737:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+    options:
+      name: Epikknezz
+  5f7797c5-f814-46a3-bfc6-bdc59ca05d4f:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: knight_clone
+  9cd32c05-3044-4dde-8024-f8a7bb31a742:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - Shadow2
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow2
+    - Supporter
+    - Wanderer
+    options:
+      name: unlimited444
+  eb9eb729-06e6-4c28-b899-c182a583ae6b:
+    permissions:
+    - herochat.join.Staff
+    - herochat.force.join.Staff
+    - herochat.leave.Staff
+    - herochat.speak.Staff
+    - VIP
+    - bm.notify.*
+    - bm.warn
+    - bm.kick
+    - bm.tempmute
+    - bm.mute
+    - coloredtags.mod
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet2
+    - Supporter
+    - Wanderer
+    options:
+      name: Gamer_M
+    suffix: ' &f[&aQuestDev&f] &8+'
+  bc10fe24-2725-4266-a016-01792d0f1c6c:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+    options:
+      name: luragonrae
+  8c36bebc-b168-45b1-8b15-9b517663e4d8:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+    options:
+      name: neil2011
+  88f302e5-9910-4389-9307-dbeec9e4f58b:
+    group:
+    - Mod
+    prefix: ''
+    options:
+      name: Timyoki11
+  42acfc8b-a191-4d2d-984b-18ca6c740880:
+    group:
+    - Sr-Admin
+    worlds:
+      Admin:
+        group:
+        - Sr-Admin
+      coloredtags.sradmin: {}
+      '10': {}
+    permissions:
+    - '*'
+    - coreprotect.*
+    - herochat.*
+    - essentials.*
+    - -coloredtags.convict
+    - permissions.*
+    - -coloredtags.wanderer
+    - coloredtags.owner
+    - coloredtags.reload
+    - permission.*
+    - -coloredtags.headbuilder
+    - -coloredtags.builder
+    - -coloredtags.mod
+    - -coloredtags.sradmin
+    - -coloredtags.admin
+    - SafeCommandBlock.setCommand
+    options:
+      name: Shizaye
+    suffix: ''
+  a17eeed1-952f-4043-be6e-5d6a67b9ca62:
+    permissions:
+    - SafeCommandBlock.*
+    - SafeCommandBlock.setCommand
+    - multiverse.portal.access.New_Spawn
+    group:
+    - ContentDev
+    options:
+      name: Slushpies
+    suffix: ''
+    prefix: '&f[&aContentDev&f] '
+  abd46b72-df0a-4a3c-96fb-e5ee1e290314:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+    options:
+      name: ThingJa
+  4137b805-815b-4f1f-991d-5283a639270a:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+    options:
+      name: icejag187
+  8ec7bba2-dd84-413c-9a5c-8a742e43d0fa:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: Cloeeee
+  f3214fdb-6d7e-486c-b91e-a15752fbcb61:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+    options:
+      name: TehMagix
+  dd94ed97-26ee-49f3-9d85-92bd1cf66fff:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: Alexen37
+  45275031-eadc-4575-b88b-9937729d61dd:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+    options:
+      name: Kaj_2005
+  a9cd5e7d-a4cf-4472-b71d-2fa99125de7c:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Lapis
+    - Scarlet1
+    - Gold
+    - Wanderer
+    suffix: ''
+    options:
+      name: CreeperRocks3
+  4953e64f-d259-446a-a27f-18db451bbfd6:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+    options:
+      name: Shivang1
+  789b8c74-0212-4742-8c3a-b5076b6f368b:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+    options:
+      name: Fuzzbo99
+  af78724f-29f1-4432-a449-34d6906fb6c8:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+    options:
+      name: wolves2222
+  b79bcc41-fb63-4947-bffd-746587cd45c9:
+    group:
+    - Admin
+    prefix: ''
+    permissions:
+    - -coloredtags.convict
+    - -coloredtags.wanderer
+    - coloredtags.admin
+    suffix: '&4'
+    options:
+      group-Voter-until: '1392937506'
+      name: jonthe445
+  b54520b7-9f9a-4d76-bc25-299caf312dde:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+    options:
+      name: olip2king
+  a9542693-3a57-4282-b8dc-5bc22bef10f7:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+    options:
+      name: J_B5550
+  fcc4ede8-81f9-49a1-b46c-75c7b957baf6:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+    options:
+      name: meteopegasis
+  e0b4bf71-c3d2-4afe-acdf-1f0fd3ae837a:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: LavaBoyQ
+  54fe6e4e-e8ca-47a1-a3b2-f7553db339b9:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: Castlette1
+  d4d340ae-670c-41d1-9520-72bf1198bc0e:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: Bellasol
+  90910d50-0dee-402f-bb5c-bf0d6adc637b:
+    permissions:
+    - herochat.speak.Staff
+    - herochat.leave.Staff
+    - herochat.join.Staff
+    - coloredtags.mod
+    - herochat.force.join.Staff
+    - essentials.afk
+    - bm.tempban
+    - bm.tempmute
+    - bm.info
+    - bm.kick
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet2
+    - Vip
+    - Supporter
+    - Wanderer
+    options:
+      name: willblue13
+    prefix: '&f[&5SC&f-&8Echo&f] [&6Chat&f-&3Mod&f] &3'
+  156209fa-9a3b-41c5-9499-40ef45e78afc:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: skysky13233
+  1086d98d-ad71-4f13-bd19-e7d74df12c01:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+    options:
+      name: TexanBacon
+  2cddfd56-7266-4602-b520-70ab5f95af4b:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow1
+    - Wanderer
+    options:
+      name: lunnnken
+  b1f78539-d2bb-4fc0-975f-f3c2257df490:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+    options:
+      name: Madeofplatinum
+  771d2cd3-8512-4a5f-a2df-6fe108cc3874:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: fh57s
+  f133f18f-bb69-49b0-b1e0-b48bc4c98b8d:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow3
+    - Shadow2
+    - Wanderer
+    options:
+      name: Ralemir
+    worlds:
+      Rank]:
+        suffix: '&5[Special'
+    suffix: ' &2[Scout]'
+  0610565b-228a-448b-baa4-455345881159:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+    options:
+      name: linkster11234
+  fb19ace5-e53f-4947-8f97-23539c3b00f1:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+    options:
+      name: mini1214
+  662b337b-5c6f-4200-a966-96863c05d1d8:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion1
+    - Supporter
+    options:
+      name: Chaos6502
+  ac7dd34c-c2cb-4ca6-a7ee-9a448a6cf2d1:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+    options:
+      name: thach0022
+  84cbb40c-ef55-417d-ade0-84b758399d5f:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+    options:
+      name: Ult1m0
+  63561edb-d902-4d9b-a07d-6167979cc925:
+    group:
+    - Shadow
+    prefix: ''
+    suffix: ' &8[&3Staff&8]&6+'
+    worlds:
+      '10':
+        group: []
+    permissions:
+    - bm.tempmute
+    - helpticket.general.*
+    - multiverse.portal.access.WH_Dungeon
+    options:
+      name: Shizudo
+  93ba5e6d-bc68-4c48-926c-db38f961ed70:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: bloodshotwout
+  606cc222-7098-4845-8fb4-52a09b027b9a:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion
+    - Wanderer
+    options:
+      name: mcwonderer
+  12a13821-2220-4b99-8b87-907f4a432694:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+    options:
+      name: Jack_Sudz_Suther
+  9bf03551-9b92-49c4-bdb7-847a4b689e67:
+    group:
+    - Shadow
+    options:
+      name: drag0n_master
+  dbdee6c4-705e-48bc-aeca-072f2fa1641e:
+    group:
+    - Hyperion
+    options:
+      name: HCQ
+  6ac7cd67-a8d1-48e8-98fd-ec8cda000df2:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+    options:
+      name: mjsir911
+  3412eb9d-4c7e-44ee-bba0-9e22898d5a81:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+    options:
+      name: pie35_Pierce
+  43eba59e-f780-4473-99ee-a07725126b37:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+    options:
+      name: ghost1399
+  2dbb4a02-be39-462c-9e72-dbeb753224ed:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Hyperion1
+    - Wanderer
+    options:
+      name: some2003
+  b6385b7d-d2eb-492e-9b39-68e3fa507121:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+    options:
+      name: Entrus
+  397c5e32-7989-4db6-87bd-8244147bd5f4:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: drb1251
+  59413c5c-cc42-4909-8bf9-ad457fceda1f:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+    options:
+      name: TheGrammarCop
+  918636a8-da18-4dac-93f6-22c8cc13ca74:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: MrWhateverman
+  997dcd9f-1b5a-4cd7-b2a3-5e39eb10c262:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow1
+    - Wanderer
+    options:
+      name: Verblind
+  022929e3-c3af-49f4-a949-ca2737dc6af5:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+    options:
+      name: Tommythebold16
+  7f5a02a5-b5b6-45d0-8fe9-e73f18176186:
+    permissions:
+    - multiverse.portal.access.PrisonBreak
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Scarlet
+    - Wanderer
+    options:
+      name: Weaponcraft
+  9662dec3-4e7b-4210-aad0-cd7ecedc2f57:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Wanderer
+    options:
+      name: 671810josh
+  702a0a5d-ee5e-4f42-8f45-fd042d3ae907:
+    permissions:
+    - multiverse.portal.access.New_Spawn
+    group:
+    - Shadow
+    - Wanderer
+    options:
+      name: capmannster
