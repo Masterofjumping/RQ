@@ -1,0 +1,6134 @@
+# Citizens NPC Storage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+npc:
+  '7':
+    traits:
+      equipment:
+        hand:
+          type: GOLD_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            '20': 2
+            '18': 5
+            DAMAGE_ARTHROPODS: 5
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            '0': 4
+            PROTECTION_ENVIRONMENTAL: 4
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            '0': 4
+            PROTECTION_ENVIRONMENTAL: 4
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            '0': 4
+            PROTECTION_ENVIRONMENTAL: 4
+      speech: chat
+      spawned: true
+      quester:
+        quester:
+          holder: 3
+      location:
+        world: RPG
+        x: '-292.7285814528964'
+        y: '90.0'
+        z: '-1248.5301525829852'
+        yaw: '92.37294006347656'
+        pitch: '-11.438946723937988'
+      text:
+        talk-close: true
+        realistic-looking: false
+        random-talker: true
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': I am busy, talk to my advisor.
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Rauthr
+    traitnames: text,speech,lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d77450fc-c49c-4f2a-a5b8-e13a79ed919e
+  '8':
+    traits:
+      equipment:
+        hand:
+          type: WATCH
+          amount: 1
+          durability: 0
+          mdata: 0
+      speech: chat
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: RPG
+                x: '-310.0'
+                y: '89.0'
+                z: '-1249.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: RPG
+                x: '-315.0'
+                y: '88.0'
+                z: '-1249.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: RPG
+                x: '-317.0'
+                y: '88.0'
+                z: '-1256.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: RPG
+                x: '-317.0'
+                y: '88.0'
+                z: '-1264.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: RPG
+                x: '-295.0'
+                y: '89.0'
+                z: '-1249.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: RPG
+        x: '-304.0460142860644'
+        y: '90.0'
+        z: '-1248.593042661704'
+        yaw: '89.02264404296875'
+        pitch: '0.0'
+      text:
+        talk-close: true
+        realistic-looking: false
+        random-talker: true
+        range: '3.0'
+        talkitem: default
+        text:
+          '0': Keep out of my path, I am ferrying important documents to the lord.
+          '1': Keep out of my path!
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: JackHemming
+    traitnames: text,speech,waypoints,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: be405efc-870f-4aaa-bbbd-29f4b1845b2a
+  '13':
+    traits:
+      equipment:
+        hand:
+          type: DIAMOND_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 1644825
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 1644825
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 1644825
+      speech: chat
+      spawned: true
+      location:
+        world: RPG
+        x: '-332.08390912415365'
+        y: '74.0'
+        z: '-1189.4753444356616'
+        yaw: '-45.8033447265625'
+        pitch: '0.0'
+      text:
+        talk-close: true
+        realistic-looking: false
+        random-talker: true
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Watch the shadows..
+          '1': Walk softly, sound can be a friend and foe.
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: HuntRS
+    traitnames: text,speech,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 84de5b00-c4e6-4699-8c44-5f92f64506f0
+  '14':
+    traits:
+      equipment:
+        hand:
+          type: DIAMOND_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 1644825
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 1644825
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 1644825
+      speech: chat
+      spawned: true
+      location:
+        world: RPG
+        x: '-335.9589060039456'
+        y: '74.0'
+        z: '-1182.7949737329022'
+        yaw: '264.8039855957031'
+        pitch: '0.0'
+      text:
+        talk-close: true
+        realistic-looking: false
+        random-talker: true
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Shadows are our friends and all other's enemies
+          '1': My brothers are strong.
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: HuntRS
+    traitnames: text,speech,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 224fccc8-aa02-43cb-ab7f-3598b95b8a9f
+  '15':
+    traits:
+      speech: chat
+      spawned: true
+      location:
+        world: RPG
+        x: '-314.3584721284716'
+        y: '75.0'
+        z: '-1173.5298675840497'
+        yaw: '9.648406982421875'
+        pitch: '0.0'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': You can find Vallelith upstairs.
+          '1': Looking for Vallelith? Up the ladder.
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: jaddes
+    traitnames: text,speech,lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: bb9ba4f3-b9cc-4a9a-b1b6-941f7998ea35
+  '21':
+    traits:
+      sentry:
+        toggled: true
+        Retaliate: true
+        Invincinble: true
+        DropInventory: false
+        CriticalHits: true
+        Targets: []
+        Ignores: []
+        Spawn:
+          x: '24.72822438578987'
+          y: '77.0'
+          z: '-6.502224406069641'
+          world: Spawn
+          yaw: '84.16656494140625'
+          pitch: '0.0'
+        Health: 20
+        Range: 10
+        RespawnDelay: 10
+        Speed: '1.0'
+        Weight: '1.0'
+        HealRate: '0.0'
+        Armor: 0
+        Strength: 1
+        WarningRange: 0
+        AttackRate: '2.0'
+        NightVision: 16
+        Warning: '&c<NPC> says Halt! Come no closer!'
+        Greeting: '&a<NPC> says Welcome, <PLAYER>'
+      spawned: true
+      quester:
+        quester:
+          holder: 6
+      location:
+        world: Spawn
+        x: '24.72822438578987'
+        y: '-4.822320863805913E7'
+        z: '-6.502224406069641'
+        yaw: '133.7694549560547'
+        pitch: '-22.156116485595703'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Niea
+    metadata:
+      protected: true
+    traitnames: quester,lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: 100
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 25edea68-37c1-4f45-bfe8-10797fc7bbdf
+  '4':
+    traits:
+      equipment:
+        hand:
+          type: RED_ROSE
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      quester:
+        quester:
+          holder: 8
+      location:
+        world: RPG
+        x: '35.585482933728294'
+        y: '65.0'
+        z: '-141.35690026751848'
+        yaw: '40.06367492675781'
+        pitch: '-8.621402740478516'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Insers
+    traitnames: quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 9a68a7a5-a7e8-4c01-9260-8e27d74ac8e6
+  '22':
+    traits:
+      speech: chat
+      spawned: true
+      quester:
+        quester:
+          holder: 17
+      location:
+        world: RPG
+        x: '11.616694461318897'
+        y: '77.0'
+        z: '-23.42493531410983'
+        yaw: '248.34426879882812'
+        pitch: '-47.56611251831055'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': Hello, been here before?
+          '1': Smith in the Kings forge is looking for someone to test his swords.
+          '2': Need some gear? There is a market down in the town.
+      equipment:
+        hand:
+          type: NAME_TAG
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            lore:
+              '0': §r§7     Voucher - Rare - QP
+              '1': §r§8========================
+              '2': §r§9 > §71 Quest Point
+              '3': §r§8========================
+              '4': §r§7§oRedeem with 'Xervan' at
+              '5': §r§7§ospawn.
+            displayname: §7[§1Rare§7] §6Quest Point Voucher
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Xervan
+    traitnames: text,speech,lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: f199fec6-c427-447e-93c1-12ad5c0f5ad8
+  '23':
+    traits:
+      equipment:
+        hand:
+          type: BLAZE_ROD
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      quester:
+        quester:
+          holder: -1
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: RPG
+                x: '49.0'
+                y: '76.0'
+                z: '6.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: RPG
+                x: '49.0'
+                y: '76.0'
+                z: '2.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: RPG
+                x: '46.0'
+                y: '76.0'
+                z: '1.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: RPG
+                x: '42.0'
+                y: '76.0'
+                z: '0.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: RPG
+                x: '38.0'
+                y: '76.0'
+                z: '0.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: RPG
+                x: '35.0'
+                y: '76.0'
+                z: '3.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: RPG
+                x: '37.0'
+                y: '77.0'
+                z: '7.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: RPG
+                x: '45.0'
+                y: '76.0'
+                z: '8.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: RPG
+        x: '43.43027679789447'
+        y: '77.0'
+        z: '0.739057169218212'
+        yaw: '-1544295.625'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Astel
+    traitnames: waypoints,quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 3f27681e-e3ae-4dae-bed7-7bb06f74e8c9
+  '24':
+    traits:
+      equipment:
+        hand:
+          type: BOW
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      quester:
+        quester:
+          holder: -1
+      location:
+        world: RPG
+        x: '23.934920575603286'
+        y: '78.0'
+        z: '9.135673163477637'
+        yaw: '76.97901916503906'
+        pitch: '-46.40102005004883'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Segolia
+    traitnames: lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: c6793130-1936-4e8b-86d1-edf204d0354c
+  '30':
+    traits:
+      spawned: true
+      location:
+        world: Spawn
+        x: '-0.47305083921601865'
+        y: '-1.0353719855458917E8'
+        z: '55.48409131278819'
+        yaw: '-23.908706665039062'
+        pitch: '-69.99620056152344'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Ragnothane
+    traitnames: lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 7926150d-71e2-497a-8dcb-8e3e45c1aa00
+  '2':
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '87.6458816195058'
+        y: '73.0'
+        z: '-201.9436081912142'
+        yaw: '57.196044921875'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: Aheri
+    traitnames: lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: fde473a0-3704-4190-b7bd-883c6e5f1e8b
+  '31':
+    traits:
+      spawned: true
+      quester:
+        quester:
+          holder: 11
+      location:
+        world: RPG
+        x: '39.480821576725084'
+        y: '65.0'
+        z: '-75.48989281975726'
+        yaw: '-4.562103271484375'
+        pitch: '-27.946796417236328'
+      equipment:
+        helmet:
+          type: SKULL_ITEM
+          amount: 1
+          durability: 3
+          mdata: 3
+          meta:
+            skull:
+              owner: MHF_Enderman
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Zuriki
+    traitnames: lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 384248dd-c3de-4b9f-a9ef-c741642ba052
+  '20':
+    traits:
+      equipment:
+        hand:
+          type: GOLD_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      quester:
+        quester:
+          holder: 9
+      location:
+        world: RPG
+        x: '9.384552357213705'
+        y: '66.0'
+        z: '-59.589885864588624'
+        yaw: '195.28265380859375'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Smith
+    traitnames: quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 089e2e39-b584-4f22-b6a3-961941a2e399
+  '26':
+    traits:
+      speech: chat
+      spawned: true
+      location:
+        world: RPG
+        x: '54.36214040867708'
+        y: '66.0'
+        z: '-79.96668763337554'
+        yaw: '34.96654510498047'
+        pitch: '10.730562210083008'
+      text:
+        talk-close: true
+        realistic-looking: false
+        random-talker: true
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': Sorry, the bank is closed today.
+          '1': Price of Gold rose recently. Must have been that new mine.
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: BankerNPC
+    traitnames: text,speech,lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 8f2d6306-027c-41ae-95d2-4149de1658f0
+  '28':
+    traits:
+      equipment:
+        hand:
+          type: FLINT_AND_STEEL
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      poses: {}
+      quester:
+        quester:
+          holder: 15
+      location:
+        world: RPG
+        x: '21.50075888897171'
+        y: '65.0'
+        z: '-78.43630939224118'
+        yaw: '-82.76105499267578'
+        pitch: '-22.220415115356445'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: Tark
+    traitnames: lookclose,quester,equipment,spawned,owner,poses,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: c2ffa996-91cf-403e-a181-df8e0e76c98c
+  '35':
+    traits:
+      lookclose:
+        range: '5.0'
+        realisticlooking: false
+        enabled: false
+      equipment:
+        hand:
+          type: SMOOTH_BRICK
+          amount: 1
+          durability: 0
+          mdata: 0
+      speech: chat
+      spawned: true
+      location:
+        world: RPG
+        x: '49.463979597088475'
+        y: '65.0'
+        z: '-110.69380850494396'
+        yaw: '180.12747192382812'
+        pitch: '0.0'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '3.0'
+        talkitem: default
+        text:
+          '0': Damn walls.. falling apart all over the place.
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Mielsen
+    traitnames: text,speech,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 7061f8a3-4185-4077-8d82-ef140f7bc708
+  '33':
+    traits:
+      spawned: true
+      quester:
+        quester:
+          holder: 16
+      location:
+        world: RPG
+        x: '15.436833065224977'
+        y: '51.0'
+        z: '-15.557018739714515'
+        yaw: '0.1558837890625'
+        pitch: '25.79987335205078'
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Aneirra
+    traitnames: quester,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b6a273fa-dc0d-4412-8c6a-7d33e35dac41
+  '36':
+    traits:
+      equipment:
+        hand:
+          type: WOOD_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 1644825
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 1644825
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 1644825
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 1644825
+      spawned: true
+      location:
+        world: RPG
+        x: '21.11722949685771'
+        y: '51.0'
+        z: '-9.926610607357539'
+        yaw: '142.14442443847656'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Murderer
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b4386a29-1fbe-4d47-be67-aecf18f81b5a
+  '25':
+    traits:
+      equipment:
+        hand:
+          type: BOOK
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      location:
+        world: RPG
+        x: '240.47667103708844'
+        y: '60.0'
+        z: '44.55906502810967'
+        yaw: '191.09112548828125'
+        pitch: '67.26994323730469'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: Secrettom
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: a13738cf-74ed-4c57-bbba-537848ceee9f
+  '27':
+    traits:
+      lookclose:
+        range: '5.0'
+        realisticlooking: false
+        enabled: false
+      speech: chat
+      spawned: true
+      quester:
+        quester:
+          holder: 29
+      location:
+        world: RPG
+        x: '44.5653552086281'
+        y: '91.0'
+        z: '2.5656248057729725'
+        yaw: '18.44110870361328'
+        pitch: '0.0'
+      text:
+        talk-close: false
+        realistic-looking: false
+        random-talker: true
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Hi, I'm <npc>!
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: JakeEpps
+    traitnames: text,speech,quester,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: aa80ad8e-8562-44d3-abca-6044087f6af0
+  '37':
+    traits:
+      spawned: true
+      quester:
+        quester:
+          holder: -1
+      location:
+        world: RPG
+        x: '33.51176737013775'
+        y: '94.0'
+        z: '16.327986093108798'
+        yaw: '254.68511962890625'
+        pitch: '-64.59706115722656'
+      equipment:
+        hand:
+          type: GOLD_BARDING
+          amount: 1
+          durability: 0
+          mdata: 0
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: vorske
+    traitnames: lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 34f6c63b-e00b-4a07-99e2-8769ac739ff7
+  '38':
+    traits:
+      speech: chat
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: RPG
+                x: '18.0'
+                y: '61.0'
+                z: '-10.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: RPG
+                x: '19.0'
+                y: '61.0'
+                z: '-6.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: RPG
+                x: '19.0'
+                y: '61.0'
+                z: '-10.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: RPG
+                x: '18.0'
+                y: '62.0'
+                z: '-6.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: RPG
+        x: '18.329596592113376'
+        y: '62.0'
+        z: '-8.952789998232305'
+        yaw: '6285942.5'
+        pitch: '0.0'
+      text:
+        talk-close: false
+        realistic-looking: false
+        random-talker: false
+        range: '3.0'
+        talkitem: default
+        text:
+          '0': Hi, I'm <npc>!
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: csd
+    traitnames: text,speech,waypoints,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 360ed302-eefb-4348-ac02-7ee3d032cd6b
+  '39':
+    traits:
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+      speech: chat
+      spawned: true
+      poses: {}
+      quester:
+        quester:
+          holder: -1
+      location:
+        world: RPG
+        x: '27.442888930933197'
+        y: '62.0'
+        z: '-0.6846166421611073'
+        yaw: '36.511383056640625'
+        pitch: '0.0'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '1.0'
+        talkitem: default
+        text:
+          '0': This is the royal prison, home to misfits and scoundrels.
+          '1': Have you seen 'Aneirra'? She has a $9500 bounty on her head.
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Prison_Guard
+    traitnames: text,speech,lookclose,quester,equipment,spawned,owner,poses,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 66ae8cbc-0e6a-4c75-a1ab-3769f6f49947
+  '29':
+    traits:
+      spawned: true
+      quester:
+        quester:
+          holder: 0
+      location:
+        world: RPG
+        x: '-125.49223692950002'
+        y: '41.5'
+        z: '-1437.5007695017696'
+        yaw: '50.21424865722656'
+        pitch: '-63.41048812866211'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: CaptainAspyr
+    traitnames: lookclose,quester,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 255169eb-eb5d-436e-a5ac-be97acbc654c
+  '34':
+    traits:
+      lookclose:
+        range: '5.0'
+        realisticlooking: false
+        enabled: false
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: SKULL_ITEM
+          amount: 1
+          durability: 3
+          mdata: 3
+          meta:
+            skull:
+              owner: crimsonghost
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      speech: chat
+      spawned: true
+      location:
+        world: RPG
+        x: '-117.31253603657187'
+        y: '42.0'
+        z: '-1439.5854078935383'
+        yaw: '-74.99776458740234'
+        pitch: '0.0'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '1.0'
+        talkitem: default
+        text:
+          '0': '&4Left &athen &4right &aclick the captain.'
+          '1': Speak to CaptainAspyr convict!
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Prison Guard
+    traitnames: text,speech,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e56643ae-da5f-43b8-a96e-5793006d8af0
+  '43':
+    traits:
+      lookclose:
+        range: '5.0'
+        realisticlooking: false
+        enabled: false
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: SKULL_ITEM
+          amount: 1
+          durability: 3
+          mdata: 3
+          meta:
+            skull:
+              owner: axanoy
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      speech: chat
+      spawned: true
+      location:
+        world: RPG
+        x: '-117.55194299508774'
+        y: '42.0'
+        z: '-1435.5352321053713'
+        yaw: '268.5677185058594'
+        pitch: '0.0'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '1.0'
+        talkitem: default
+        text:
+          '0': Do not keep the Captain waiting. Speak to the Captain!
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Prison Guard
+    traitnames: text,speech,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 48b7ce53-f0d2-440e-b008-4e52ef7f6ab6
+  '40':
+    traits:
+      spawned: true
+      location:
+        world: Spawn
+        x: '13.470251409604346'
+        y: '-4.822320791806144E7'
+        z: '6.500092535527007'
+        yaw: '180.8548583984375'
+        pitch: '-43.49591827392578'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: kasmas
+    traitnames: lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e4b38ebc-dcf1-4b13-8fc7-e33973eda4db
+  '41':
+    traits:
+      lookclose:
+        range: '5.0'
+        realisticlooking: false
+        enabled: false
+      spawned: true
+      location:
+        world: RPG
+        x: '362.40777599899167'
+        y: '75.0'
+        z: '39.530975613758464'
+        yaw: '114.56472778320312'
+        pitch: '13.92442798614502'
+      owner:
+        owner: masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Tursikas
+    traitnames: spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 12553f6c-00ab-41a7-b911-823ff0e6f2dd
+  '42':
+    traits:
+      spawned: true
+      quester:
+        quester:
+          holder: 12
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: RPG
+                x: '75.0'
+                y: '64.0'
+                z: '-112.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: RPG
+        x: '74.73719439618074'
+        y: '65.0'
+        z: '-111.46056793129483'
+        yaw: '36.72511291503906'
+        pitch: '-6.772729396820068'
+      equipment: {}
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: Flambe
+    traitnames: waypoints,lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '0.5'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b5b8e4cf-eadc-4c19-b92a-f6a954be6687
+  '44':
+    traits:
+      equipment:
+        hand:
+          type: ENCHANTED_BOOK
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      location:
+        world: RPG
+        x: '23.392839701478838'
+        y: '121.0'
+        z: '11.371354300586672'
+        yaw: '239.61898803710938'
+        pitch: '57.085323333740234'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: Fumblemore
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 3d2013be-819b-45e3-8a1d-6d092904104a
+  '45':
+    traits:
+      equipment:
+        hand:
+          type: GOLDEN_CARROT
+          amount: 1
+          durability: 0
+          mdata: 0
+      speech: chat
+      spawned: true
+      location:
+        world: RPG
+        x: '-131.0'
+        y: '89.0'
+        z: '-1480.0'
+        yaw: '116.33815002441406'
+        pitch: '0.0'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': Time to leave this dirt hole?! Lucky you..
+          '1': What can I say, your leaving and I am stuck here.
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: memnoc
+    traitnames: text,speech,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 317a6c7e-bd64-41dd-95eb-574971138eb2
+  '46':
+    traits:
+      equipment:
+        hand:
+          type: BOW
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      speech: chat
+      spawned: true
+      location:
+        world: RPG
+        x: '40.29496626951001'
+        y: '72.0'
+        z: '17.303722242336228'
+        yaw: '3.7172470092773438'
+        pitch: '-42.67170333862305'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': What do you think you're doing down here?
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: Chortana
+    traitnames: text,speech,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d42dd85e-32a0-462c-9f75-e106eac63c0c
+  '47':
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '10.137499988079071'
+        y: '63.0'
+        z: '7.48243965767324'
+        yaw: '-87.80563354492188'
+        pitch: '10.563772201538086'
+      text:
+        talk-close: false
+        random-talker: true
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Help! I'm trapped %p!
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: SirMoops
+    traitnames: text,lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: a0785e5c-b3e5-4eb2-8bbd-bc78acf17cdf
+  '50':
+    traits:
+      speech: chat
+      spawned: true
+      location:
+        world: RPG
+        x: '-82.47871043926438'
+        y: '64.0'
+        z: '-10.165119588791946'
+        yaw: '-73.84239959716797'
+        pitch: '0.0'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': '&4Witches! Lookout! We''ve got a ratty intruder!'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: nranin
+    traitnames: text,speech,lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b7a23069-2564-4910-80d3-e4ac003172c9
+  '48':
+    traits:
+      equipment:
+        hand:
+          type: IRON_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      quester:
+        quester:
+          holder: 14
+      location:
+        world: RPG
+        x: '74.47970848555087'
+        y: '65.0'
+        z: '-97.54375641470187'
+        yaw: '161.6157989501953'
+        pitch: '-9.833918571472168'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: shizudo
+        uuid: ''
+    name: panzan
+    traitnames: lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: c6d3a740-833f-4e07-893f-bd26605ba6e2
+  '49':
+    traits:
+      spawned: true
+      quester:
+        quester:
+          holder: 32
+      location:
+        world: RPG
+        x: '-16.7632247144597'
+        y: '66.0'
+        z: '-258.1319366789553'
+        yaw: '182.28054809570312'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: babibab
+        uuid: ''
+    name: Kabby
+    traitnames: lookclose,quester,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b2a9cb4e-50e3-4de0-bd0f-af2f7973870f
+  '53':
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '211.35545321028854'
+        y: '74.0'
+        z: '-327.8197313278793'
+        yaw: '71.38658142089844'
+        pitch: '-4.110647678375244'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: babibab
+        uuid: ''
+    name: Stius
+    traitnames: lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 67cdc5f4-bb19-46eb-bc93-bfb75f58772f
+  '55':
+    traits:
+      equipment:
+        hand:
+          type: YELLOW_FLOWER
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: RPG
+                x: '99.0'
+                y: '65.0'
+                z: '125.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: RPG
+                x: '88.0'
+                y: '65.0'
+                z: '113.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: RPG
+                x: '83.0'
+                y: '65.0'
+                z: '128.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: RPG
+                x: '71.0'
+                y: '65.0'
+                z: '128.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: RPG
+                x: '68.0'
+                y: '65.0'
+                z: '116.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: RPG
+                x: '56.0'
+                y: '65.0'
+                z: '117.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: RPG
+                x: '55.0'
+                y: '65.0'
+                z: '128.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: RPG
+                x: '44.0'
+                y: '65.0'
+                z: '128.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: RPG
+                x: '26.0'
+                y: '65.0'
+                z: '125.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: RPG
+                x: '23.0'
+                y: '65.0'
+                z: '130.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: RPG
+                x: '17.0'
+                y: '65.0'
+                z: '118.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: RPG
+                x: '11.0'
+                y: '65.0'
+                z: '127.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: RPG
+                x: '1.0'
+                y: '65.0'
+                z: '126.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: RPG
+                x: '-3.0'
+                y: '65.0'
+                z: '116.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: RPG
+                x: '-12.0'
+                y: '65.0'
+                z: '110.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '15':
+              location:
+                world: RPG
+                x: '-24.0'
+                y: '65.0'
+                z: '112.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '16':
+              location:
+                world: RPG
+                x: '-29.0'
+                y: '65.0'
+                z: '128.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '17':
+              location:
+                world: RPG
+                x: '-23.0'
+                y: '65.0'
+                z: '126.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '18':
+              location:
+                world: RPG
+                x: '-10.0'
+                y: '65.0'
+                z: '129.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '19':
+              location:
+                world: RPG
+                x: '-1.0'
+                y: '65.0'
+                z: '128.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '20':
+              location:
+                world: RPG
+                x: '8.0'
+                y: '64.0'
+                z: '130.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '21':
+              location:
+                world: RPG
+                x: '16.0'
+                y: '64.0'
+                z: '129.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '22':
+              location:
+                world: RPG
+                x: '24.0'
+                y: '65.0'
+                z: '131.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '23':
+              location:
+                world: RPG
+                x: '37.0'
+                y: '64.0'
+                z: '126.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '24':
+              location:
+                world: RPG
+                x: '41.0'
+                y: '64.0'
+                z: '138.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '25':
+              location:
+                world: RPG
+                x: '53.0'
+                y: '65.0'
+                z: '132.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '26':
+              location:
+                world: RPG
+                x: '65.0'
+                y: '65.0'
+                z: '135.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '27':
+              location:
+                world: RPG
+                x: '74.0'
+                y: '64.0'
+                z: '136.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '28':
+              location:
+                world: RPG
+                x: '94.0'
+                y: '64.0'
+                z: '135.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '29':
+              location:
+                world: RPG
+                x: '118.0'
+                y: '64.0'
+                z: '133.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: RPG
+        x: '-23.4393331075098'
+        y: '65.0'
+        z: '121.73727567260761'
+        yaw: '-11.156944274902344'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: babibab
+        uuid: ''
+    name: Kusp
+    traitnames: waypoints,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '20.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 81002027-0906-4ae0-ad1f-5478ab6da6a2
+  '57':
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '20.30325154613691'
+        y: '99.0'
+        z: '9.337338577678903'
+        yaw: '242.581298828125'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: babibab
+        uuid: ''
+    name: Jallen
+    traitnames: lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 03e1992c-ed76-405e-9f83-4728c6dc83a8
+  '58':
+    traits:
+      speech: chat
+      spawned: true
+      quester:
+        quester:
+          holder: 40
+      location:
+        world: RPG
+        x: '14.542369805298037'
+        y: '65.0'
+        z: '-92.5209929675916'
+        yaw: '227.72802734375'
+        pitch: '-3.9941153526306152'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': Welcome to the Bakehouse, how may I help you?
+          '1': All bread freshly baked.
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Shizaye
+        uuid: ''
+    name: Notsuru
+    traitnames: text,speech,quester,lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 2d2b23b3-46c1-4891-b874-bb4b1485f296
+  '59':
+    traits:
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: RPG
+                x: '65.0'
+                y: '71.0'
+                z: '-109.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: RPG
+                x: '64.0'
+                y: '71.0'
+                z: '-107.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: RPG
+        x: '64.87978929657307'
+        y: '72.0'
+        z: '-107.01908710547889'
+        yaw: '2103682.75'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Bekan
+    traitnames: waypoints,lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '0.5'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: a46aee15-58bf-45fd-a79d-3d0599543eb7
+  '60':
+    traits:
+      spawned: true
+      quester:
+        quester:
+          holder: 37
+      location:
+        world: RPG
+        x: '147.09382935781656'
+        y: '74.0'
+        z: '-309.30000001192093'
+        yaw: '154.08782958984375'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Willster
+    traitnames: quester,lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 8ce25974-b789-4993-8632-51c223adad83
+  '61':
+    traits:
+      spawned: true
+      quester:
+        quester:
+          holder: 35
+      location:
+        world: RPG
+        x: '141.71463299452924'
+        y: '74.0'
+        z: '-309.6625243847168'
+        yaw: '275.630615234375'
+        pitch: '9.749923706054688'
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Pami
+    traitnames: quester,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: fe8a52bd-54f3-4c71-916f-5a3794df6ac6
+  '62':
+    traits:
+      equipment:
+        hand:
+          type: STICK
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: PUMPKIN
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      location:
+        world: RPG
+        x: '210.63597649634875'
+        y: '69.0'
+        z: '-247.05815593731268'
+        yaw: '178.4305419921875'
+        pitch: '1.7999637126922607'
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Farmer Eugene
+    traitnames: equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 399cef59-3195-4729-abe3-42e964c407c3
+  '63':
+    traits:
+      equipment:
+        hand:
+          type: STONE_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: GOLD_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: RPG
+                x: '-3.0'
+                y: '69.0'
+                z: '-416.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: RPG
+                x: '-2.0'
+                y: '67.0'
+                z: '-418.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: RPG
+                x: '-5.0'
+                y: '65.0'
+                z: '-419.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: RPG
+                x: '-6.0'
+                y: '65.0'
+                z: '-426.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: RPG
+                x: '-7.0'
+                y: '65.0'
+                z: '-435.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: RPG
+                x: '-4.0'
+                y: '70.0'
+                z: '-411.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: RPG
+                x: '-6.0'
+                y: '65.0'
+                z: '-433.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: RPG
+        x: '-4.7564483168868'
+        y: '66.0'
+        z: '-421.3449451748553'
+        yaw: '-190.14561462402344'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Worker
+    traitnames: waypoints,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '0.800000011920929'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 047dd37b-94fa-4baf-b1d2-2964418a7fa7
+  '64':
+    traits:
+      spawned: true
+      quester:
+        quester:
+          holder: 42
+      location:
+        world: RPG
+        x: '34.92793982574664'
+        y: '69.0'
+        z: '-401.46414127513117'
+        yaw: '206.0999298095703'
+        pitch: '11.249951362609863'
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Lex
+    traitnames: quester,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 5464fdb1-cca3-47af-acbd-0f80cc8f6e74
+  '65':
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '-49.07291170339002'
+        y: '71.0'
+        z: '-552.6999999880791'
+        yaw: '189.8912353515625'
+        pitch: '7.199950695037842'
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Tomtaru
+    traitnames: spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 2b9dfb1b-e906-466f-b345-78a8978e16ad
+  '66':
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '-49.99768273395919'
+        y: '72.0'
+        z: '-590.764141189824'
+        yaw: '337.1915283203125'
+        pitch: '12.749960899353027'
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Taurus
+    traitnames: spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 02596b3e-fbb6-48c5-a047-ea1d0c8171e9
+  '67':
+    traits:
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: IRON_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: IRON_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: RPG
+                x: '-44.0'
+                y: '70.0'
+                z: '-566.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: RPG
+                x: '-47.0'
+                y: '70.0'
+                z: '-563.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: RPG
+                x: '-51.0'
+                y: '70.0'
+                z: '-563.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: RPG
+                x: '-52.0'
+                y: '70.0'
+                z: '-565.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: RPG
+                x: '-50.0'
+                y: '70.0'
+                z: '-566.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: RPG
+                x: '-49.0'
+                y: '70.0'
+                z: '-569.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: RPG
+                x: '-55.0'
+                y: '71.0'
+                z: '-573.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '7':
+              location:
+                world: RPG
+                x: '-55.0'
+                y: '71.0'
+                z: '-577.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '8':
+              location:
+                world: RPG
+                x: '-52.0'
+                y: '71.0'
+                z: '-580.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '9':
+              location:
+                world: RPG
+                x: '-48.0'
+                y: '71.0'
+                z: '-579.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '10':
+              location:
+                world: RPG
+                x: '-46.0'
+                y: '70.0'
+                z: '-574.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '11':
+              location:
+                world: RPG
+                x: '-43.0'
+                y: '70.0'
+                z: '-574.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '12':
+              location:
+                world: RPG
+                x: '-42.0'
+                y: '70.0'
+                z: '-577.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '13':
+              location:
+                world: RPG
+                x: '-40.0'
+                y: '70.0'
+                z: '-579.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '14':
+              location:
+                world: RPG
+                x: '-39.0'
+                y: '71.0'
+                z: '-583.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '15':
+              location:
+                world: RPG
+                x: '-38.0'
+                y: '71.0'
+                z: '-591.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '16':
+              location:
+                world: RPG
+                x: '-35.0'
+                y: '71.0'
+                z: '-593.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '17':
+              location:
+                world: RPG
+                x: '-29.0'
+                y: '76.0'
+                z: '-590.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '18':
+              location:
+                world: RPG
+                x: '-26.0'
+                y: '76.0'
+                z: '-587.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '19':
+              location:
+                world: RPG
+                x: '-23.0'
+                y: '74.0'
+                z: '-583.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '20':
+              location:
+                world: RPG
+                x: '-31.0'
+                y: '72.0'
+                z: '-581.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '21':
+              location:
+                world: RPG
+                x: '-40.0'
+                y: '70.0'
+                z: '-570.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: RPG
+        x: '-48.14800289978073'
+        y: '71.0'
+        z: '-567.8205902167573'
+        yaw: '152.6116485595703'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Guard Ion
+    traitnames: waypoints,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '0.30000001192092896'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d1139086-2394-463b-9283-6500c818293c
+  '68':
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '-81.69999998807907'
+        y: '78.0'
+        z: '-585.3000000119209'
+        yaw: '193.85891723632812'
+        pitch: '0.0'
+      quester:
+        quester:
+          holder: 52
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Agnate
+    traitnames: quester,lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 8555fe70-90e9-4745-a4fb-0774ba3b8ae5
+  '69':
+    traits:
+      equipment:
+        hand:
+          type: IRON_INGOT
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 6724056
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5000268
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 1644825
+      speech: chat
+      spawned: true
+      quester:
+        quester:
+          holder: 32
+      location:
+        world: RPG
+        x: '14.713432887488453'
+        y: '66.0'
+        z: '-54.48696599452978'
+        yaw: '162.10873413085938'
+        pitch: '-9.525742530822754'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '3.0'
+        talkitem: default
+        text:
+          '0': I'm in big trouble! Could you help me out?
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Apprentice
+    traitnames: text,speech,quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 3e4e0eae-3eb3-4adc-b152-c164cd6b30a6
+  '70':
+    traits:
+      equipment:
+        hand:
+          type: COOKIE
+          amount: 1
+          durability: 0
+          mdata: 0
+      speech: chat
+      spawned: true
+      waypoints:
+        linear: {}
+        provider: linear
+      type: Villager
+      location:
+        world: RPG
+        x: '-235.07238427441385'
+        y: '44.0'
+        z: '-356.8989046055524'
+        yaw: '-226.54351806640625'
+        pitch: '0.0'
+      age:
+        age: -24000
+        locked: true
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '3.0'
+        talkitem: default
+        text:
+          '0': Mom? When will the cake be here?
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Birthday Boy
+    traitnames: text,waypoints,age,speech,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '0.20000000298023224'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 38a20889-df90-42e8-af02-2f4408aad55b
+  '71':
+    traits:
+      spawned: true
+      quester:
+        quester:
+          holder: 28
+      location:
+        world: RPG
+        x: '8.482498961186886'
+        y: '65.0'
+        z: '-114.47048706857446'
+        yaw: '80.20703125'
+        pitch: '-4.481686115264893'
+      text:
+        talk-close: false
+        random-talker: true
+        realistic-looking: false
+        range: '3.0'
+        talkitem: default
+        text:
+          '0': Oh please, please could you help me get a cake for my son's birthday?
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Turcotte
+    traitnames: text,lookclose,quester,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: ad5b9704-c55d-4812-9eed-e621824207ec
+  '72':
+    traits:
+      equipment:
+        hand:
+          type: POTION
+          amount: 1
+          durability: 8260
+          mdata: 68
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 8375321
+      spawned: true
+      quester:
+        quester:
+          holder: 13
+      location:
+        world: RPG
+        x: '-35.502164381332115'
+        y: '66.0'
+        z: '-0.6233046656489686'
+        yaw: '165.07046508789062'
+        pitch: '-39.766395568847656'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Skauf
+    traitnames: quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 6dbec636-fd44-4afa-95b1-cc4083f06045
+  '73':
+    traits:
+      spawned: true
+      quester:
+        quester:
+          holder: 36
+      location:
+        world: RPG
+        x: '441.57263518465743'
+        y: '76.0'
+        z: '-552.5462711757947'
+        yaw: '14.568565368652344'
+        pitch: '0.0'
+      text:
+        talk-close: false
+        random-talker: true
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Hi, I'm <npc>!
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: jonthe445
+        uuid: ''
+    name: Miner
+    traitnames: text,quester,lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 914b1010-3571-48db-a942-3bb8c2e3c705
+  '74':
+    traits:
+      equipment:
+        hand:
+          type: IRON_PICKAXE
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: GOLD_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 16777215
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 3361970
+      spawned: true
+      location:
+        world: RPG
+        x: '395.3591770811826'
+        y: '35.0'
+        z: '-550.5596297955085'
+        yaw: '-89.02083587646484'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: jonthe445
+        uuid: ''
+    name: John
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: fa089ffb-ab0c-4cd1-b3e9-c93125de0fbf
+  '75':
+    traits:
+      speech: chat
+      spawned: true
+      quester:
+        quester:
+          holder: 27
+      location:
+        world: RPG
+        x: '21.45373516647647'
+        y: '65.0'
+        z: '-101.63248461266343'
+        yaw: '-41.39763259887695'
+        pitch: '-11.429722785949707'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '3.0'
+        talkitem: '0'
+        text:
+          '0': Hi there!
+          '1': Welcome to WoodBry you look new!
+          '2': Follow this path to get to chickens and beef!
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: jonthe445
+        uuid: ''
+    name: Naxt
+    traitnames: text,speech,lookclose,quester,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 8a4639dc-4f66-4c26-9f00-f5d820056eee
+  '76':
+    traits:
+      equipment:
+        hand:
+          type: WOOL
+          amount: 1
+          durability: 1
+          mdata: 1
+      spawned: true
+      location:
+        world: RPG
+        x: '6.4666119787174665'
+        y: '65.0'
+        z: '-117.77764254985863'
+        yaw: '37.73442840576172'
+        pitch: '-4.502030372619629'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Coestar
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 27b1edbb-4938-45f5-afd7-31aeb58d878b
+  '77':
+    traits:
+      equipment:
+        hand:
+          type: WOOL
+          amount: 1
+          durability: 2
+          mdata: 2
+      spawned: true
+      location:
+        world: RPG
+        x: '11.518935313995502'
+        y: '65.0'
+        z: '-114.42138359822268'
+        yaw: '220.73562622070312'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: Afromana
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 7bb218e3-017c-412a-a3b0-e33184a22f76
+  '78':
+    traits:
+      speech: chat
+      spawned: true
+      controllable:
+        enabled: false
+      location:
+        world: Spawn
+        x: '5.207979125143889'
+        y: '-2.0121922767108176E9'
+        z: '-13.701853831285817'
+        yaw: '-19.997634887695312'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Shizaye
+        uuid: ''
+    name: breeza936
+    metadata:
+      removefromplayerlist: false
+    traitnames: speech,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '2.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 5534ae92-7158-42d0-97bc-55bf8943381d
+  '79':
+    traits:
+      equipment:
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      speech: chat
+      spawned: true
+      quester:
+        quester:
+          holder: -1
+      location:
+        world: RPG
+        x: '18.22544744213578'
+        y: '65.5'
+        z: '-89.48935175257381'
+        yaw: '194.34930419921875'
+        pitch: '4.9503889083862305'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': Hey, You, Yeah you, You want to do me a little... erh... "Favor"?
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: jonthe445
+        uuid: ''
+    name: Hobo
+    traitnames: text,speech,quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 60ef3e02-7cdb-44cb-90c0-3e0fbda4c467
+  '80':
+    traits:
+      spawned: true
+      location:
+        world: Spawn
+        x: '4.6263630334460295'
+        y: '-4.8223209878061034E7'
+        z: '-15.460703190784514'
+        yaw: '210.13461303710938'
+        pitch: '-46.3158073425293'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Shizaye
+        uuid: ''
+    name: big_hairy_jimbo
+    traitnames: lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 9305891f-6b8e-42a7-a1bb-90fb715a258b
+  '82':
+    traits:
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: IRON_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 10066329
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 1644825
+      spawned: true
+      quester:
+        quester:
+          holder: 30
+      location:
+        world: RPG
+        x: '28.360433265291412'
+        y: '65.0'
+        z: '-248.18905538068793'
+        yaw: '49.04133605957031'
+        pitch: '-34.55625534057617'
+      text:
+        talk-close: false
+        random-talker: true
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': close
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Recruit Steve
+    traitnames: text,quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 39c08d82-3180-4e52-a460-47a166307072
+  '81':
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '121.85442178865019'
+        y: '65.0'
+        z: '113.37048485459424'
+        yaw: '238.64920043945312'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    name: CherryJimbo
+    traitnames: lookclose,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 4af59a66-0975-4224-bcb6-a67bef19a4bb
+  '54':
+    traits:
+      equipment:
+        hand:
+          type: IRON_SPADE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            displayname: Jack's Shovel
+          enchantments:
+            '32': 3
+            DIG_SPEED: 3
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 6724056
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      quester:
+        quester:
+          holder: 43
+      location:
+        world: RPG
+        x: '16.446091648716553'
+        y: '71.0'
+        z: '-482.34160442617787'
+        yaw: '-265.20361328125'
+        pitch: '-25.350006103515625'
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Explorer Jack
+    traitnames: quester,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b9ac23b1-b34d-46e1-b826-7875ec1cfd35
+  '84':
+    traits:
+      equipment:
+        hand:
+          type: SAPLING
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15892389
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15892389
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15892389
+      spawned: true
+      quester:
+        quester:
+          holder: 44
+      location:
+        world: RPG
+        x: '147.89482574639283'
+        y: '79.0'
+        z: '-312.4476477946174'
+        yaw: '166.89016723632812'
+        pitch: '42.056724548339844'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Earth Wizard
+    traitnames: quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d22719fc-d71b-4552-b157-0214f1cf9693
+  '85':
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '148.4593489571073'
+        y: '75.0'
+        z: '-335.59955385252135'
+        yaw: '221.96670532226562'
+        pitch: '7.634779930114746'
+      equipment:
+        hand:
+          type: ENCHANTED_BOOK
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Postern Guard
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 91cfe63c-7a19-4fb8-8803-981c9e305758
+  '86':
+    traits:
+      equipment:
+        hand:
+          type: PAPER
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15066419
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+      spawned: true
+      location:
+        world: RPG
+        x: '-0.8818195859527878'
+        y: '66.0'
+        z: '-430.45755613070685'
+        yaw: '-89.16842651367188'
+        pitch: '-55.73396682739258'
+      quester:
+        quester:
+          holder: 53
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    name: Foreman Buzz
+    traitnames: quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      speed: '1.0'
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 12e34801-c993-4a2d-98cb-052b7fc95ce4
+  '97':
+    name: IronValley
+    traits:
+      location:
+        world: RPG
+        x: '-325.48906120797716'
+        y: '61.0'
+        z: '-1239.5680118482433'
+        yaw: '-73.07157135009766'
+        pitch: '0.0'
+      spawned: true
+      quester:
+        quester:
+          holder: 19
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: quester,lookclose,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 09fc42c7-da20-46dc-be89-b2a21c0cab1d
+  '101':
+    name: RetroGeir
+    traits:
+      equipment:
+        hand:
+          type: CARROT_STICK
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: RPG
+        x: '-308.582430321201'
+        y: '61.0'
+        z: '-1231.6255414699'
+        yaw: '163.28529357910156'
+        pitch: '0.0'
+      spawned: true
+      quester:
+        quester:
+          holder: 26
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: a7b0387c-75fe-4749-851c-74cd7cf47fee
+  '102':
+    name: Neofelis
+    traits:
+      equipment:
+        hand:
+          type: DIAMOND_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            displayname: Axe of Neofelis
+          enchantments:
+            '33': 1
+            SILK_TOUCH: 1
+      location:
+        world: RPG
+        x: '-302.49892443606393'
+        y: '61.0'
+        z: '-1256.4907506910904'
+        yaw: '26.0948486328125'
+        pitch: '-18.700496673583984'
+      spawned: true
+      quester:
+        quester:
+          holder: 23
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 9d20c088-1b67-4e73-9c58-9ab5c4c2d29d
+  '103':
+    name: Hunta
+    traits:
+      equipment:
+        hand:
+          type: BOW
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: RPG
+        x: '-336.42686493350294'
+        y: '74.0'
+        z: '-1170.5394885912715'
+        yaw: '222.43307495117188'
+        pitch: '-2.154130458831787'
+      spawned: true
+      quester:
+        quester:
+          holder: 18
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: c038b9ba-f846-4acb-8de5-63551183e8a9
+  '104':
+    name: Alysius
+    traits:
+      location:
+        world: RPG
+        x: '-325.51902770837086'
+        y: '74.0'
+        z: '-1191.4094480050935'
+        yaw: '-1.9824752807617188'
+        pitch: '0.0'
+      spawned: true
+      equipment:
+        helmet:
+          type: SKULL_ITEM
+          amount: 1
+          durability: 1
+          mdata: 1
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 9
+          mdata: 9
+          meta:
+            armor:
+              color: 4141606
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 7883814
+      quester:
+        quester:
+          holder: 22
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 20a79baa-e502-45ba-8a42-870410db66ea
+  '105':
+    name: Kucic
+    traits:
+      location:
+        world: RPG
+        x: '-324.48337199209897'
+        y: '64.0'
+        z: '-1175.5153583248984'
+        yaw: '237.69320678710938'
+        pitch: '0.0'
+      spawned: true
+      quester:
+        quester:
+          holder: 25
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,quester,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b12c1eef-0721-4723-919b-5226ae345a24
+  '106':
+    name: Farmer Gro
+    traits:
+      location:
+        world: RPG
+        x: '64.8890104127981'
+        y: '69.0'
+        z: '-366.25857793942276'
+        yaw: '104.31314086914062'
+        pitch: '-27.353517532348633'
+      equipment:
+        hand:
+          type: IRON_HOE
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 10066329
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      quester:
+        quester:
+          holder: 31
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    traitnames: lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 154bc7a1-6cb8-4e62-9a9f-9a399d784259
+  '108':
+    name: Turam
+    traits:
+      equipment:
+        hand:
+          type: LOG
+          amount: 1
+          durability: 1
+          mdata: 1
+      location:
+        world: RPG
+        x: '167.56838957400035'
+        y: '75.0'
+        z: '-286.2495136909114'
+        yaw: '221.4857177734375'
+        pitch: '16.06245994567871'
+      spawned: true
+      quester:
+        quester:
+          holder: 47
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    traitnames: lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 9eb11214-3d4b-41e2-9a39-d4f2db0b460e
+  '109':
+    name: Boltan
+    traits:
+      location:
+        world: RPG
+        x: '169.23160690797994'
+        y: '27.0'
+        z: '-326.84479302045713'
+        yaw: '43.19561767578125'
+        pitch: '0.0'
+      spawned: true
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    traitnames: lookclose,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: b49fa692-4b39-4694-8eb7-516631c04160
+  '110':
+    name: Brick Chiseler
+    traits:
+      equipment:
+        hand:
+          type: SMOOTH_BRICK
+          amount: 1
+          durability: 3
+          mdata: 3
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: RPG
+        x: '20.388432636413082'
+        y: '68.0'
+        z: '-661.0749999880792'
+        yaw: '-69.8261489868164'
+        pitch: '0.0'
+      spawned: true
+      quester:
+        quester:
+          holder: 48
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    traitnames: quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: dcdc56b2-ace0-41a3-855a-d21b559264cc
+  '120':
+    name: §eSpidey
+    traits:
+      spawned: true
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: RPG
+                x: '9.0'
+                y: '29.0'
+                z: '-500.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: RPG
+                x: '9.0'
+                y: '28.0'
+                z: '-495.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: RPG
+                x: '12.0'
+                y: '29.0'
+                z: '-495.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      type: Spider
+      location:
+        world: RPG
+        x: '10.86096354695086'
+        y: '30.0'
+        z: '-494.97907754004564'
+        yaw: '-2523368.75'
+        pitch: '0.0'
+      owner:
+        owner: Babibab
+        uuid: ''
+    traitnames: waypoints,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '5.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: c1f47571-806c-4592-819a-203b7e3d8d1f
+  '121':
+    name: Feedz
+    traits:
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: RPG
+                x: '39.0'
+                y: '67.0'
+                z: '-658.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: RPG
+                x: '37.0'
+                y: '67.0'
+                z: '-658.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: RPG
+                x: '37.0'
+                y: '67.0'
+                z: '-656.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: RPG
+                x: '39.0'
+                y: '67.0'
+                z: '-656.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      spawned: true
+      text:
+        talk-close: false
+        random-talker: true
+        realistic-looking: false
+        range: '3.0'
+        talkitem: default
+        text:
+          '0': Oh god, where is that shipping manifest! I'll get killed by Buzz!
+      location:
+        world: RPG
+        x: '39.024595369811536'
+        y: '68.0'
+        z: '-655.8852692643896'
+        yaw: '-30403.59375'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    traitnames: text,waypoints,lookclose,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '2.0'
+      stationaryticks: -1
+      speedmodifier: '0.4000000059604645'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e9b0ff20-a6ec-48fe-8208-d799931a9322
+  '123':
+    name: WoodbryGuard
+    traits:
+      speech: chat
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '7.0'
+        talkitem: default
+        text:
+          '0': Be warned brave explorer! Beyond these walls, the fowlest of creatures dwell upon folks like you!
+          '1': Beware of the beings that live beyond these walls! The infernal dead will not hesitate to attack!
+      equipment:
+        hand:
+          type: DIAMOND_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: SKULL_ITEM
+          amount: 1
+          durability: 1
+          mdata: 1
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      location:
+        world: RPG
+        x: '27.558304366077753'
+        y: '65.0'
+        z: '-121.55376034829564'
+        yaw: '227.98291015625'
+        pitch: '-34.815067291259766'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: jonthe445
+        uuid: ''
+    traitnames: text,speech,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 572aeddb-2884-4cdb-9f24-8669a5e26650
+  '124':
+    name: RappyRed
+    traits:
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': They kill... th m all! *Stutters*
+          '1': Help me please... please
+          '2': They must be put to rest, it must be done.
+      speech: chat
+      spawned: true
+      equipment:
+        hand:
+          type: EXP_BOTTLE
+          amount: 1
+          durability: 0
+          mdata: 0
+      quester:
+        quester:
+          holder: 60
+      location:
+        world: RPG
+        x: '240.69740271129865'
+        y: '72.0'
+        z: '64.56476345949999'
+        yaw: '239.2494354248047'
+        pitch: '6.300013542175293'
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,speech,quester,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 732f941a-366f-4eef-81b8-32627aac17e4
+  '126':
+    name: Cryzen
+    traits:
+      text:
+        talk-close: false
+        random-talker: true
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Hi, I'm <npc>!
+      spawned: true
+      location:
+        world: RPG
+        x: '45.636640058896816'
+        y: '66.0'
+        z: '-67.2861869491436'
+        yaw: '1.2881088256835938'
+        pitch: '-12.327028274536133'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,lookclose,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 528571be-ea8d-4dd0-baad-b7f06246f24c
+  '130':
+    name: Lumberjack
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: IRON_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: RPG
+        x: '18.57996330313557'
+        y: '69.0'
+        z: '-435.625445181494'
+        yaw: '49.729248046875'
+        pitch: '-90.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Babibab
+        uuid: ''
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 5dc7fb4d-16fe-4b97-8441-b272b3ed748c
+  '131':
+    name: §4Tester
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '140.065856330591'
+        y: '65.0'
+        z: '684.6311006114531'
+        yaw: '-173.97518920898438'
+        pitch: '8.698763847351074'
+      quester:
+        quester:
+          holder: 67
+      owner:
+        owner: Babibab
+        uuid: ''
+    traitnames: quester,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: e5603a5e-d685-4030-b330-20fceeb83ca1
+  '132':
+    name: Engel
+    traits:
+      quester:
+        quester:
+          holder: 1
+      speech: chat
+      spawned: true
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': Hello traveler, speak to me before you move on.
+          '1': I have a quest for you, it is rather important.
+      location:
+        world: RPG
+        x: '-216.37392457021858'
+        y: '85.0'
+        z: '-1339.6928794303813'
+        yaw: '266.3144836425781'
+        pitch: '-5.248839855194092'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,speech,lookclose,quester,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: eccaa168-7807-43e9-9d6d-fb8311045a2e
+  '133':
+    name: Joe
+    traits:
+      quester:
+        quester:
+          holder: 2
+      spawned: true
+      location:
+        world: RPG
+        x: '-430.47698527746155'
+        y: '81.0'
+        z: '-1216.5332999559962'
+        yaw: '-64.2625503540039'
+        pitch: '-11.14184856414795'
+      equipment:
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 6717235
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 7048a238-d752-4b6d-bcb3-631b813b585f
+  '135':
+    name: Hyperion Guard
+    traits:
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+          enchantments:
+            '2': 4
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 1
+          mdata: 1
+          meta:
+            armor:
+              color: 15066419
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 3361970
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 3361970
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 3361970
+      location:
+        world: RPG
+        x: '-327.8537943662025'
+        y: '88.0'
+        z: '-1254.3123620936055'
+        yaw: '-21.407272338867188'
+        pitch: '-36.68872833251953'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': Are you a Scarlet spy?
+          '1': All hail the Hyperion Goddess!
+      spawned: true
+      speech: chat
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,speech,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 74cd7b78-2302-41af-a417-e162ce53da1e
+  '136':
+    name: Hyperion Guard
+    traits:
+      speech: chat
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+          enchantments:
+            '2': 4
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 1
+          mdata: 1
+          meta:
+            armor:
+              color: 15066419
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 3361970
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 3361970
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 3361970
+      location:
+        world: RPG
+        x: '-327.958010336688'
+        y: '88.0'
+        z: '-1242.5816274160388'
+        yaw: '178.5185546875'
+        pitch: '-30.083559036254883'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': We will be watching you, do not commit any crimes.
+          '1': Have faith in our Hyperion Goddess!
+      spawned: true
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,speech,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 36e98881-31bf-45a6-b457-b05152f614bf
+  '137':
+    name: Hyperion Guard
+    traits:
+      equipment:
+        hand:
+          type: BOW
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: RPG
+                x: '-344.0'
+                y: '85.0'
+                z: '-1260.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: RPG
+                x: '-344.0'
+                y: '85.0'
+                z: '-1239.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: RPG
+        x: '-343.3086140974487'
+        y: '86.0'
+        z: '-1242.7566801279413'
+        yaw: '7201082.5'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: waypoints,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 0e2628c3-42b1-446d-96fd-44ad2c17b39f
+  '138':
+    name: vallelith
+    traits:
+      equipment:
+        hand:
+          type: NETHER_STAR
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 1
+          mdata: 1
+          meta:
+            armor:
+              color: 1644825
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 10040115
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 10040115
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 10040115
+      location:
+        world: RPG
+        x: '-308.37636487360857'
+        y: '89.0'
+        z: '-1167.5006237007308'
+        yaw: '109.80224609375'
+        pitch: '38.360965728759766'
+      spawned: true
+      quester:
+        quester:
+          holder: 4
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: a9576c96-b824-4b73-b1cb-1225b7ea653f
+  '139':
+    name: §4Elite Guard
+    traits:
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 1
+          mdata: 1
+          meta:
+            armor:
+              color: 15066419
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: RPG
+        x: '-291.72845635104756'
+        y: '90.0'
+        z: '-1246.7746337762237'
+        yaw: '111.10691833496094'
+        pitch: '0.0'
+      spawned: true
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: fabb3fb3-9ead-450d-9e9e-9f14d9b4bb68
+  '140':
+    name: §4Elite Guard
+    traits:
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 1
+          mdata: 1
+          meta:
+            armor:
+              color: 15066419
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: RPG
+        x: '-291.56509193036266'
+        y: '90.0'
+        z: '-1250.3000967693888'
+        yaw: '74.38099670410156'
+        pitch: '0.0'
+      spawned: true
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 64c5b2f4-d397-4c5a-b17a-625e945b5fbc
+  '141':
+    name: Guards
+    traits:
+      speech: chat
+      location:
+        world: RPG
+        x: '-316.4728650112623'
+        y: '89.0'
+        z: '-1264.9496353616698'
+        yaw: '9.960853576660156'
+        pitch: '-24.329586029052734'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': I fear we must make peace, before it is too late!
+          '1': I do not wish to cause the 'RuneWars' all over again.
+          '2': It is too late, I am too tired, leave me alone in peace.
+      spawned: true
+      equipment:
+        hand:
+          type: GOLD_AXE
+          amount: 1
+          durability: 0
+          mdata: 0
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,speech,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 19bfc4ae-15a9-4f0a-84ef-f2840dc684a2
+  '142':
+    name: Whicked
+    traits:
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+      location:
+        world: RPG
+        x: '-389.66888189506165'
+        y: '89.0'
+        z: '-1108.5412484671936'
+        yaw: '89.609375'
+        pitch: '0.0'
+      spawned: true
+      quester:
+        quester:
+          holder: 5
+      equipment:
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 10040115
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: quester,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 11255a9b-9383-4b32-867b-87405ec59bec
+  '144':
+    name: Assigir
+    traits:
+      waypoints:
+        linear:
+          points:
+            '0':
+              location:
+                world: RPG
+                x: '-389.0'
+                y: '87.0'
+                z: '-1100.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '1':
+              location:
+                world: RPG
+                x: '-386.0'
+                y: '87.0'
+                z: '-1100.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '2':
+              location:
+                world: RPG
+                x: '-386.0'
+                y: '82.0'
+                z: '-1116.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '3':
+              location:
+                world: RPG
+                x: '-386.0'
+                y: '82.0'
+                z: '-1128.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '4':
+              location:
+                world: RPG
+                x: '-402.0'
+                y: '82.0'
+                z: '-1128.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '5':
+              location:
+                world: RPG
+                x: '-413.0'
+                y: '85.0'
+                z: '-1128.0'
+                yaw: '0.0'
+                pitch: '0.0'
+            '6':
+              location:
+                world: RPG
+                x: '-389.0'
+                y: '88.0'
+                z: '-1108.0'
+                yaw: '0.0'
+                pitch: '0.0'
+        provider: linear
+      location:
+        world: RPG
+        x: '-385.49994989494775'
+        y: '84.0'
+        z: '-1123.7232974510664'
+        yaw: '-180.00283813476562'
+        pitch: '0.0'
+      spawned: true
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: waypoints,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: af9955d4-915c-4f5a-811b-1ddcfa208c15
+  '145':
+    name: Kewaii
+    traits:
+      speech: chat
+      equipment:
+        hand:
+          type: BLAZE_ROD
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: CHAINMAIL_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+        leggings:
+          type: CHAINMAIL_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: CHAINMAIL_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: RPG
+        x: '-380.3176450454652'
+        y: '82.0'
+        z: '-1117.1425161601067'
+        yaw: '127.02725219726562'
+        pitch: '-12.02381706237793'
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': What power do these 'runes' hold...
+          '1': '*Whispers: The space we inhabit, must be just one small part of the
+            whole.'
+      spawned: true
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,speech,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d9631d4a-c490-454e-b9c8-8fd3f07e75ce
+  '147':
+    name: Guards
+    traits:
+      location:
+        world: RPG
+        x: '-173.44415829248624'
+        y: '68.0'
+        z: '-1292.9091500038944'
+        yaw: '0.4988444149494171'
+        pitch: '4.649997711181641'
+      spawned: true
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: fe78452b-083c-4a00-9301-2a45fac158df
+  '148':
+    name: Eilf
+    traits:
+      equipment:
+        hand:
+          type: GOLDEN_APPLE
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 6704179
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: RPG
+        x: '30.619235473347587'
+        y: '77.0'
+        z: '-13.24882411388633'
+        yaw: '190.34982299804688'
+        pitch: '-12.441640853881836'
+      spawned: true
+      quester:
+        quester:
+          holder: 6
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 27955d49-865e-4044-973f-7d7ecff90698
+  '149':
+    name: §5Scarlet Guard
+    traits:
+      location:
+        world: RPG
+        x: '-365.27419599327214'
+        y: '83.0'
+        z: '-1121.5598540394562'
+        yaw: '149.63742065429688'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type: WOOD_SWORD
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            '16': 1
+            DAMAGE_ALL: 1
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 5
+          mdata: 5
+          meta:
+            armor:
+              color: 6704179
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 5
+          mdata: 5
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 5
+          mdata: 5
+      spawned: true
+      type: Zombie
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 4bb910fb-ebc1-45c0-8a72-076c7e1c0f5e
+  '150':
+    name: Zorgoth
+    traits:
+      equipment:
+        hand:
+          type: BLAZE_ROD
+          amount: 1
+          durability: 0
+          mdata: 0
+      spawned: true
+      location:
+        world: RPG
+        x: '-388.4236350980568'
+        y: '76.0'
+        z: '-1101.5883904835428'
+        yaw: '237.22164916992188'
+        pitch: '0.0'
+      quester:
+        quester:
+          holder: 20
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,quester,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 8de9c657-1d3b-42c9-88e8-57fd3311312a
+  '151':
+    name: Dread
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '-375.4973007523165'
+        y: '105.0'
+        z: '-1118.5211646398843'
+        yaw: '13.822273254394531'
+        pitch: '0.0'
+      quester:
+        quester:
+          holder: 21
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,quester,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 0f388371-81af-42b7-9457-f591fbc49455
+  '152':
+    name: tnt
+    traits:
+      quester:
+        quester:
+          holder: 24
+      spawned: true
+      location:
+        world: RPG
+        x: '-401.5172350633652'
+        y: '105.0'
+        z: '-1024.555961089021'
+        yaw: '-89.36599731445312'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: quester,lookclose,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: dadbf088-0cda-4a64-bd2a-b027bd029efe
+  '153':
+    name: Balloon Agent
+    traits:
+      spawned: true
+      equipment:
+        hand:
+          type: BOOK_AND_QUILL
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15066419
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15066419
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      location:
+        world: RPG
+        x: '207.53784592810953'
+        y: '77.0'
+        z: '-289.5117254093474'
+        yaw: '197.16055297851562'
+        pitch: '-40.3744010925293'
+      speech: chat
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': Register, for a quick ride to the Dark Forest in future!
+      quester:
+        quester:
+          holder: 68
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,speech,quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: a3a932d8-818f-4509-b110-bf06a69493fb
+  '154':
+    name: Balloon Agent
+    traits:
+      text:
+        talk-close: false
+        random-talker: true
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Hi, I'm <npc>!
+      location:
+        world: RPG
+        x: '63.40370883180587'
+        y: '81.0'
+        z: '-46.50773785348242'
+        yaw: '136.88531494140625'
+        pitch: '-7.98472785949707'
+      spawned: true
+      equipment:
+        hand:
+          type: BOOK_AND_QUILL
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15066419
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15066419
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      speech: chat
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,speech,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 1407e200-cdd3-440b-bfb7-1816f58c9100
+  '156':
+    name: Au
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '-88.82614548943462'
+        y: '121.0'
+        z: '-337.8547801035656'
+        yaw: '-9.468482971191406'
+        pitch: '-59.315673828125'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 29ea0235-9a8b-47a7-8fc8-2f47048df3b4
+  '167':
+    name: §9Golog
+    traits:
+      type: Zombie
+      spawned: true
+      location:
+        world: RPG
+        x: '145.54209294822857'
+        y: '65.0'
+        z: '49.31772448127821'
+        yaw: '183.55325317382812'
+        pitch: '0.0'
+      quester:
+        quester:
+          holder: 7
+      equipment:
+        hand:
+          type: RED_ROSE
+          amount: 1
+          durability: 1
+          mdata: 1
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 5cb4beb7-9318-4a98-8cc2-1f694e67d882
+  '168':
+    name: Dostya
+    traits:
+      spawned: true
+      speech: chat
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '2.0'
+        talkitem: default
+        text:
+          '0': Cheap goods for sale!
+          '1': Best value this side of the castle!
+          '2': Selling beds, food and ornaments!
+          '3': Buy from Dostya's shop for the best goods!
+      location:
+        world: RPG
+        x: '86.7636409794949'
+        y: '70.0'
+        z: '-0.8002415950582107'
+        yaw: '-1.2519683837890625'
+        pitch: '5.176435470581055'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,speech,lookclose,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 7ca4d44d-6c26-43a3-b016-f9a212b3d3fc
+  '169':
+    name: Dostya's Horse
+    traits:
+      age:
+        age: 0
+        locked: true
+      horsemodifiers:
+        carryingChest: false
+        color: CREAMY
+        style: NONE
+        type: HORSE
+      type: EntityHorse
+      spawned: true
+      location:
+        world: RPG
+        x: '84.36996835704066'
+        y: '69.0'
+        z: '2.6470423888961854'
+        yaw: '219.9067840576172'
+        pitch: '0.0'
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: horsemodifiers,age,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 87351d11-9d2a-41c6-bd4a-ff851aa0c82c
+  '174':
+    name: Cookei
+    traits:
+      speech: chat
+      equipment:
+        hand:
+          type: RAW_FISH
+          amount: 1
+          durability: 1
+          mdata: 1
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': '*Mutters; If I catch those stealing rats, I will string them up!*'
+          '1': '*Mutters; The lazy guards, not interested in protecting our goods.*'
+      spawned: true
+      location:
+        world: RPG
+        x: '27.200536131034035'
+        y: '91.0'
+        z: '16.896066025369528'
+        yaw: '11.556056022644043'
+        pitch: '7.200079441070557'
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,speech,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: c8beced9-4f26-407c-b7ea-6a88fc58e8a9
+  '177':
+    name: §9Royal Archer
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '-50.00022210892691'
+        y: '65.0'
+        z: '-19.087457605921486'
+        yaw: '95.67129516601562'
+        pitch: '-35.753936767578125'
+      equipment:
+        hand:
+          type: BOW
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            ARROW_DAMAGE: 1
+        helmet:
+          type: IRON_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: d34a8dfe-5e08-4d6d-a5b5-aaa8ab07af09
+  '176':
+    name: §9Royal Archer
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '-52.125871177834334'
+        y: '65.0'
+        z: '-24.28383131433547'
+        yaw: '42.74755859375'
+        pitch: '1.05000638961792'
+      equipment:
+        hand:
+          type: BOW
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            ARROW_DAMAGE: 1
+        helmet:
+          type: IRON_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: dd4b018a-8625-4c11-8cde-a6a0cd66055b
+  '178':
+    name: Bar Tender
+    traits:
+      location:
+        world: RPG
+        x: '17.401886504109008'
+        y: '65.0'
+        z: '-83.78999459040197'
+        yaw: '288.59991455078125'
+        pitch: '0.0'
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      type: Villager
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: age,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 7d5ac735-198d-4ef4-8817-70d4308ae735
+  '180':
+    name: §1Castle Guard
+    traits:
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 179
+          mdata: -77
+          meta:
+            lore:
+              '0': §r§7   Sword - Trash - Iron
+              '1': §r§8=====================
+              '2': §r§a + §76 Damage
+              '3': §r§a + §72 §mStrength
+              '4': §r§c - §73 §mVitality
+              '5': §r§8=====================
+              '6': §r§7§oBeen left out in the rain.
+            displayname: §7[Trash§7] §6Rusted Sword
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 27
+          mdata: 27
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 4
+            PROTECTION_EXPLOSIONS: 4
+            PROTECTION_PROJECTILE: 4
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 27
+          mdata: 27
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 4
+            PROTECTION_EXPLOSIONS: 4
+            PROTECTION_PROJECTILE: 4
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 27
+          mdata: 27
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 4
+            PROTECTION_EXPLOSIONS: 4
+            PROTECTION_PROJECTILE: 4
+        helmet:
+          type: SKULL_ITEM
+          amount: 1
+          durability: 3
+          mdata: 3
+          meta:
+            skull:
+              owner: Coestar
+      location:
+        world: RPG
+        x: '28.64683351375523'
+        y: '77.0'
+        z: '-7.703611734287636'
+        yaw: '214.5928955078125'
+        pitch: '0.0'
+      spawned: true
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 9dd60f5c-b6ec-4751-84c3-ba11ee6d7ae6
+  '179':
+    name: §1Castle Guard
+    traits:
+      equipment:
+        hand:
+          type: IRON_SWORD
+          amount: 1
+          durability: 179
+          mdata: -77
+          meta:
+            lore:
+              '0': §r§7   Sword - Trash - Iron
+              '1': §r§8=====================
+              '2': §r§a + §76 Damage
+              '3': §r§a + §72 §mStrength
+              '4': §r§c - §73 §mVitality
+              '5': §r§8=====================
+              '6': §r§7§oBeen left out in the rain.
+            displayname: §7[Trash§7] §6Rusted Sword
+        helmet:
+          type: SKULL_ITEM
+          amount: 1
+          durability: 3
+          mdata: 3
+          meta:
+            skull:
+              owner: Top_Assin
+        chestplate:
+          type: DIAMOND_CHESTPLATE
+          amount: 1
+          durability: 27
+          mdata: 27
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 4
+            PROTECTION_EXPLOSIONS: 4
+            PROTECTION_PROJECTILE: 4
+        leggings:
+          type: DIAMOND_LEGGINGS
+          amount: 1
+          durability: 27
+          mdata: 27
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 4
+            PROTECTION_EXPLOSIONS: 4
+            PROTECTION_PROJECTILE: 4
+        boots:
+          type: DIAMOND_BOOTS
+          amount: 1
+          durability: 27
+          mdata: 27
+          meta: {}
+          enchantments:
+            PROTECTION_ENVIRONMENTAL: 4
+            PROTECTION_EXPLOSIONS: 4
+            PROTECTION_PROJECTILE: 4
+      location:
+        world: RPG
+        x: '36.494895698393016'
+        y: '77.0'
+        z: '-7.750299554115617'
+        yaw: '176.75927734375'
+        pitch: '0.0'
+      spawned: true
+      lookclose:
+        enabled: false
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 69e47398-7d0a-442c-85ac-8df9446f880b
+  '181':
+    name: §9Castle Archer
+    traits:
+      equipment:
+        hand:
+          type: BOW
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta: {}
+          enchantments:
+            ARROW_DAMAGE: 1
+        helmet:
+          type: IRON_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 3361970
+        leggings:
+          type: LEATHER_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+        boots:
+          type: LEATHER_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 5013401
+      spawned: true
+      location:
+        world: RPG
+        x: '27.61329603649193'
+        y: '82.0'
+        z: '-46.37107448023086'
+        yaw: '164.59762573242188'
+        pitch: '-33.37533187866211'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 6e02c04b-a95b-48e8-8a67-1ab686232da2
+  '192':
+    name: Shizudo
+    traits:
+      spawned: true
+      location:
+        world: RPG
+        x: '-376.9875457671434'
+        y: '105.0'
+        z: '-1114.1875443996946'
+        yaw: '199.24473571777344'
+        pitch: '0.3000063896179199'
+      owner:
+        owner: Shizaye
+        uuid: ''
+    traitnames: spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 29afe59e-7682-481d-99bf-6a32ffdbe3dd
+  '200':
+    name: Spots
+    traits:
+      location:
+        world: RPG
+        x: '22.717540390236223'
+        y: '65.0'
+        z: '-139.8895955681814'
+        yaw: '227.13311767578125'
+        pitch: '0.0'
+      horsemodifiers:
+        carryingChest: false
+        color: WHITE
+        style: BLACK_DOTS
+        type: HORSE
+      type: EntityHorse
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: horsemodifiers,age,lookclose,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 7041160a-28be-424d-95da-025af745249c
+  '198':
+    name: Blaze
+    traits:
+      location:
+        world: RPG
+        x: '21.78801189353997'
+        y: '65.0'
+        z: '-138.1003601147915'
+        yaw: '-95.69979858398438'
+        pitch: '0.0'
+      horsemodifiers:
+        carryingChest: false
+        color: CREAMY
+        style: NONE
+        type: HORSE
+      type: EntityHorse
+      spawned: true
+      age:
+        age: 0
+        locked: true
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: horsemodifiers,age,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 6c5439d5-eb16-43b5-bb67-745164aeb3bf
+  '205':
+    name: Jack
+    traits:
+      location:
+        world: RPG
+        x: '-184.49075506849076'
+        y: '56.0'
+        z: '-306.2945806546937'
+        yaw: '343.6474609375'
+        pitch: '0.0'
+      type: Villager
+      spawned: true
+      age:
+        age: -24000
+        locked: true
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: age,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    uuid: 5c6d2fa0-b28b-42b9-87fa-a79efe62e17e
+  '209':
+    name: Assigir
+    uuid: 34cdc13f-0303-4f59-809f-76bd38c8b58a
+    traits:
+      spawned: true
+      location:
+        world: Gladiator Arena
+        x: '388.64480598837406'
+        y: '130.0'
+        z: '364.3546882316171'
+        yaw: '107.11013793945312'
+        pitch: '0.0'
+      text:
+        talk-close: false
+        random-talker: true
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Hi, I'm <npc>!
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,lookclose,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '210':
+    name: jaddes
+    uuid: b3853137-e63a-4729-bdfa-9d348c77d3c5
+    traits:
+      spawned: true
+      location:
+        world: Gladiator Arena
+        x: '320.4941487982561'
+        y: '130.0'
+        z: '418.57590654741836'
+        yaw: '202.73526000976562'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '211':
+    name: Guards
+    uuid: dad6513b-11dd-4b6f-99c7-87293bc9d577
+    traits:
+      spawned: true
+      location:
+        world: Gladiator Arena
+        x: '256.52496638541044'
+        y: '130.0'
+        z: '360.4458542007213'
+        yaw: '35.506919860839844'
+        pitch: '0.0'
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: lookclose,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '212':
+    name: Balloon Agent
+    uuid: d39f172e-5b61-4be1-98c6-25deb9a8f3a2
+    traits:
+      equipment:
+        hand:
+          type: BOOK_AND_QUILL
+          amount: 1
+          durability: 0
+          mdata: 0
+        helmet:
+          type: LEATHER_HELMET
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15066419
+        chestplate:
+          type: LEATHER_CHESTPLATE
+          amount: 1
+          durability: 0
+          mdata: 0
+          meta:
+            armor:
+              color: 15066419
+        leggings:
+          type: IRON_LEGGINGS
+          amount: 1
+          durability: 0
+          mdata: 0
+        boots:
+          type: IRON_BOOTS
+          amount: 1
+          durability: 0
+          mdata: 0
+      text:
+        talk-close: true
+        random-talker: true
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Register, for a quick ride to the North Pass in the future!
+      location:
+        world: RPG
+        x: '-1.4844040849027935'
+        y: '71.0'
+        z: '-328.3694558803494'
+        yaw: '79.99436950683594'
+        pitch: '-53.32469940185547'
+      speech: chat
+      spawned: true
+      quester:
+        quester:
+          holder: 33
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+      owner:
+        owner: Masterofjumping
+        uuid: 75f30b4d-fa50-4861-b90a-47ffcb93b95c
+    traitnames: text,speech,quester,lookclose,equipment,spawned,owner,location,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+last-created-npc-id: 212
