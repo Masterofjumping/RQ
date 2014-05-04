@@ -2,7 +2,7 @@
   name: New Beginning
   description: '§a[Quest] §bStart you journey, as you leave this place of imprisonment
     with a §3quest. §cDifficulty: §8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '77'
@@ -138,7 +138,7 @@
   name: Decisions
   description: '§a[Quest] §bSpeak with each Caste leader, and learn of their virtues.
     §bThen make the big choice. §cDifficulty: §8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 7
@@ -334,7 +334,7 @@
   name: Hyperion Initiation
   description: '§a[Quest] §bBegin your journey with the §1Hyperion Order§b. §cDifficulty:
     §8Coal'
-  flags: ACTIVE;DEATHCANCEL;NODESC;
+  flags: NODESC;DEATHCANCEL;ACTIVE;
   objectives:
     '0':
       index: 141
@@ -474,7 +474,7 @@
       occasion: 2
       delay: 6
     '21':
-      command: class set %p Hyperion
+      command: hero admin class %p Hyperion
       type: CMD
       occasion: 2
       delay: 6
@@ -497,7 +497,7 @@
   name: Smith the Blacksmith
   description: '&a[Quest] &bTest a new refined alloy sword and observe the affect
     it has on test dummies. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '35'
@@ -584,7 +584,7 @@
   name: Shadow Training
   description: '&a[Quest] &bTake your first step towards the &2Shadow Hunters&b.&c
     Difficulty: &7Coal'
-  flags: ACTIVE;DEATHCANCEL;NODESC;
+  flags: NODESC;DEATHCANCEL;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-309.16;90.00;-1162.54;RPG;0.00;0.00;|1.0
@@ -733,7 +733,7 @@
       occasion: 3
       delay: 3
     '22':
-      command: class set %p Shadow
+      command: hero admin class %p Shadow
       type: CMD
       occasion: 3
       delay: 3
@@ -762,7 +762,7 @@
   name: Scarlet Beginnings
   description: '&a[Quest] &bJoin the ranks of the &5Scarlet Coven&b. &cDifficulty:
     &8Coal'
-  flags: ACTIVE;DEATHCANCEL;NODESC;
+  flags: NODESC;DEATHCANCEL;ACTIVE;
   objectives:
     '0':
       hand: '259'
@@ -974,7 +974,7 @@
       occasion: 0
       delay: 3
     '29':
-      command: class set %p Scarlet
+      command: hero admin class %p Scarlet
       type: CMD
       occasion: 5
       delay: 4
@@ -982,7 +982,7 @@
   name: The Ropes
   description: '&a[Quest] &bCourier some packages for a short while, and gain some
     contacts at the same time. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 126
@@ -1218,7 +1218,7 @@
   name: A Monster Time
   description: '&a[Quest] &bGolog has started up a resort, but he needs a hand first.
     By the way, he is also a zombie. &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       block: '38'
@@ -1501,7 +1501,7 @@
   description: '&a[Quest] &BThe classic story of love; Insers and Aheri separated
     but their hearts still long to be together. Maybe you can help? &cDifficulty:
     &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|59.00;72.00;-195.42;RPG;0.00;0.00;|3.0
@@ -1639,7 +1639,7 @@
     to me, Chortana in the guards quarters under the Castle. &cDifficulty: &3Diamond'
   worlds:
   - rpg
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 46
@@ -2164,7 +2164,7 @@
   name: Spider Infestation
   description: '&a[Quest] &bComplete some pest control in Zuriki''s mine. &9Daily
     Quest, &cDifficulty: &8Coal'
-  flags: ACTIVE;REPEATABLE;HIDDENOBJS;NODESC;
+  flags: NODESC;HIDDENOBJS;REPEATABLE;ACTIVE;
   objectives:
     '0':
       amount: 6
@@ -2227,7 +2227,7 @@
   name: Run `n` Seek
   description: '&a[Quest] &bFlambe here has a brother you must find, and doing so
     might just &bprove the honour of young adventurers. &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 55
@@ -2366,7 +2366,7 @@
   description: '&a[Quest] &bThe city sewers are obviously of importance, but keeping
     them clear of critters seems less important to a fighter such as yourself. But
     a job is being offered and coin is alluring. &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 72
@@ -2669,7 +2669,7 @@
   name: Zombie Population
   description: '&a[Quest] &bA culling of the Zombie population is called for, this
     kingdom must be kept safe. &9Daily Quest. &cDifficulty: &8Coal'
-  flags: ACTIVE;REPEATABLE;NODESC;
+  flags: NODESC;REPEATABLE;ACTIVE;
   objectives:
     '0':
       amount: 15
@@ -2780,7 +2780,7 @@
   description: '&a[Quest] &bThe bank of Woodbry contains a substantial amount of wealth;
     this is a town of success and good harvests. Perhaps it is time to burrow some
     of this wealth? &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|52.32;66.00;-80.56;RPG;0.00;0.00;|8.0
@@ -3088,7 +3088,7 @@
   description: '&a[Quest] &bYou have two options; either rot in the less than luxurious
     prison or &bcomplete some further work for the Black Hand Guild. &cDifficulty:
     &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       item: '338'
@@ -3310,95 +3310,11 @@
       type: MSG
       occasion: 1
       delay: 5
-    '33':
-      block: '83:0'
-      location: 17.30;54.00;15.52;RPG;105.15;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '34':
-      block: '83:0'
-      location: 17.29;54.00;14.46;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '35':
-      block: '83:0'
-      location: 16.44;54.00;14.47;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '36':
-      block: '83:0'
-      location: 16.29;54.00;15.47;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '37':
-      block: '83:0'
-      location: 15.23;54.00;15.49;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '38':
-      block: '83:0'
-      location: 15.21;54.00;14.64;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '39':
-      block: '83:0'
-      location: 14.36;54.00;14.65;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '40':
-      block: '83:0'
-      location: 14.37;54.00;15.51;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '41':
-      block: '83:0'
-      location: 13.30;54.00;15.53;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '42':
-      block: '83:0'
-      location: 13.28;54.00;14.46;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '43':
-      block: '83:0'
-      location: 12.21;54.00;14.48;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '44':
-      block: '83:0'
-      location: 12.22;54.00;15.33;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '45':
-      block: '83:0'
-      location: 11.19;54.00;15.35;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
-    '46':
-      block: '83:0'
-      location: 11.30;54.00;14.31;RPG;87.75;90.00;
-      type: BLOCK
-      occasion: 1
-      delay: 5
 '18':
   name: Quest Voucher`s
   description: '&a[Quest] &bExchange a looted Quest Voucher for one Quest Point. &eCan
     be completed once every hour.'
-  flags: ACTIVE;HIDDEN;REPEATABLE;NODESC;
+  flags: NODESC;REPEATABLE;ACTIVE;HIDDEN;
   objectives:
     '0':
       item: '421'
@@ -3448,7 +3364,7 @@
       delay: 1
 '19':
   name: Rank - Dusk Spy
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-338.14;74.00;-1173.43;RPG;0.00;0.00;|20.0
@@ -3532,14 +3448,9 @@
       type: CMD
       occasion: 0
       delay: 7
-    '12':
-      command: class set %p Shadow1
-      type: CMD
-      occasion: 0
-      delay: 7
 '20':
   name: Rank - Neophyte
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-323.14;61.00;-1240.43;RPG;0.00;0.00;|50.0
@@ -3625,14 +3536,9 @@
       type: CMD
       occasion: 0
       delay: 7
-    '12':
-      command: class set %p Hyperion1
-      type: CMD
-      occasion: 0
-      delay: 7
 '21':
   name: Rank - Echo
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-386.14;76.00;-1102.43;RPG;0.00;0.00;|50.0
@@ -3716,14 +3622,9 @@
       type: CMD
       occasion: 0
       delay: 7
-    '12':
-      command: class set %p Scarlet1
-      type: CMD
-      occasion: 0
-      delay: 7
 '22':
   name: Rank - Bane Hunter
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-324.14;74.00;-1189.43;RPG;0.00;0.00;|50.0
@@ -3810,14 +3711,9 @@
       type: CMD
       occasion: 0
       delay: 7
-    '12':
-      command: class set %p Shadow2
-      type: CMD
-      occasion: 0
-      delay: 7
 '23':
   name: Rank - Disciple
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-300.14;61.00;-1250.00;RPG;0.00;0.00;|50.0
@@ -3903,14 +3799,9 @@
       type: CMD
       occasion: 0
       delay: 7
-    '12':
-      command: class set %p Hyperion2
-      type: CMD
-      occasion: 0
-      delay: 7
 '24':
   name: Rank - Reaver
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-327.14;105.00;-1116.43;RPG;0.00;0.00;|50.0
@@ -3995,14 +3886,9 @@
       type: CMD
       occasion: 0
       delay: 7
-    '12':
-      command: class set %p Scarlet2
-      type: CMD
-      occasion: 0
-      delay: 7
 '25':
   name: Rank - Temporal
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-325.14;64.00;-1177.43;RPG;0.00;0.00;|50.0
@@ -4085,14 +3971,9 @@
       type: CMD
       occasion: 0
       delay: 7
-    '12':
-      command: class set %p Shadow3
-      type: CMD
-      occasion: 0
-      delay: 7
 '26':
   name: Rank - Deacon
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-310.14;61.00;-1233.43;RPG;0.00;0.00;|50.0
@@ -4176,14 +4057,9 @@
       type: CMD
       occasion: 0
       delay: 7
-    '12':
-      command: class set %p Hyperion3
-      type: CMD
-      occasion: 0
-      delay: 7
 '27':
   name: Rank - Summoner
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-399.14;105.00;-1024.43;RPG;0.00;0.00;|50.0
@@ -4266,14 +4142,9 @@
       type: CMD
       occasion: 0
       delay: 7
-    '12':
-      command: class set %p Scarlet3
-      type: CMD
-      occasion: 0
-      delay: 7
 '28':
   name: The Kings Mine
-  flags: HIDDENOBJS;NODESC;
+  flags: NODESC;HIDDENOBJS;
   objectives:
     '0':
       region: SPHERE|37.86;106.00;14.38;RPG;0.00;0.00;|3.0
@@ -4494,7 +4365,7 @@
   name: Birthday Cake
   description: '&a[Quest] &bThe birthday is all ruined! What birthday doesn’t have
     cake? &cDifficulty: &8Coal'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       item: '296'
@@ -4807,9 +4678,12 @@
       delay: 2
 '30':
   name: Time to Enchant
-  flags: ACTIVE;HIDDENOBJS;NODESC;
+  flags: NODESC;HIDDENOBJS;ACTIVE;
   objectives:
     '0':
+      index: 27
+      type: NPC
+    '1':
       region: SPHERE|32.50;77.00;-10.50;RPG;0.00;0.00;|3.0
       type: REGION
   events:
@@ -4819,41 +4693,46 @@
       occasion: -1
       delay: 1
     '1':
+      message: '&a[Quest] &bRight Click JakeEpps to enchant, or /q cancel to cancel.'
+      type: MSG
+      occasion: -1
+      delay: 3
+    '2':
       message: '&4[JakeEpps] &3So &4[%p] &3I will take 2000 dollars please.'
       type: MSG
-      occasion: -1
+      occasion: 0
       delay: 4
-    '2':
+    '3':
       amount: -2000.0
       type: MONEY
-      occasion: -1
-      delay: 6
-    '3':
-      message: '&a[Quest] &3 $2000 Removed from account.'
-      type: MSG
-      occasion: -1
+      occasion: 0
       delay: 6
     '4':
-      message: '&4[jakeEpps] &3Thank you, Enjoy! Walk through the portal when done!'
-      type: MSG
-      occasion: -1
-      delay: 8
-    '5':
-      location: 38.27;92.00;11.49;RPG;0.15;10.05;
-      type: TELE
-      occasion: -1
-      delay: 10
-    '6':
-      message: '&4[JakeEpps] &3Thank you, now feel free to come back anytime!'
+      message: '&a[Quest] &3 $2000 Removed from account.'
       type: MSG
       occasion: 0
+      delay: 6
+    '5':
+      message: '&4[jakeEpps] &3Thank you, Enjoy! Walk through the portal when done!'
+      type: MSG
+      occasion: 0
+      delay: 8
+    '6':
+      location: 38.16;92.00;12.04;RPG;-0.90;11.85;
+      type: TELE
+      occasion: 0
+      delay: 10
+    '7':
+      message: '&4[JakeEpps] &3Thank you, now feel free to come back anytime!'
+      type: MSG
+      occasion: 1
       delay: 3
 '31':
   name: Tower of Fun
   description: '&a[Quest] &bRecruit Steve is in a tight spot, during the recent conflict
     this &btower was heavily damaged. Now it his responsibility to salvage anything
     of worth. The only problem is the height! &9Daily Quest, &cDifficulty: &8Coal'
-  flags: ACTIVE;REPEATABLE;NODESC;
+  flags: NODESC;REPEATABLE;ACTIVE;
   objectives:
     '0':
       region: SPHERE|37.49;77.00;-253.29;RPG;0.00;0.00;|3.0
@@ -4995,7 +4874,7 @@
   description: '&a[Quest] &bIt is harvest season for this farm, but Farmer Gro is
     old and needs the assistance of his son, Au to harvest. Only problem is, his son
     has run off. &cDifficulty: &7Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-87.31;121.00;-337.37;RPG;0.00;0.00;|5.0
@@ -5281,7 +5160,7 @@
   name: Bone Hunter
   description: '&a[Quest] &bFarming this late in winter requires courage, and a lot
     of bonemeal. &cDifficulty: &8Iron'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       region: SPHERE|-73.18;72.00;-276.00;RPG;0.00;0.00;|5.0
@@ -5311,7 +5190,8 @@
       type: QUEST
   events:
     '0':
-      message: '&4[Kabby] &3You’re an explorer right? If so, I have a request for you.'
+      message: '&4[Kabby] &3You’re an explorer right? If so, I have a request for
+        you.'
       type: MSG
       occasion: -1
       delay: 1
@@ -5447,7 +5327,7 @@
   name: Balloon - North Pass
   description: '&3[Balloon Agent] &aTo register for this route, right click Balloon
     Agent again.'
-  flags: ACTIVE;NODESC;
+  flags: NODESC;ACTIVE;
   objectives:
     '0':
       index: 212
