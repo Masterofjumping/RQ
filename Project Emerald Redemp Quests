@@ -1,0 +1,126 @@
+  ID: 20
+new beginning:
+  name: New Beginning
+  description: '§a[Quest] §bStart you journey, as you leave this place of imprisonment
+    with a §3quest. §cDifficulty: §8Coal'
+  flags: NODESC;
+  objectives:
+    '0':
+      type: ACTION
+      description: '&a[Objective] &bRight click a &7stone button&b behind the hut.'
+      block: '77'
+      click: 2
+    '1':
+      type: NPC
+      description: '&a[Objective] &bSpeak to Memnoc (right click).'
+      index: 45
+  conditions:
+    '0':
+      type: QUEST
+      quest: New Beginning
+  events:
+    '0':
+      type: MSG
+      occasion: -1
+      message: '&7-*-------------*- &6&lQuest: Chat Muted&7 -*-------------*-'
+    '1':
+      type: MSG
+      occasion: -1
+      delay: 1
+      message: '&a[Captain Aspyr]&7: &bPrisoner, your lucky day. You have been pardoned
+        by some foolish soul. Proceed to a mine cart and get out of my sight.'
+    '2':
+      type: MSG
+      occasion: -1
+      delay: 2
+      message: '&c[Objective] &dRight click a stone button behind the hut.'
+    '3':
+      type: MSG
+      occasion: -1
+      delay: 3
+      message: '&6[Tip] &7That is an objective, complete it to progress the quest.
+        You can use &f/q help&7 for quest commands.'
+    '4':
+      type: MSG
+      occasion: 0
+      delay: 1
+      message: '&6[Quest] &7You hear a rumble as a minecart approaches.'
+    '5':
+      type: MSG
+      occasion: 0
+      delay: 5
+      message: '&4[Memnoc] &3Come speak to me, I will kit you out for leaving.'
+    '6':
+      type: MSG
+      occasion: 0
+      delay: 6
+      message: '&a[Objective] &bSpeak to Memnoc (right click).'
+    '7':
+      type: CMD
+      occasion: 1
+      delay: 2
+      command: rpgitem ts give %p 1
+    '8':
+      type: ITEM
+      occasion: 1
+      delay: 2
+      item: '297:0'
+      amount: 5
+    '9':
+      type: MSG
+      occasion: 1
+      message: '&4[Memnoc] &3Prisoner #43289, it appears you have been released.'
+    '10':
+      type: MSG
+      occasion: 1
+      delay: 2
+      message: '&4[Memnoc] &3Lucky bugger... here is your gear.'
+    '11':
+      type: MSG
+      occasion: 1
+      delay: 3
+      message: '&a[Objective] &bRead the information & then walk up the path out of
+        here.'
+    '12':
+      type: CMD
+      occasion: 1
+      command: pex user %p add multiverse.portal.access.New_Spawn
+    '13':
+      type: POINT
+      occasion: 2
+      delay: 2
+      amount: 1
+    '14':
+      type: MONEY
+      occasion: 2
+      delay: 2
+      amount: 115.0
+    '15':
+      type: MSG
+      occasion: 2
+      delay: 2
+      message: '&e[Rewards] &7$115 - 1 Quest Point - Rank of Wanderer.'
+    '16':
+      type: MSG
+      occasion: 2
+      delay: 3
+      message: '&a[Quest] &3Quest points are required for higher Caste ranks.'
+    '17':
+      type: CMD
+      occasion: 2
+      delay: 4
+      command: pex user %p group add Wanderer
+    '18':
+      type: CMD
+      occasion: 2
+      delay: 4
+      command: pex user %p group remove Convict
+    '19':
+      type: CMD
+      occasion: 2
+      delay: 4
+      command: broadcast %p &3is now a &3Wanderer &3of the free world&3!
+    '20':
+      type: MSG
+      occasion: -1:6
+      message: '&7-*-------------*- &6&lQuest: Chat Unmuted&7 -*-------------*-'
